@@ -1,0 +1,127 @@
+*{
+	font-family: "Roboto";
+	font-style: thin;
+}
+
+body{
+	background-image: url(https://media.giphy.com/media/JXHhI4o9NCf8k/giphy.gif);
+	background-repeat: no-repeat;
+	background-size: 200%;
+}
+
+/*#title-vertical{
+	transform: rotate(270deg);
+	transform-origin: center 200px 0;
+	float: left;
+	width: 350px;
+	height: 150px;
+	padding: 5% 5% 0 5%;
+	text-align: center;
+	font-size: 300%;
+	font-family: "Futura", "Helvetica", sans-serif;
+	font-style: italic;
+	text-shadow: 3px 3px  #99ff99;
+	color: #00ffff;
+	background-image: url(https://media.giphy.com/media/AGwwYeZSOibQI/giphy.gif);
+	background-size: 50%;
+	border-radius: 30px;
+
+}*/ 
+
+/*#author{
+	overflow: hidden;
+	text-align: right;
+	transform: rotate(20deg);
+	text-shadow: 4px 4px #ffe6ff;
+	text-transform: uppercase;
+	font-family: "Arial Black";
+	font-size: 2.5em;
+	color: #ff99ff;
+}*/
+
+/*#cool{
+	transform: rotate(40deg);
+	margin-left: 90%;
+	margin-top: 6%;
+	text-shadow: 2px 2px #ffffb3;
+	font-size: 1.5em;
+	color: #ffff1a;
+}*/
+
+.first{
+	margin: 5% 40% 5% 40%;
+	color: rgba(0,0,0, 0.2);
+	width: 200px;
+	height: 250px;
+	padding: 0px 10px 0px 10px;
+	overflow: hidden;
+	background-image: url(http://orig11.deviantart.net/a991/f/2016/018/2/1/_png_birdsnestfern_by_conanholmes-d9oieoj.png);
+	background-size: 100%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	transition: background-image 10s;
+	transition: width 5s;
+	transition: height 20s;
+	border: 5px dotted black;
+}
+
+.first:hover{
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Moir%C3%A9_pattern.svg/2000px-Moir%C3%A9_pattern.svg.png);
+	background-position: bottom;
+	width: 100vw;
+	margin-left: 0;
+	position: relative;
+
+	height: 10px;
+	background-color: rgba(0,0,0, 0.2);
+	text-shadow: 1px -1px 1px #aaa,
+             	 0px 4px 1px rgba(153,255,153,0.5);
+}
+
+#image2{
+	background-position: top;
+	width: 100vw;
+	text-align: center;
+	font-size: 4em;
+	color: rgba(153, 255, 204, 0.2);
+	transition: color 6s;
+
+}
+
+#image2:hover{
+	color: rgba(255,0,255, 0.7);
+	text-shadow: 2px 4px 1px rgba(153,255,204,0.8);
+}
+
+.second{
+	background-image: url(http://static.tumblr.com/d9a61302f590d8722feb59f383e9c42a/nskl9dz/z5Cnjqf4d/tumblr_static_ex2lb38zsa0ocwwc8kw0ww8go.png);
+	background-size: 60%;
+	background-position: center;
+	padding: 20px 0 20px 0;
+	border: 10px dotted black;
+	color: rgba(0,0,0,0.2);
+	background-repeat: no-repeat;
+/*	transition: transform 20s;*/
+	transition: border 10s;
+	transition: margin 20s;
+/*	transition: background-image 5s; */
+
+
+}
+
+.second:hover{
+/*	transform: rotate(90deg);*/
+	margin: 5% 40% 5% 40%;
+/*	background-color: rgba(255, 0, 255, 0.2); */
+	background-color: rgba(0,0,0, 0.3);
+text-shadow: 1px -1px 1px #aaa,
+             	 0px 4px 1px rgba(255,0,255,0.5);
+	background-image: url(https://media.giphy.com/media/pZREZQ5wQrogo/giphy.gif);
+/*	background-image: url(http://68.media.tumblr.com/491dc6f017786ed1ea192bd9b4289aae/tumblr_n6vuiwKOoA1rat0tqo1_500.gif);*/
+	background-repeat: no-repeat;
+	background-size: 70%;
+	border: 20px dotted black;
+}
+
+
+

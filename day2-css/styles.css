@@ -1,0 +1,53 @@
+/* default styles */
+
+p{
+  color: 	 #ffb3ff;
+  font-family: "Futura";
+  font-style: italic;
+  text-transform: uppercase; 
+}
+
+h2 {
+  color: 	 #ccffb3;
+  background-color: turquoise;
+  font-family: "Arial Black";
+  text-align: center;
+}
+
+h1{
+  font-weight: bold; 
+  color: #ccccff;
+  font-family: "Arial Black";
+  font-size: 70px;
+}
+
+body {
+  font-family: 'Roboto', arial, sans-serif; /* default arial then sans-serif if it can't find Roboto */
+  font-size: 12px; 
+}
+
+#babes{
+  color: aqua;
+  background-color: black;
+  text-align: center;
+  font-size:  1.5em; 
+}
+
+.superbabe{
+  background-color: #ffe6ff;
+  font-size: 6em;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid #000;
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#lovebabes{
+  margin-bottom: 50px;
+  margin-top: 1px;
+  margin: 0 auto;
+}
