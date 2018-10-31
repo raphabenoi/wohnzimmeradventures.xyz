@@ -14,17 +14,21 @@ body{
 	width: 100vw;
 	height: 100vh;
 	background-image: url("../img/warp1.png");
-	background-size: 90vw;
+	background-size: 85vw;
 	background-repeat: no-repeat;
-	position: relative;
+	position: absolute;
 	background-position: center;
-    -webkit-transition: all 5s ease;
-       transition: all 5s ease;
+    -webkit-animation: fadein 7s linear forwards;
+       animation: fadein 7s linear forwards;
 }
 
 #festival_title{
+	width: 70%;
+	height: 15%;
+/*	border: 3px white solid;*/
+/*	position: fixed;*/
 	background-position: top;
-	width: 100vw;
+/*	width: 100vw;*/
 	text-align: center;
 	font-size: 4em;
 	color: rgba(255, 0, 255, 0.2);
@@ -43,6 +47,7 @@ body{
 
 
 #middle_color{
+/*	position:fixed;*/
 	color: rgba(153,255,204,0.4);
 	text-shadow: 2px 4px 1px rgba(255,0,255, 0.2);
 	font-style: italic;
@@ -54,33 +59,42 @@ body{
 	text-shadow: 2px 4px 1px rgba(255,0,255, 0.7);
 }
 
-.invitation{
-	margin-top: 2%;
-	margin-left: 5%;
+#date{
+
+	/*horizontal and vertical alignment of absolute object*/	
+	top: 0; left: 0; bottom: 0; right: 0;
+	position: absolute;
+	margin:auto;
+	margin-top: 17%;
+
+	/*v+h alignment of text inside container*/
+	padding: 3px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align:center;
+
+	/*fonts and colors*/
 	font-family: 'IBM Plex Mono', monospace;
-/*	font-style: italic;*/
-	font-size: 150%;
+	font-style: italic;
+	font-size: 250%;
 	color: white;
 
-/*	text-transform: uppercase;*/
-	text-align:center;
-	display: flex;
-/*	background-color: rgba(255, 255,255, 0.5);*/
-	border: 5px solid;
+	/*container size and attributes*/
+	width: 50vw;
+	height:50vh;
+/*	border: 5px solid;*/
+
+	/*animation*/
+	-webkit-animation: appear 9s linear forwards;
+       animation: appear 9s linear forwards;
+
 }
 
-/* CLASS TO MAYBE ADD WITH JQUERY TO FADE THE BACKGROUND*/
-.fade {
-	-webkit-animation: fadein 5s;
-	    animation: fadein 5s;
+.invitation{
+	color: white;
 }
-
-.darker{
-    -webkit-filter: brightness(30%);
-         filter: brightness(30%);
-}
-
-
 
 /* CELLPHONES */
 @media(min-width: 650px){
@@ -95,28 +109,67 @@ body{
 @media(min-width: 750px){
 }
 
-/* ANIMATIONS */
 
-/* warp fade animation*/
+
+/* ANIMATIONS */
+/* webkit: Chrome, Safari*/
+/* moz: Mozilla Firefox*/
+
+/* warp fade animation:*/
+@-webkit-keyframes fadein{
+    0%   {filter: brightness(1);}
+    50%  {filter: brightness(0.4);}
+    100% {filter: brightness(0.2);}
+}
+
+@-moz-keyframes fadein{
+    0%   {filter: brightness(1);}
+    50%  {filter: brightness(0.4);}
+    100% {filter: brightness(0.2);}
+}
+
 
 @keyframes fadein{
-	from: {opacity:1;}
-	to: {opacity: 0;}
-}
-@-webkit-keyframes fadein{
-	from: {opacity:1;}
-	to: {opacity: 0;}
+    0%   {filter: brightness(1);}
+    50%  {filter: brightness(0.4);}
+    100% {filter: brightness(0.2);}
 }
 
+@-webkit-keyframes appear{
+    0%   {filter: opacity(0);}
+    50%  {filter: opacity(0.4);}
+    100% {filter: opacity(1);}
+}
+
+@-moz-keyframes appear{
+    0%   {filter: opacity(0);}
+    50%  {filter: opacity(0.4);}
+    100% {filter: opacity(1);}
+}
+
+@keyframes appear{
+    0%   {filter: opacity(0);}
+    50%  {filter: opacity(0.4);}
+    100% {filter: opacity(1);}
+}
 
 /*floating animation for title*/
 @-webkit-keyframes floating{
-	0%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}
-	50%{-webkit-transform: 20px, -20px;transform: 20px, -20px;}
-	100%{-webkit-transform: translate(-10px, -10px);transform: translate(-10px, -10px);}
+	0%{-webkit-transform: translate(0px, 0px);}
+	50%{-webkit-transform: 20px, -20px;}
+	100%{-webkit-transform: translate(-10px, -10px);}
 }
+
 @keyframes floating{
-	0%{-webkit-transform: translate(0px, 0px);transform: translate(0px, 0px);}
-	50%{-webkit-transform: 20px, -20px;transform:  translate(20px, -20px);}
-	100%{-webkit-transform: translate(-10px, -10px);transform: translate(-10px, -10px);}
+	0%{transform: translate(0px, 0px);}
+	50%{transform:  translate(20px, -20px);}
+	100%{transform: translate(-10px, -10px);}
 }
+/*
+@keyframes floating{
+	0%{-webkit-transform: translate(35%, 10%);transform: translate(35%, 10%);}
+	20%{-webkit-transform: 45%, 10%;transform: 45%, 10%;}
+	50%{-webkit-transform: 20%, 8%;transform: 20%, 8%;}
+	60%{-webkit-transform: 15%, -6%;transform: 15%, -6%;}
+	100%{-webkit-transform: translate(35%, 15%);transform: translate(35%, 15%);}*/
+
