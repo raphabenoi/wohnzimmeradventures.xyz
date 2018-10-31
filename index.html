@@ -5,6 +5,8 @@
 <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="6ba57f6eca24bd9d83e557936ae4825dc7e0e84a/css/webkitstyles.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 </head>
 
@@ -12,14 +14,53 @@
 
 body {
 
-	background-image: url('grunge_patterns.jpg');
+	background-image: url('6ba57f6eca24bd9d83e557936ae4825dc7e0e84a/img/star.gif');
 	background-attachment: fixed;
 	color: #333;
 }
 
+#warp {
+	width: 100%;
+	height: 100%;
+	background-image: url("6ba57f6eca24bd9d83e557936ae4825dc7e0e84a/img/warp1.png");
+	background-size: 90vw;
+	background-repeat: no-repeat;
+	position: fixed;
+	background-position: center;
+}
+
+#loginbutton {
+	color: black;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.1s; /*Safari*/
+	transition-delay: 0.1s;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: "IBM Plex Mono", monospace;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+#loginbutton:hover {
+    background-color: #e540c2;
+		border: 2px solid #e540c2;
+    color: white;
+}
+
 .box {
-	border-radius: 3px;
+	border-radius: 5px;
 	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	font-family: "IBM Plex Mono", monospace;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 10px;
+	color: #e540c2;
 }
 
 .lightbox {
@@ -32,7 +73,6 @@ body {
 	background: rgba(10, 10, 10, 0.8);
 	text-align: center;
 	margin: auto;
-
 }
 
 div.horizontal {
@@ -49,36 +89,48 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+   color: #e540c2;
    text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
 }
 
 ::-moz-placeholder {
-   color: #955;
+   color: #e540c2;
    text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   color: #e540c2;
    text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
 }
 
 </style>
 
 <body>
-
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
+	<div id="warp">
+			<div id="loginbox" class="lightbox" >
+				<div class="horizontal">
+					<div class="vertical">
+						<div class="box">
+							<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="who is king?" /> <br />
+							<button id="loginbutton" type="button">start adventure</button>
+							<p id="wrongPassword" style="display: none">nah ... that's wrong!</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
-
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -110,7 +162,7 @@ div.vertical {
 				parent.location.hash= hash;
 
 				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
+				$("#password").attr("placeholder","eeeh ... no!");
 				$("#password").val("");
 			}
 		});
