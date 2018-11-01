@@ -92,8 +92,40 @@ body{
 
 }
 
-.invitation{
+#invitation{
+	margin-top: 80vh;
+	padding: 9% 3% 9% 3%;
+/*	border: 3px white solid;*/
+	position: relative;
 	color: white;
+	background: rgba(0,0,0,0.5);
+	font-family: 'IBM Plex Mono', monospace;
+	font-style: italic;
+	font-size: 120%;
+
+/*	-webkit-animation: darkbg 9s linear forwards;
+       animation: darkbg 9s linear forwards;*/
+
+}
+
+.green{
+	color: #21ff00;
+}
+
+.yellow{
+	color: #fffa00;
+}
+
+.red{
+	color:#f20000;
+}
+
+.magenta{
+	color:#ff02fa;
+}
+
+.cyan{
+	color:cyan;
 }
 
 /* CELLPHONES */
@@ -116,6 +148,16 @@ body{
 /* moz: Mozilla Firefox*/
 
 /* warp fade animation:*/
+@-webkit-keyframes darkbg{
+    0%   {background: rbga(0,0,0,0);}
+    100% {background: rbga(0,0,0,0.6));}
+}
+
+@keyframes darkbg{
+    0%   {background: rbga(0,0,0,0);}
+    100% {background: rbga(0,0,0,6));}
+}
+
 @-webkit-keyframes fadein{
     0%   {filter: brightness(1);}
     50%  {filter: brightness(0.4);}
