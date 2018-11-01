@@ -61,7 +61,7 @@ body{
 
 #date{
 
-	/*horizontal and vertical alignment of absolute object*/	
+	/*horizontal and vertical alignment of absolute object*/
 	top: 0; left: 0; bottom: 0; right: 0;
 	position: absolute;
 	margin:auto;
@@ -102,6 +102,7 @@ body{
 	font-family: 'IBM Plex Mono', monospace;
 	font-style: italic;
 	font-size: 120%;
+	font-weight: 200;
 
 /*	-webkit-animation: darkbg 9s linear forwards;
        animation: darkbg 9s linear forwards;*/
@@ -214,4 +215,3 @@ body{
 	50%{-webkit-transform: 20%, 8%;transform: 20%, 8%;}
 	60%{-webkit-transform: 15%, -6%;transform: 15%, -6%;}
 	100%{-webkit-transform: translate(35%, 15%);transform: translate(35%, 15%);}*/
-
