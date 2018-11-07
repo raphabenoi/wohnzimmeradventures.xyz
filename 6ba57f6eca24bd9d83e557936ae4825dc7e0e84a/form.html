@@ -22,37 +22,54 @@
 			</header>
 			<div class="main">
 				<form class="cbp-mc-form" id="test-form">
+
+					<!-- First Column -->
 					<div class="cbp-mc-column">
+
+						<label for="id">Invitation ID</label>
+	  				  	<input type="text" id="id" name="id" placeholder="R2D3Y985W">
 						<label for="first_name">First Name</label>
-	  					<input type="text" id="first_name" name="first_name" placeholder="Gonzálo Liu Irgmard">
+	  				  	<input type="text" id="first_name" name="first_name" placeholder="Gonzálo Liu Irmgard">
 	  				<label for="last_name">Last Name</label>
-	  					<input type="text" id="last_name" name="last_name" placeholder="Mustermensch de">
+	  				  	<input type="text" id="last_name" name="last_name" placeholder="Mustermensch de 4 real">
 						<label for="festival_name">Festival Name</label>
-	  					<input type="text" id="festival_name" name="festival_name" placeholder="Myopic unicorn on steroids">
+	  					  <input type="text" id="festival_name" name="festival_name" placeholder="Myopic unicorn on steroids">
 	  				<label for="email">Email Address</label>
 		  					<input type="text" id="email" name="email" placeholder="party@yourplace.now">
-	  				<label for="attending">Am Attending</label>
+						<label for="favourite_drink">Favourite Drink</label>
+								<input type="text" id="favourite_drink" name="favourite_drink" placeholder="Black tea infused gin">
+						<label for="special_power">Special power</label>
+								<input type="text" id="special_power" name="special_power" placeholder="Anti-gravity">
+
+		 		  </div>
+
+					<!-- second column -->
+				 	<div class="cbp-mc-column">
+
+						<label for="attending">I Am Attending</label>
 	  					<select id="attending" name="attending">
 	  						<option class="preview">Choose wisely...</option>
 	  						<option>Yes, obviously!</option>
-	  						<option>Maybe, I'm afraid of commitments</option>
 	  						<option>No, I'm busy :(</option>
-								<option>No, don't like the idea ... get a life!</option>
+								<option>No, don't like the idea... get a life!</option>
 	  					</select>
+
 						<label for="invited_by">Invited By</label>
-	  					<select id="invited_by" name="invited_by">
-	  						<option>My favourite person is ...</option>
-	  						<option>Anna</option>
-								<option>Carlotta</option>
-								<option>Claudia</option>
-								<option>Marta</option>
-								<option>Pit</option>
-	  						<option>Raphaël</option>
-								<option>Simon</option>
-	  					</select>
+							 	<select id="invited_by" name="invited_by">
+								  						<option>My favourite person is...</option>
+								  						<option>Anna</option>
+															<option>Carlotta</option>
+															<option>Claudia</option>
+															<option>Luise</option>
+															<option>Marta</option>
+															<option>Pit</option>
+								  						<option>Raphaël</option>
+															<option>Simon</option>
+								</select>
+
 						<label for="arrival_date">Arrival Date</label>
 	  					<select id="arrival_date" name="arrival_date">
-	  						<option>I'll be there from ...</option>
+	  						<option>I'll be there from...</option>
 	  						<option>Thursday 13</option>
 								<option>Friday 14</option>
 								<option>Saturday 15</option>
@@ -61,9 +78,10 @@
 	  						<option>Tuesday 18</option>
 								<option>Wednesday 19</option>
 	  					</select>
+
 						<label for="departure_date">Departure Date</label>
 	  					<select id="departure_date" name="departure_date">
-	  						<option>Untill ...</option>
+	  						<option>Until...</option>
 	  						<option>Thursday 13</option>
 								<option>Friday 14</option>
 								<option>Saturday 15</option>
@@ -73,57 +91,81 @@
 								<option>Wednesday 19</option>
 	  					</select>
 
-							<!-- Checkbox -->
-						<label for="propose">Propose activity or passivity<br><span class="detail">Activities are all ajskdll  asdkajsld kas dasl d kasld jasl dsjakld asjlkd ajlskd ajlkd lkasd</span></label>
-							<input class="checkbox" type="checkbox" name="propose" value="yes">
+							<label for="place_you_live">I live in...</label>
+		  					<input type="text" id="place_you_live" name="place_you_live" placeholder="Vélizy-Villacoublay, France">
+
+							<label for="couch">You said Berlin?! Great,</label>
+		  					<select id="couch" name="couch">
+		  						<option>I can offer a couch for...</option>
+		  						<option>1 awesome person</option>
+									<option>2 bodies</option>
+									<option>3 crazy people</option>
+									<option>4 ding-a-dong ding-dong ding Menschen</option>
+									<option>5 enormously-awesome-as-me-friends</option>
+									<option>I have no couch but plenty of space in my bed</option>
+									<option>I only have space in my heart</option>
+		  					</select>
+
+						<!-- Checkbox Place to Sleep -->
+						<label for="sleep">Not from Berlin?!</label>
+								<select id="couch" name="couch">
+									<option>I'm coming for you...</option>
+									<option>but have a place to sleep</option>
+									<option>and need a couch to crash on</option>
+									<option>Don't want to sleep at all</option>
+							  </select>
+						<!--	<input class="checkbox" type="checkbox" name="sleep" value="yes"> <span class="checkbox">Yes</span>
+							<input class="checkbox" type="checkbox" name="sleep" value="no"> <span class="checkbox">No</span> -->
+
+					<!-- Checkbox +1 -->
+						<label for="guests">You have more great friends?!</label>
+								<select id="friends_invite" name="friends_invite">
+									<option>Yes, of course...</option>
+									<option>and want to invite 1</option>
+									<option>and want to invite 2</option>
+									<option>and want to invite 3</option>
+									<option>but like them to stay at home</option>
+								</select>
+								<br>
+								<span class="detail">
+									People with invitations come first.
+								  But your friends are most welcome if we have enough capacity.
+									Send us their names and why they can't be missed in the comment field.
+								  We will then send them a unique invitation ID.</span>
+
+						<!--	<input class="checkbox" type="checkbox" name="guests" value="yes">
+							<span class="checkbox">Yes, I do!</span> -->
+
+	  				</div>
+
+						<!-- Third column -->
+	  				<div class="cbp-mc-column">
+
+						<!-- Checkbox Propose -->
+						<label for="propose">I want to help you</label>
+							<span class="detail">We want you! We need you! Is there something you have secretly trained for seven years
+								and want to share, an idea you want input on, a sport you marvel at, a song you wish to sing?
+								Or you can host on our lonesome activities (page before).
+								We want it! The crazier, the better. Don't hold back.<br> </span><br>
+					<!--		<input class="checkbox" type="checkbox" name="propose" value="yes">
 							<span class="checkmark"></span>
-							<span class="checkbox">Yes, I do!</span>
+							<span class="checkbox">Yes, I'd love to!</span> -->
+							<select id="propose_act_pas" name="propose_act_pas">
+								<option>That sounds awesome...</option>
+								<option>and I propose something!</option>
+								<option>and I'd love to host one of your activities!</option>
+								<option>but I like to keep my ideas to myself.</option>
+								<option>but I trust you to take me on a spacey journey.</option>
+							</select>
 
-  					<label for="description">Describe your proposal</label>
-	  					<textarea id="description" name="description"></textarea>
-						<label for="favourite_drink">Favourite Drink</label>
-	  					<input type="text" id="favourite_drink" name="favourite_drink" placeholder="Black tea infused gin">
-						<label for="special_power">Special power</label>
-							<input type="text" id="special_power" name="special_power" placeholder="Anti-gravity">
+						<label for="description">Give us a hint what you'd be planning and we'll get back to you.</label>
+							<textarea style="height: 250px;" id="description" name="description" placeholder="Maximum of 160 characters. Just kidding! There are no birds in space. Want to write a novel? Here's space (and the website power consumption) to do it!"></textarea>
 						<label for="comments">Comments</label>
-	  					<textarea id="comments" name="comments" placeholder="I always wanted to confess my love for ..."></textarea>
+							<textarea style="min-height: 163px;" id="comments" name="comments" placeholder="I always wanted to confess my love for..."></textarea>
+
 	  				</div>
 
-						<!-- second column -->
-	  				<div class="cbp-mc-column">
-	  					<label for="phone">Phone Number</label>
-	  					<input type="text" id="phone" name="phone" placeholder="+351 999 999">
-						<label for="affiliations">Affiliations</label>
-	  					<textarea id="affiliations" name="affiliations"></textarea>
-	  					<label>Occupation</label>
-	  					<select id="occupation" name="occupation">
-	  						<option>Choose an occupation</option>
-	  						<option>Web Designer</option>
-	  						<option>Web Developer</option>
-	  						<option>Hybrid</option>
-	  					</select>
-	  					<label for="cat_name">Cat's name</label>
-	  					<input type="text" id="cat_name" name="cat_name" placeholder="Kitty">
-	  					<label for="gagdet">Favorite Gadget</label>
-	  					<input type="text" id="gagdet" name="gagdet" placeholder="Annoy-a-tron">
-	  				</div>
-	  				<div class="cbp-mc-column">
-	  					<label>Type of Talent</label>
-	  					<select id="talent" name="talent">
-	  						<option>Choose a talent</option>
-	  						<option>Ninja silence</option>
-	  						<option>Sumo power</option>
-	  						<option>Samurai precision</option>
-	  					</select>
-						<label for="drink">Favorite Drink</label>
-	  					<input type="text" id="drink" name="drink" placeholder="Green Tea">
-	  					<label for="power">Special power</label>
-	  					<input type="text" id="power" name="power" placeholder="Anti-gravity">
-	  					<label for="weapon">Weapon of choice</label>
-	  					<input type="weapon" id="weapon" name="weapon" placeholder="Lightsaber">
-	  					<label for="comments">Comments</label>
-	  					<textarea id="comments" name="comments"></textarea>
-	  				</div>
+
 	  				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" id="submit-form" value="Send your deepest secrets into space" /></div>
 				</form>
 			</div>

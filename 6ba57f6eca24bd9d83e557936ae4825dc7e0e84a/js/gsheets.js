@@ -27,7 +27,7 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: form.serializeObject()
   }).success(
-    // do something
+    $(location).attr('href', 'http://www.wohnzimmeradventures.xyz/6ba57f6eca24bd9d83e557936ae4825dc7e0e84a/success.html')
   );
 });
 });
