@@ -24,6 +24,18 @@ a{
 	text-decoration:none;
 }
 
+a:hover {
+	color: black;
+}
+
+#back {
+	color: #e540c2;
+}
+
+#back:hover {
+	color: black;
+}
+
 #invitation{
 	margin: auto;
 	padding: 3%;
@@ -47,24 +59,50 @@ a{
 	font-style: italic;
 }
 
+#join {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+	background: #e540c2;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+#join:hover {
+	background: #fff;
+	color: #e540c2;
+}
+
 .green{
-	color: #21ff00;
+	color: #3ee485;
 }
 
 .yellow{
-	color: #fffa00;
+	color: #fff424;
 }
 
-.red{
-	color:#f20000;
+.orange{
+	color:#fd6504;
 }
 
 .magenta{
-	color:#ff02fa;
+	color:#e540c2;
 }
 
-.cyan{
-	color:cyan;
+.blue{
+	color:#33ccff;
+}
+
+.blue2{
+	color:#119dfc;
 }
 
 .bold{
