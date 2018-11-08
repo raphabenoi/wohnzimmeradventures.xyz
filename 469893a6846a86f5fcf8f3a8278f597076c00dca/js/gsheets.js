@@ -26,8 +26,12 @@ $('#submit-form').on('click', function(e) {
     method: "GET",
     dataType: "json",
     data: form.serializeObject()
-  }).success(
-    $(location).attr('href', 'http://www.wohnzimmeradventures.xyz/469893a6846a86f5fcf8f3a8278f597076c00dca/success.html')
+  });
+    $(".thanks").html("Thank you for getting in touch!").css("font-size","4rem");
+    $(".form-control").remove();
+    $("#submit").remove();
+    // .success(
+    //$(location).attr('href', 'http://www.wohnzimmeradventures.xyz/469893a6846a86f5fcf8f3a8278f597076c00dca/success.html')
   );
 });
 });
