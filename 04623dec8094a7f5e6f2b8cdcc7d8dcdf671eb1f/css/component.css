@@ -1,3 +1,9 @@
+h2{
+	font-size:1.5em;
+/*	border: solid white;*/
+	text-align: center;
+}
+
 .cbp-mc-form {
 	position: relative;
 }
@@ -138,11 +144,43 @@
 	.cbp-mc-column:nth-child(3) {
 		width: 100%;
 	}
+
 }
 
 @media screen and (max-width: 48em) {
 	.cbp-mc-column {
 		width: 100%;
 		padding: 10px;
+	}
+
+	.cbp-mc-form label {
+		display: block;
+		padding: 40px 5px 5px 2px;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+
+	.cbp-mc-form input,
+	.cbp-mc-form textarea,
+	.cbp-mc-form select {
+		font-family: 'IBM Plex Mono', monospace;
+		line-height: 1.5;
+		font-size: 1em;
+		padding: 5px 10px;
+		color: #fff;
+		display: block;
+		width: 100%;
+		background: transparent;
+	}
+
+
+	.cbp-mc-form input.cbp-mc-submit {
+		font-size: 2.5vw;
+	}
+
+	h2{
+		font-size: 1.414em;
 	}
 }
