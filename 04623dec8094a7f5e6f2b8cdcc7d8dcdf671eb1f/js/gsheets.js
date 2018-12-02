@@ -22,13 +22,13 @@ $(document).ready(function(){
     var form = $('form#test-form');
 
     // This is the url where the google sheet web app is deployed
-    var url = 'https://script.google.com/macros/s/AKfycbxqnNz_97G6Xz-wlSNNOL1mbLbHHyQ9Dw0qEfn1Oz7NxdS0tWs/exec';
+    var url = 'https://script.google.com/macros/s/AKfycbzhKIngu_O46uR3gcO7t46GR2Hr0GV70eZtQLVoWHLfkq7HLSg/exec';
 
     // On submit the following function gets called
     // "e" is the submit event that is being created when submitting
     form.submit(function(e){
         e.preventDefault();
-
+        
       var xhr = new XMLHttpRequest(); // I think this one is not necessary anymore!
 
       // Here wer use the ajax library to do a http get request to the webapp

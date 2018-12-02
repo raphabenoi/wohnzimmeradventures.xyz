@@ -13,3 +13,11 @@ $("#festival_title").click(function() {
 $("body").scroll(function(){
  	  $("#warp").addClass("darker");
 });
+
+
+$(document).ready(function() {
+  var invite_id = sessionStorage.getItem("invite_id");
+
+  $("#id").html(invite_id);
+
+});
