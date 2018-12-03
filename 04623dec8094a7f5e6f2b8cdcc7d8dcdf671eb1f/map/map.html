@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wohnzimmeradventures</title>
+	<meta name="description" content="Wohnzimmeradventures Schedule" />
+	<meta name="keywords" content="schedule, festival, program" />
+	<meta name="author" content="Wohnzimmeradventurers" />
+	<link rel="shortcut icon" href="../../favicon.ico">
+	<!-- Style components-->
+	<link rel="stylesheet" type="text/css" href="css/map_tabs.css" />
+	<link rel="stylesheet" type="text/css" href="css/map_style.css" />
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<!-- Font Awesome for Icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- For the Markers https://github.com/hiasinho/Leaflet.vector-markers -->
+	<link rel="stylesheet" href="css/leaflet-vector-markers.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!-- To use maps -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+
+	<!-- Leaflet's JavaScript Library. AFTER CSS!! -->
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+	<script src="js/leaflet-tilelayer-colorfilter.min.js"></script> <!-- TileFilter from https://github.com/xtk93x/Leaflet.TileLayer.ColorFilter -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!-- For the Markers https://github.com/hiasinho/Leaflet.vector-markers -->
+	<script src="js/leaflet-vector-markers.js"></script>
+
+	<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+
+
+
+<body>
+
+	<p id="back">
+		<a id="lookback" href="../landing.html">&#8605;  look <span id=back>b a c k</span> atyourownrisk  &#8604;</a>
+	</p>
+	
+	<!-- Map divider-->
+	<div class="map">
+		<div id="waldemars_SALON"></div>
+	</div>
+
+	<div class="TABScontainer">
+		<!-- <header class="TABclearfix">
+				<h1>SCHEDULE <br> Please pick a day to see the corresponding program</h1>
+			</header> -->
+
+		<div id="tabs" class="tabs">
+
+			<nav>
+				<ul>
+					<li><a href="#section-1" class="waldemars_SALON"><span class="magenta">waldemars_SALON</span></a></li>
+					<li><a href="#section-2" class="peace_NOW"><span class="green">peace_NOW</span></a></li>
+					<li><a href="#section-3" class="cat_IVERSE"><span class="orange">cat_IVERSE</span></a></li>
+					<li><a href="#section-4" class="pankow_STUDIOS"><span class="yellow">pankow_STUDIOS</span></a></li>
+					<li><a href="#section-5" class="secret_PLACE"><span class="purple">secret_PLACE</span></a></li>
+					<li><a href="#section-6" class="mitte_SCHNITTE"><span class="blue">mitte_SCHNITTE</span></a></li>
+					<li><a href="#section-7" class="virtual_REALITY"><span class="blue">virtual_REALITY</span></a></li>
+					<li><a href="#section-8" class="more_BEAT"><span class="blue">more_BEAT</span></a></li>
+					<li><a href="#section-9" class="escape_ROOM"><span class="blue">escape_ROOM</span></a></li>
+				</ul>
+			</nav>
+
+
+			<div class="TABScontent">
+				<section id="section-1" class="TABsection">
+
+					<h1 class="magentaBackground"><a href="https://goo.gl/maps/UtS2PR1GAtR2">waldemars_SALON</a></h1>
+					<h2 class="magenta">Address</h2>
+					<p><a href="https://goo.gl/maps/UtS2PR1GAtR2">Triftstraße 52 – 13353 Berlin<br>Last floor under the roof — front building (no elevator).</a></p>
+					<h2 class="magenta">Code/Ring at:</h2>
+					<p>Kafemann, Haupt, Guerrée, Vogel</p>
+					<h2 class="magenta">Rules</h2>
+					<p>We are in a delicate situation with some neighbours... So please be as quiet as possible on the stairs!</p>
+					<h2 class="magenta">Description</h2>
+					<p>Some believe in God. This place pays reverence to space inspirer-turned-dead boar: Waldemar.
+					Born on Earth, deeply attached to earthy truffle, but an adventurous spirit he left Earth to become
+					the first pig in space. #pinkfloyd. He tried IASS, he tried Mars, then he tried the moon but
+					didn't like it (boar not swearwolf!), and finally he flew into the sun.
+					A part of boarIcarus flew back to Earth on a sun ray, crashed through the
+					atmosphere and landed on our living room's wall. The solar energy is enough to light
+					our salon for the next 1000000 years and will not fail to inspire you.</p>
+
+				</section>
+
+				<section id="section-2" class="TABsection">
+
+					<h1 class="greenBackground">peace_NOW</h1>
+					<h2 class="green">Address</h2>
+					<p><a href="https://goo.gl/maps/j83zjq6GEov">Bachestr. 5 — 12161 Berlin<br>Hochparterre — front building.</a></p>
+					<h2 class="green">Code/Ring at:</h2>
+					<p>0511/Madlener</p>
+					<h2 class="green">Rules</h2>
+					<p>Be naked. Oh, and don't attach bikes to our fence; there is a voracious bike-eating neighbour. Please use another house's fence.</p>
+					<h2 class="green">Description</h2>
+					<p>An oasis for body and mind! Come here if you need to recharge your batteries, sweat in the sauna or listen to music with or without small-talk...
+					   Also keep in mind that <a style="color: #3ee485; padding: 0 0 0 0; font-weight: 400;" href="https://www.youtube.com/watch?v=JAFQFvSPhQ8">peace</a> is the concept here.</p>
+
+				</section>
+
+				<section id="section-3" class="TABsection">
+
+					<h1 class="orangeBackground">cat_IVERSE</h1>
+					<h2 class="orange">Address</h2>
+					<p><a href='https://goo.gl/maps/V6p6yTvQw8S2'>Levetzowstr. 25 — 10555 Berlin<br>three flights of stairs, door on your left — front building.</a></p>
+					<h2 class="orange">Code/Ring at:</h2>
+					<p>von Zimmermann</p>
+					<h2 class="orange">Rules</h2>
+					<p>Don't disturb the cats! Better bring something beefy for the two gracious creatures if you want to come in.</p>
+					<h2 class="orange">Description</h2>
+					<p>A universe ruled by cats, with hallways and rooms hardly big enough for their self-esteem. Play, relax, learn and close your eyes.</p>
+
+				</section>
+
+
+				<section id="section-4" class="TABsection">
+
+					<h1 class="yellowBackground">pankow_STUDIOS</h1>
+					<h2 class="yellow">Address</h2>
+					<p><a href="https://goo.gl/maps/2hZB8RBXeH32">Schulzestraße 27 — 13187 Berlin<br>Last floor - take the elevator.</a></p>
+					<h2 class="yellow">Code/Ring at:</h2>
+					<p>Turski, Klein</p>
+					<h2 class="yellow">Rules</h2>
+					<p>Don't steal the paintings hanging in the hallway!</p>
+					<h2 class="yellow">Description</h2>
+					<p>Want to move? Want to sweat? Come here to learn the latest (or oldest) dance moves or do some body work!</p>
+
+				</section>
+
+
+				<section id="section-5" class="TABsection">
+
+					<h1 class="purpleBackground">secret_PLACE</h1>
+					<h2 class="purple">Address</h2>
+					<p>The unknown street — 00000 Berlin<br>no floor — no building.</p>
+					<h2 class="purple">Code/Ring at:</h2>
+					<p>There is no bell.</p>
+					<h2 class="purple">Rules</h2>
+					<p>Only rule: no rules.</p>
+					<h2 class="purple">Description</h2>
+					<p>Where is this place? Well... we don't know. But you will out soon enough.</p>
+
+				</section>
+
+				<section id="section-6" class="TABsection">
+
+					<h1 class="blueBackground">mitte_SCHNITTE</h1>
+					<h2 class="blue">Address</h2>
+					<p><a href='https://goo.gl/maps/K8ekNMtxdmS2'>Scharnhorststr. 25 – 10115 Berlin<br>3th floor — front building.</a></p>
+					<h2 class="blue">Code/Ring at:</h2>
+					<p>Schroers</p>
+					<h2 class="blue">Rules</h2>
+					<p>There are a lot of old people living here. Bring some flowers and a smile in case you meet them!</p>
+					<h2 class="blue">Description</h2>
+					<p>You like food? You like sugar? Then that's where you will find the calories to make your legs work at night!</p>
+
+				</section>
+
+				<section id="section-7" class="TABsection">
+
+					<h1 class="blueBackground">virtual_REALITY</h1>
+					<h2 class="blue">Address</h2>
+					<p><a href='https://goo.gl/maps/Ry5ykoayYw22'>Belziger Str. 20 — 10823 Berlin<br>1st floor – side building.</a></p>
+					<h2 class="blue">Code/Ring at:</h2>
+					<p>Klug</p>
+					<h2 class="blue">Rules</h2>
+					<p>Be unnormal and don't cough.</p>
+					<h2 class="blue">Description</h2>
+					<p>We're not sure this place really exists! Some say it only exists in a digtal reality. We think it's still worth going there and make sure that's not just talks.</p>
+
+				</section>
+
+				<section id="section-8" class="TABsection">
+
+					<h1 class="blueBackground">more_BEAT</h1>
+					<h2 class="blue">Address</h2>
+					<p><a href='https://goo.gl/maps/VNkj39i5NNx'>Rathenowerstr. 26 — 10559 Berlin<br>3rd floor — front building.</a></p>
+					<h2 class="blue">Code/Ring at:</h2>
+					<p>Kaan, Chan</p>
+					<h2 class="blue">Rules</h2>
+					<p>Don't eat too much fermented food or your stomach may talk to our noses all night!</p>
+					<h2 class="blue">Description</h2>
+					<p>Kimchi rules the world. Or at least this world.</p>
+
+				</section>
+
+				<section id="section-9" class="TABsection">
+
+					<h1 class="blueBackground">escape_ROOM</h1>
+					<h2 class="blue">Address</h2>
+					<p><a href='https://goo.gl/maps/HZjkJwQTYX92'>Zellestr. 9 – 10247 Berlin<br>Under the roof — front building.</a></p>
+					<h2 class="blue">Code/Ring at:</h2>
+					<p>Beyer</p>
+					<h2 class="blue">Rules</h2>
+					<p>Be nice and don't be too hard on the stuff in the room!</p>
+					<h2 class="blue">Description</h2>
+					<p>We know of some who never came back...</p>
+
+				</section>
+
+			</div><!-- /content -->
+		</div><!-- /tabs -->
+	</div><!-- /TABScontainer -->
+
+	<!-- Scripts --->
+	<!-- JQuery Library-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<!-- Script for this page-->
+	<script src="js/map.js"></script>
+	<script src="js/cbpFWTabs.js"></script>
+	<script>
+		new CBPFWTabs(document.getElementById('tabs'));
+	</script>
+	<script src="js/modernizr.custom.63321.js"></script>
+
+
+</body>
+
+</html>
