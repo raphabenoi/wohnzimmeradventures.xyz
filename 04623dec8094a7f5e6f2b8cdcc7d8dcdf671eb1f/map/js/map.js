@@ -267,6 +267,40 @@ var kleine_MENSA_Options =  {
     }
 var kleine_MENSA = L.marker([52.5431950, 13.3567809], {icon:coffeeIcon}).on('click', goToOnClick).bindPopup(kleine_MENSA_Popup, kleine_MENSA_Options).addTo(map);
 
+// Pizzeria Stranero
+var pizza_STRANERO_Popup = "<b>Pizzeria Stranero</b><br><i>best italian Pizza in Wedding</i>";
+var pizza_STRANERO_Options =  {
+    'maxWidth': '250',
+    'className' : 'blue2'
+    }
+var pizza_STRANERO = L.marker([52.5521497, 13.3638240], {icon:pizzaIcon}).on('click', goToOnClick).bindPopup(pizza_STRANERO_Popup, pizza_STRANERO_Options).addTo(map);
+
+// Pizza DeLUX
+var pizza_DELUX_Popup = "<b>Pizza DeLUX</b><br><i>Good and cheap pizza slices!</i>";
+var pizza_DELUX_Options =  {
+    'maxWidth': '250',
+    'className' : 'blue2'
+    }
+var pizza_DELUX = L.marker([52.5456079, 13.3583690], {icon:pizzaIcon}).on('click', goToOnClick).bindPopup(pizza_DELUX_Popup, pizza_DELUX_Options).addTo(map);
+
+// getraenke Hoffmann
+var getraenke_HOFFMANN_Popup = "<b>Getränke Hoffmann</b><br><i>In case you want to buy a pack of beer</i>";
+var getraenke_HOFFMANN_Options =  {
+    'maxWidth': '250',
+    'className' : 'blue2'
+    }
+var getraenke_HOFFMANN = L.marker([ 52.5451476, 13.3580805], {icon:spaetiIcon}).on('click', goToOnClick).bindPopup(getraenke_HOFFMANN_Popup, getraenke_HOFFMANN_Options).addTo(map);
+
+// falafel Humbaba
+var falafel_HUMBABA_Popup = "<b>Falafel Humbaba</b><br><i>Little 'Falafel Mann' in the heart of Moabit (The 'Vegan Mix' plate is quite amazing!) </i>";
+var falafel_HUMBABA_Options =  {
+    'maxWidth': '250',
+    'className' : 'blue2'
+    }
+var falafel_HUMBABA = L.marker([52.5263088, 13.3382169], {icon:doenerIcon}).on('click', goToOnClick).bindPopup(falafel_HUMBABA_Popup, falafel_HUMBABA_Options).addTo(map)
+
+
+
 
 $( document ).ready(function() {
 
