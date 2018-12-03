@@ -63,20 +63,20 @@ $(document).ready(function() {
     // Set variable with the invite_id of visitor
     var invite_id = $("#invite_id").val();
 
-    // First check browser support for localStorage and sessionStorage
+    // First check browser support for localStorage and localStorage
     if (typeof(Storage) !== "undefined") {
-      // Create a new value pair in the sessionStorage with above variable invite_id
-      sessionStorage.setItem("invite_id", invite_id);
+      // Create a new value pair in the localStorage with above variable invite_id
+      localStorage.setItem("invite_id", invite_id);
 
     } else {
-      alert("No sessionStorage() support! Please use another (newer or BETTER) browser!")
+      alert("No localStorage() support! Please use another (newer or BETTER) browser!")
     }
 
     // Use setTimeout function to delay execution of the redirecting function
-    // because otherwise the sessionStorage does not have the time to be set
+    // because otherwise the localStorage does not have the time to be set
     if(is_invite(invite_id)) {
       alert("Welcome back " + festival_name + "! Buckle up for a intergalactic space journey trough the galaxy of stolen dreams");
-      sessionStorage.setItem("festival_name", festival_name);
+      localStorage.setItem("festival_name", festival_name);
       setTimeout(loadPage($("#password").val()), 4000);
     } else {
       $("#invite_id").attr("placeholder", "who are you?");
@@ -91,20 +91,20 @@ $(document).ready(function() {
       // Set var// Set variable with the invite_id of visitor
       var invite_id = $("#invite_id").val();
 
-      // First check browser support for localStorage and sessionStorage
+      // First check browser support for localStorage and localStorage
       if (typeof(Storage) !== "undefined") {
-        // Create a new value pair in the sessionStorage with above variable invite_id
-        sessionStorage.setItem("invite_id", invite_id);
+        // Create a new value pair in the localStorage with above variable invite_id
+        localStorage.setItem("invite_id", invite_id);
 
       } else {
-        alert("No sessionStorage() support! Please use another (newer or BETTER) browser!")
+        alert("No localStorage() support! Please use another (newer or BETTER) browser!")
       }
 
       // Use setTimeout function to delay execution of the redirecting function
-      // because otherwise the sessionStorage does not have the time to be set
+      // because otherwise the localStorage does not have the time to be set
       if(is_invite(invite_id)) {
         alert("Welcome back " + festival_name + "! Buckle up for a intergalactic space journey trough the galaxy of stolen dreams");
-        sessionStorage.setItem("festival_name", festival_name);
+        localStorage.setItem("festival_name", festival_name);
         setTimeout(loadPage($("#password").val()), 4000);
       } else {
         $("#invite_id").attr("placeholder", "who are you?");

@@ -11,8 +11,8 @@ var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1CfOJMcvIwCyW
 var data;
 // var invite_arr = [];
 
-// Get the invite_id from sessionStorage
-var invite_id = sessionStorage.getItem("invite_id");
+// Get the invite_id from localStorage
+var invite_id = localStorage.getItem("invite_id");
 // var invite_id = "FL9C855JD";
 
 // Function that returns the position of the respective guest in the data object
