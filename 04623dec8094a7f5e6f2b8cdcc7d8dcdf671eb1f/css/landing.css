@@ -165,6 +165,18 @@ a:hover {
 	color: black;
 }
 
+#venues:hover{
+	color:#e540c2 ;
+}
+
+#about:hover{
+	color:#e540c2 ;
+}
+
+#schedule:hover{
+	color:#e540c2 ;
+}
+
 #back {
 	color: #e540c2;
 }
