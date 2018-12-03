@@ -79,12 +79,20 @@
 }
 
 /* Transparent Checkbox/radio hack: leave the checkbox on top, hide it with opacity 0 */
-.event label,
-.event input[type="radio"] {
+.event label {
   width: 24px;
   height: 24px;
   left: 158px;
   top: 36px;
+  position: absolute;
+  display: block;
+}
+
+.event input[type="radio"] {
+  width: 100vw;
+  height: 100px;
+  /* left: 158px; */
+  /* top: 36px; */
   position: absolute;
   display: block;
 }
@@ -196,7 +204,6 @@
   color: transparent;
   color: rgba(0, 0, 0, 0);
   text-align: left;
-  margin-top: 0px
 }
 
 .content-inner:before {
@@ -344,7 +351,7 @@
 	}
 
   .event input[type="radio"]:checked~.content-perspective .content-inner p {
-    max-height: 5500px;
+    max-height: 51500px;
   }
 }
 
@@ -399,28 +406,28 @@
   }
 
   .content {
-    -webkit-transform: rotateX(-10deg);
-    -moz-transform: rotateX(-10deg);
-    -o-transform: rotateX(-10deg);
-    -ms-transform: rotateX(-10deg);
-    transform: rotateX(-10deg);
+    -webkit-transform: rotateX(-15deg);
+    -moz-transform: rotateX(-15deg);
+    -o-transform: rotateX(-15deg);
+    -ms-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
   }
 
   .event input[type="radio"]:checked~.content-perspective .content {
-    -webkit-transform: rotateX(10deg);
-    -moz-transform: rotateX(10deg);
-    -o-transform: rotateX(10deg);
-    -ms-transform: rotateX(10deg);
-    transform: rotateX(10deg);
+    -webkit-transform: rotateX(2deg);
+    -moz-transform: rotateX(2deg);
+    -o-transform: rotateX(2deg);
+    -ms-transform: rotateX(2deg);
+    transform: rotateX(2deg);
   }
 
   .content-inner {
     border-left: none;
-    border-top: 5px solid #119dfc;
+    border-top: 5px solid;
   }
 
   .event input[type="radio"]:checked~.content-perspective .content-inner {
-    border-color: #e540c2;
+    /* border-color: #e540c2; */
     box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.1);
   }
 
@@ -431,6 +438,6 @@
   }
 
   .event input[type="radio"]:checked~.content-perspective .content-inner p {
-    max-height: 5500px;
+    max-height: 10500px;
   }
 }
