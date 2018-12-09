@@ -7,7 +7,7 @@ var virtual_REALITY = [52.4873781, 13.3540318]; // Marius VR: Belziger Str. 20, 
 var more_BEAT = [52.5324298, 13.3509281]; // Denis & David: Rathenowerstr. 26
 var cat_IVERSE = [52.5225983, 13.3310714]; // Luise: Levetzowstr. 25
 var escape_ROOM = [52.5189103, 13.4601073]; // Roland: Zellestraße 9 – 10247 Berlin
-var secret_PLACE = [55.7479872, 37.5923261]; // Place in Moskow
+var mon_REVE = [52.5432938, 13.3642095]; // Mon Rêve Shisha Lounge — Müllerstraße 163B, 13353 Berlin
 
 // Get the map data
 var map = L.map('waldemars_SALON').setView(waldemars_SALON, 17);
@@ -24,6 +24,10 @@ var myTileLayer = L.tileLayer.colorFilter('https://maps.wikimedia.org/osm-intl/{
     attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
     filter: myFilter,
 }).addTo(map);
+
+function goToOnClick(e) {
+  map.flyTo(e.latlng);
+}
 
 /* Original tileLayer
 // Add a tile layer that visualizes the data. Here mapbox. But could be anything
@@ -53,10 +57,6 @@ var wS_Options =
     'maxWidth': '500',
     'className' : 'magenta'
     }
-
-function goToOnClick(e) {
-  map.flyTo(e.latlng);
-}
 
 // create marker object, pass custom icon as option, pass content and options to popup, add to map
 var marker_waldemar_SALON = L.marker(waldemars_SALON, {icon: wS_marker}).on('click', goToOnClick).bindPopup(wS_Popup,wS_Options).addTo(map).openPopup();
@@ -181,21 +181,21 @@ var eR_Options =
 
 var marker_escape_ROOM = L.marker(escape_ROOM, {icon:eR_marker}).on('click', goToOnClick).bindPopup(eR_Popup, eR_Options).addTo(map);
 
-// secret_PLACE marker
-var sP_marker = L.VectorMarkers.icon({
-  icon: 'lock',
+// mon_REVE marker
+var mR_marker = L.VectorMarkers.icon({
+  icon: 'rocket',
   markerColor: '#7e42ff'
 });
 
-var sP_Popup = "<h3>secret_PLACE</h3><i>Mh ... sure it's here?</i>";
+var mR_Popup = "<h3><a style='color: black;' href='https://goo.gl/maps/aTcvNMAQgLM2'>mon_RÊVE</a></h3><i><a style='color: white;' href='https://goo.gl/maps/aTcvNMAQgLM2'>Müllerstraße 163B — 13353 Berlin</a></i>";
 
-var sP_Options =
+var mR_Options =
     {
     'maxWidth': '500',
     'className' : 'purple'
     }
 
-var marker_secret_PLACE = L.marker(secret_PLACE, {icon:sP_marker}).on('click', goToOnClick).bindPopup(sP_Popup, sP_Options).addTo(map);
+var marker_mon_REVE = L.marker(mon_REVE, {icon:mR_marker}).on('click', goToOnClick).bindPopup(mR_Popup, mR_Options).addTo(map);
 
 /*—————————————————————FOOD—————————————————————————————————————————————————————————————————————————————*/
 
@@ -344,9 +344,9 @@ $( document ).ready(function() {
       marker_escape_ROOM.openPopup();
     });
 
-    $(".secret_PLACE").click(function() {
-      map.flyTo(secret_PLACE);
-      marker_secret_PLACE.openPopup();
+    $(".mon_REVE").click(function() {
+      map.flyTo(mon_REVE);
+      marker_mon_REVE.openPopup();
     });
 
 });
