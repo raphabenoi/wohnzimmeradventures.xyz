@@ -122,12 +122,17 @@ body{
 }
 
 #fourth{
-	color:#3ee485;
+	color:#7e42ff;
 }
 
 #fifth{
+	color:#3ee485;
+}
+
+#sixth{
 	color:#33ccff;
 }
+
 
 
 a{
@@ -149,6 +154,11 @@ a{
 
 .link_yellow:hover{
 		color:#fff424;
+		text-shadow: 0.5px 0.5px grey;
+}
+
+.link_purple:hover{
+		color:#7e42ff;
 		text-shadow: 0.5px 0.5px grey;
 }
 
