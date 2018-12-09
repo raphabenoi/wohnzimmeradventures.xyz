@@ -130,10 +130,9 @@ body {
 
 
 .schedule_link{
-	color: #969696;
+	font-family: "Arial Black", monospace;
+	color: grey;
 	font-size: 1em;
-	font-style:italic;
-	margin: 0;
 
 }
 
