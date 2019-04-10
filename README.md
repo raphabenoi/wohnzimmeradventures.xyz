@@ -1,5 +1,2 @@
-# salonfestival.xyz
-Website for the SalonFestival
-
-## inspiration
-http://brutalistwebsites.com/raw/grafik.co.nz/
+# wohnzimmeradventures.xyz
+Website for the wohnzimmerADVENTures festival in Dec 2018
