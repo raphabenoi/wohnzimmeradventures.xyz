@@ -13,27 +13,39 @@
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap" rel="stylesheet">
 		<style>
 				body{
-					margin:0;
-					padding:0;
-					background-image:url("2019/img/water1.gif");
-					background-size: 120%;
+					/* margin:0;
+					padding:0; */
+					/* background-image:url("2019/img/water1.gif"); */
+					background-color:rgba(30,30,30) ;
+					/* background-size: 120%;
 					height: 100vh;
 					width:100vw;
-					overflow: scroll;
+					overflow: scroll; */
 				}
+				p {
+					display: block;
+					justify-content: center;
+					font-family: 'Lacquer', sans-serif;
+					font-size: 5vh;
+					color: rgba(153,255,204, 0.8);
+					text-shadow: 1px 2px 1px rgba(255, 0, 255, 0.5);
+				}
+				.center{
+					/* position: absolute; */
+					display: table-cell;
+					height: 100vh;
+					text-align: center;
+					width: 100vw;
+					vertical-align: middle;
+				}
+				
 				img {
-					/* display: block;
-					margin-top: 25%;
-					margin-bottom: 25%;
-					margin-left: auto;
-					margin-right: auto; */
-					position: absolute;
+					/* position: fixed;
 					top: 50%;
-					left: 50%;
-					/* width: 500px;
-					height: 500px; */
-					margin-top: -250px; /* Half the height */
-					margin-left: -250px; /* Half the width */
+					left: 50%; */
+					max-width: 30%;
+					height: auto;
+					/* transform: translate(-50%, -50%); */
 					animation: rotation 2s infinite linear;
 				}
 				@keyframes rotation {
@@ -44,21 +56,24 @@
 						transform: rotate(359deg);
 					}
 				}
-				h1   {color: blue;}
-				p    {color: red;}
 				</style>
 				</head>
 				<body>
 	</head>
 
+
 	<body>
-		
-		<img src="2019/img/ring.png" alt="Schwimmring" style="width:50%;">
+		<div class="center">
+			<img src="2019/img/ring.png" alt="Schwimmring" style="width:50%;">
+			<p>Filling the pool with water ...<br>Heating up the jacuzzy ...<br>Making you wait for nothing ...</p>
+		<!-- </div>
+		<div class="center">
+		</div> -->
 
 		<!-- Scripts-->
 
 		<script>
-			let redirect = function() { window.location.href = "http://www.wohnzimmeradventures.xyz/2019/landing.html"; }
+			var redirect = function() { window.location.href = "http://www.wohnzimmeradventures.xyz/2019/landing.html"; }
 			setTimeout(redirect, 10000)
 		</script>
 
