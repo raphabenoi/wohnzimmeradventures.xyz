@@ -43,8 +43,8 @@ $(document).ready(function(){
       }).done( function(data) {   // If the request was successfull it calls this function *!*!*!* ATTENTION. USE latest JQuery library here. Old versions work with .suceess()
         if (data.result == "success") {
           $("#submit-form").val("You're in");
-          alert(`Hurray ${$("#first_name").val()}, you're now officially part of the 2019 edition of the WZA series. Get that swim suit dry cleaned!`)
-          // window.location.href = "http://www.wohnzimmeradventures.xyz/04623dec8094a7f5e6f2b8cdcc7d8dcdf671eb1f/success.html"; // redirect to the "success" page
+          alert(`Hurray ${$("#first_name").val()}, you're now officially part of the 2019 edition of the WZA series. Get that swim suit dry-cleaned!`)
+          window.location.href = "http://endless.horse/"; // redirect to the "success" page
         };
       }).fail( function(data) { // if it fails there is a popup message telling you that something went wrong
         alert("Ups ... I guess we have a problem here! Could you try again with another browser, please? We're still coding-newbies. If it still doesn't work, please write us an email: wohnzimmeradventures@posteo.de")
