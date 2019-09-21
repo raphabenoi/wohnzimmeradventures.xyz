@@ -1,0 +1,222 @@
+
+.cbp-mc-form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before,
+.cbp-mc-form:after {
+	content: " "; display: table;
+}
+
+.cbp-mc-form:after {
+	clear: both;
+}
+
+.cbp-mc-column {
+	width: 40%;
+	padding: 10px 30px;
+	font-size: 1.3em;
+	float: left;
+}
+
+.cbp-mc-column p{
+	background-image: url("../img/plant.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+	height: 220px;
+}
+
+.cbp-mc-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	font-family: 'Permanent Marker', cursive;
+	line-height: 1.5;
+	font-size: 1em;
+	padding: 5px 10px;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	display: block;
+	width: 100%;
+	background: transparent;
+	max-width: 100%;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: 3px solid rgba(153,255,204,0.7);
+/*	background-image: url("../img/cloth.png");
+	background-size: 100%;
+  	background-position: center;*/
+}
+
+#first_name{
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+}
+
+#last_name{
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+	background-position: center;
+}
+
+#email{
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+	background-position: bottom;
+}
+
+#attending{
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+	background-position: 40%;
+	border:3px solid rgba(153,255,204,0.7);
+}
+
+#wkshp_description{
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid #e540c2;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+
+/* WebKit browsers */
+::-webkit-input-placeholder { 
+    color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+    font-style: italic;
+}
+
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder { 
+    color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+    font-style: italic;
+}
+
+/* Mozilla Firefox 19+ */
+::-moz-placeholder { 
+    color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+    font-style: italic;
+}
+
+/* Internet Explorer 10+ */
+:-ms-input-placeholder { 
+    color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+	border: solid 3px rgba(153,255,204,0.7);
+	border-radius: 12px;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	width: auto;
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background: rgba(0,0,0,0.2);
+}
+
+/*.cbp-mc-form input.checkbox {
+	background: #e540c2;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}*/
+
+@media screen and (max-width: 70em) {
+	.cbp-mc-column {
+		width: 50%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 48em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.cbp-mc-form label {
+		display: block;
+		padding: 40px 5px 5px 2px;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+
+	.cbp-mc-form input,
+	.cbp-mc-form textarea,
+	.cbp-mc-form select {
+		font-family: 'Permanent Marker', cursive;
+		color: rgba(255, 0, 255, 0.2);
+		text-shadow: 2px 2px 1px rgba(153,255,204,1);
+		background: transparent;
+		line-height: 1.5;
+		font-size: 1em;
+		padding: 5px 10px;
+		display: block;
+		width: 100%;
+	}
+
+
+	.cbp-mc-form input.cbp-mc-submit {
+		font-size: 2.5vw;
+	}
+
+
+}

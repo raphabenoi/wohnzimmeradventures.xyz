@@ -1,0 +1,384 @@
+@font-face{
+	font-family: mortified;
+	src:url('../fonts/Mortified.ttf');
+	font-family: curves;
+	src:url('../fonts/Royal Inferno.ttf');
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-image:url("../img/water1.gif");
+	background-size: 120%;
+	height: 100%;
+	width:100vw;
+	overflow: scroll;
+}
+
+.buttons{
+	position: fixed;
+	z-index: 1;
+}
+button{
+	border: 3px solid rgba(255, 0, 255, 0.45 );
+	background-color: rgba(153,255,204,0.5);
+	border-radius: 45px;
+	font-family: 'curves', cursive;
+	font-size: 1em;
+	color: rgba(255, 0, 255, 0.7);
+	text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	-webkit-animation: floating_phone 15s infinite alternate linear;
+		animation: floating_phone 15s infinite alternate linear
+}
+
+
+#festival_title {
+	display: inline-block;
+	font-size: 7vw;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	font-family: 'New Rocker', cursive;
+	-webkit-animation: floating 25s infinite alternate-reverse linear;
+	    animation: floating 25s infinite alternate-reverse linear;
+}
+
+#festival_title > p{
+
+}
+
+#middle_color{
+	color:rgba(153,255,204, 0.2);
+	text-shadow: 2px 4px 1px rgba(243, 255, 15, 0.6);
+	font-style: italic;
+	font-weight: 400;
+}
+
+
+#edishon{
+	font-size: 4vw;
+	text-align: center;
+	font-style: italic;
+	display: block;
+}
+
+#girl{
+	margin-top: -10%;
+	background-image: url("../img/girlhead.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left: 70%;	
+	position:absolute;
+	height: 350px;
+	width: 300px;
+	font-family: 'curves';
+	text-align: center;
+	font-size: 5vh;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+
+}
+
+#man{
+	margin-top: -10%;
+	background-image: url("../img/girlhead2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 70%;	
+	position:absolute;
+	height: 350px;
+	width: 300px;
+	font-family: 'curves';
+	font-size: 5vh;
+	text-align: center; 
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+
+
+}
+
+#donut{	
+	position: relative;
+	z-index: -1;
+	margin-left: 25vw;
+	display: block;
+	height: 40vh;
+	width: 28vw;
+	background-image: url("../img/donut.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    -webkit-animation: floating 15s infinite alternate-reverse linear;
+	    animation: floating 15s infinite alternate-reverse linear;
+}
+
+#date{
+	/*v+h alignment of text inside container*/
+	text-align:center;
+	display: table;
+	margin-left: 25vw;
+
+	/*fonts and colors*/
+	font-family: 'New Rocker', cursive;
+	font-size: 3vw;
+	text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6);
+	color: rgba(153,255,204, 0.2);
+	letter-spacing: 5px;
+
+	/*animation*/
+    -webkit-animation: floating 18s infinite alternate linear;
+	    animation: floating 18s infinite alternate linear;
+}
+
+.hook{
+	margin: 6vh 5vw 6vh 5vw;
+	padding: 10px;
+	font-family: 'curves', serif;
+	font-size: 3vw;
+	font-weight: 400;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px rgba(243, 255, 15, 0.4);
+	display:flex;
+	flex-direction: row;
+	background-image: url("../img/water2.gif");
+	background-size: 100%;
+	background-position: center;
+	border-radius: 22px;
+	}
+
+#word1{
+	-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
+	    animation: wordfloating 35s infinite alternate-reverse linear;
+}
+#word2{			
+	-webkit-animation: wordfloating 20s infinite reverse linear;
+	    animation: wordfloating 20s infinite reverse linear;}
+#word3{		
+	-webkit-animation: wordfloating 25s infinite reverse linear;
+	    animation: wordfloating 25s infinite reverse linear;}
+#word4{
+	-webkit-animation: wordfloating 35s infinite alternate linear;
+	    animation: wordfloating 35s infinite alternate linear;}
+#word5{
+	-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
+	    animation: wordfloating 30s infinite alternate-reverse linear;}
+#word6{
+	-webkit-animation: wordfloating 18s infinite reverse linear;
+	    animation: wordfloating 18s infinite reverse linear;}
+#word7{
+	-webkit-animation: wordfloating 23s infinite alternate linear;
+	    animation: wordfloating 23s infinite alternate linear;}
+#word8{
+	-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
+	    animation: wordfloating 32s infinite alternate-reverse linear;}
+#word9{
+	-webkit-animation: wordfloating 22s infinite alternate linear;
+	    animation: wordfloating 22s infinite alternate linear;}
+#word10{
+	-webkit-animation: wordfloating 29s infinite reverse linear;
+	    animation: wordfloating 29s infinite reverse linear;}
+#word11{
+	-webkit-animation: wordfloating 19s infinite reverse linear;
+	    animation: wordfloating 19s infinite reverse linear;}	    
+#word12{
+	-webkit-animation: wordfloating 28s infinite alternate linear;
+	    animation: wordfloating 28s infinite alternate linear;}
+
+
+
+
+#description{
+	margin: 5vw;
+	padding: 20px 70px;
+	display: block;
+	justify-content: center;
+    font-family: 'Lacquer', sans-serif;
+    /*color: rgba(162, 237, 24, 0.55	);
+	text-shadow: 2px 2px 1px rgba(139, 16, 227, 0.75);*/
+	color: rgba(153,255,204, 0.8);
+	text-shadow: 1px 2px 1px rgba(255, 0, 255, 0.5);
+    /*color: rgba(153,255,204, 0.7);
+    text-shadow: 1.5px 1.5px 1.5px rgba(255,0,255,0.7);*/
+    background-image: url("../img/water2.gif");
+    background-size: 120%;
+    background-size: 120%;
+    border-radius: 25px;
+}
+
+#description  p {
+	font-size: 1.5em;
+}
+
+/*WEIRD TEXT LINEAR SCROLL (can't manage to have a confined scroll)*/
+/*#weird{
+	font-size: 0.65em;
+	overflow: hidden;
+    white-space: nowrap;
+    -webkit-animation: weirdtranslation 25s infinite linear;
+	    animation: weirdtranslation 25s infinite linear;}*/
+
+
+h3{
+	font-size: 1.8em;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	text-transform: uppercase;
+	margin: auto;
+	font-family: 'New Rocker', cursive;
+}
+
+.alien_flex{
+	display:flex;
+}
+
+#alien{
+	position: relative;
+	background-image: url("../img/alien.png");
+	background-position: center;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	width: 2000px;
+}
+
+.awaits p{
+	/*padding-left: 4vw;*/
+	text-align: justify;
+    text-justify: inter-word;
+}	
+
+.where{
+	margin-top: 6vh;
+}
+.where > p{
+	padding-left: 4vw;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#glowflex{
+	display: flex;
+}
+
+#glow{
+    background-image: url("../img/glow.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55vw;
+    height: 150px;	
+}
+
+.cost{
+	margin-top: 6vh;
+}
+.cost> p{
+	padding-left: 4vw;
+	text-align: justify;
+    text-justify: inter-word;	
+}
+
+#price{
+	padding:5px;
+	font-size: 1.5em;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+}
+
+#moneyflex{
+	display: flex;
+}
+
+#money{
+	width: 25vw;
+	height: 180px;
+	background-image: url("../img/nickel.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.answer{
+	margin-top: 10vh;
+}
+.answer > p{
+	padding-left: 4vw;
+	text-align: justify;
+    text-justify: inter-word;	
+}
+
+
+
+
+/* phone styles */
+
+@media screen and (max-width: 600px) {
+
+	#festival_title{
+		margin:auto;
+		padding-top: 5vh;
+		width: 90vw;
+		height: 15vh;
+		font-size: 7vw;
+		-webkit-animation: floating_phone 15s infinite alternate linear;
+		        animation: floating_phone 15s infinite alternate linear;
+	}
+
+
+}
+
+
+
+/* ANIMATIONS */
+/* webkit: Chrome, Safari*/
+/* moz: Mozilla Firefox*/
+
+
+@-webkit-keyframes floating{
+	0%{-webkit-transform: translate(2vw, -10vh);}
+	50%{-webkit-transform: translate(8vw, -18vh);}
+	100%{-webkit-transform: translate(12vw, 1vh);}
+}
+
+@keyframes floating{
+	0%{transform: translate(2vw, -10vh);}
+	50%{transform:  translate(8vw, -18vh);}
+	100%{transform: translate(12vw, 1vh);}
+}
+
+@-webkit-keyframes wordfloating{
+	0%{-webkit-transform: translate(1vw, 1vh);}
+	50%{-webkit-transform: translate(5vw, -8vh);}
+	100%{-webkit-transform: translate(2vw, 2vh);}
+}
+
+@keyframes wordfloating{
+	0%{transform: translate(1vw, 1vh);}
+	50%{transform:  translate(5vw, -8vh);}
+	100%{transform: translate(2vw, 2vh);}
+}
+
+
+@-webkit-keyframes floating_phone{
+	0%{-webkit-transform: translate(-1vw, 5vh);}
+	50%{-webkit-transform: translate(5vw, 1vh);}
+	100%{-webkit-transform: translate(10vw, 5vh);}
+}
+
+@keyframes floating_phone{
+	0%{transform: translate(-1vw, 5vh);}
+	50%{transform:  translate(5vw, 1vh);}
+	100%{transform: translate(10vw, 5vh);}
+}
+
+@-webkit-keyframes weirdtranslation
+{
+    from {margin-left: 4vw;
+    	  padding-left: 4vw;}
+    to {margin-left: -30vw;
+    	padding-left: 4vw;}
+}
+@keyframes weirdtranslation
+{
+    from {margin-left: 4vw;}
+    to {margin-left: -30vw;}
+}
+
+

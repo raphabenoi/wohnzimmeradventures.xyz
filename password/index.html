@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+
+	body {
+
+	background-image: url('2018/img/star2.gif');
+	background-attachment: fixed;
+	color: #333;
+}
+
+#warp {
+	width: 100%;
+	height: 100%;
+	background-image: url("2018/img/warp1.png");
+	background-size: 90vw;
+	background-repeat: no-repeat;
+	position: fixed;
+	background-position: center;
+}
+
+#loginbutton {
+	color: black;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.1s; /*Safari*/
+	transition-delay: 0.1s;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: "IBM Plex Mono", monospace;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+#loginbutton:hover {
+    background-color: #e540c2;
+		border: 2px solid #e540c2;
+    color: white;
+}
+
+.box {
+	border-radius: 5px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	font-family: "IBM Plex Mono", monospace;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 10px;
+	color: #e540c2;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #e540c2;
+   text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
+}
+
+::-moz-placeholder {
+   color: #e540c2;
+   text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
+}
+
+:-ms-input-placeholder {
+   color: #e540c2;
+   text-align: center;
+	 font-family: "IBM Plex Mono", monospace;
+	 font-style: italic;
+	 font-weight: 400;
+	 font-size: 10px;
+}
+
+</style>
+
+<body>
+	<div id="warp">
+		<!-- <img src="2018/img/warp1.png" alt="warp"> -->
+		<div id="loginbox" class="lightbox">
+			<div class="horizontal">
+				<div class="vertical">
+					<div class="box">
+						<input style="margin-top: 10px; text-align: center;" id="invite_id" type="text" placeholder="INV1TE#ID" /> <br />
+						<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="galactic password" /> <br />
+						<button id="loginbutton" type="button">start adventure</button>
+						<p id="wrongPassword" style="display: none">nah ... that's wrong!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- <script type="module" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script> -->
+	<!-- <script type="module" src="js/sha1.js"></script> -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<!-- <script type="text/javascript">
+		"use strict";
+
+		// Define the function that will get called later to load new page
+		function loadPage(pwd) {
+
+			var hash = pwd;
+			hash = Sha1.hash(pwd);
+			var url = hash + "/landing.html";
+
+			$.ajax({
+				url: url,
+				dataType: "html",
+				success: function(data) {
+
+					window.location = url;
+
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+
+
+					parent.location.hash = hash;
+
+					//$("#wrongPassword").show();
+					$("#password").attr("placeholder", "eeeh ... no!");
+					$("#password").val("");
+				}
+			});
+		}
+
+		// When clicking the button
+		$(document).ready(function() {
+			$("#loginbutton").on("click", function() {
+
+				// Set variable with the invite_id of visitor
+				var invite_id = $("#invite_id").val();
+
+				// First check browser support for localStorage and sessionStorage
+				if (typeof(Storage) !== "undefined") {
+					// Create a new value pair in the sessionStorage with above variable invite_id
+					sessionStorage.setItem("invite_id", invite_id);
+
+				} else {
+					alert("No sessionStorage() support! Please use another (newer or BETTER) browser!")
+				}
+
+				// Use setTimeout function to delay execution of the redirecting function
+				// because otherwise the sessionStorage does not have the time to be set
+				setTimeout(loadPage($("#password").val()), 4000);
+			});
+
+			// If pressing the ENTER key
+			$("#password").keypress(function(e) {
+				if (e.which == 13) {
+
+					// Set variable with the invite_id of visitor
+					var invite_id = $("#invite_id").val();
+
+					// First check browser support for localStorage and sessionStorage
+					if (typeof(Storage) !== "undefined") {
+						// Create a new value pair in the sessionStorage with above variable invite_id
+						sessionStorage.setItem("invite_id", invite_id);
+
+					} else {
+						alert("No sessionStorage() support! Please use another (newer or BETTER) browser!")
+					}
+
+					// Use setTimeout function to delay execution of the redirecting function
+					// because otherwise the sessionStorage does not have the time to be set
+					setTimeout(loadPage($("#password").val()), 4000);
+				}
+			});
+
+			$("#password").focus();
+		});
+	</script> -->
+
+</body>
+
+</html>
