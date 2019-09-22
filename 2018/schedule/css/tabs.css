@@ -1,0 +1,206 @@
+.tabs {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em 0 2em;
+}
+
+/* TABS NAVIGATION SECTION */
+.tabs nav {
+  text-align: center;
+  justify-content: space-around;
+  background-size: 5%;
+}
+
+.tabs nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.tabs nav ul li {
+  border: 0.3vw solid #e540c2;
+  border-bottom: none;
+  margin: 0 0.2vw;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 0;
+}
+
+.tabs nav li.tab-current {
+  border: 0.3vw solid #fff424;
+  border-bottom: none;
+  z-index: 100;
+}
+
+/*Delimitation horizontal border (yellow line) within view port of a selected tab (before and after tab)*/
+.tabs nav li.tab-current:before,
+.tabs nav li.tab-current:after {
+  content: '';
+  position: absolute;
+  height: 0.3vw;
+  right: 100%;
+  bottom: 0;
+  width: 100vw;
+  background: #fff424;
+}
+
+.tabs nav li.tab-current:after {
+  right: auto;
+  left: 100%;
+  width: 100vw;
+}
+
+.tabs nav a {
+  color: #33ccff;
+  display: block;
+  font-size: 1.5vw;
+  font-weight: 450;
+  line-height: 2;
+  padding: 0.5vw 0.8vw 0.5vw 0.8vw;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tabs nav a:hover {
+  color: #fff424;
+}
+
+/*color of selected tab*/
+.tabs nav li.tab-current a {
+  color: #ffcc33;
+}
+
+/* CONTENT */
+/* .TABScontent {
+	-webkit-transform: scale(0.80);
+		 -moz-transform: scale(0.80);
+			 -ms-transform:scale(0.80);
+					transform: scale(0.80);
+} */
+.TABScontent section {
+  font-size: 1.25em;
+  padding: 3em 1em;
+  display: none;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.TABScontent section:before,
+.TABScontent section:after {
+  content: '';
+  display: table;
+}
+
+.TABScontent section:after {
+  clear: both;
+}
+
+/* Fallback example */
+.no-js .TABScontent section {
+  display: block;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #47a3da;
+}
+
+.TABScontent section.content-current {
+  display: block;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 700px) {
+  .tabs nav ul {
+    display: inline-block;
+  }
+
+  .tabs nav a {
+    font-size: 2.5vw;
+  }
+
+  .tabs nav ul li {
+    display: block;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    font-family: 'IBM Flex Mono', monospace;
+  }
+
+  .days {
+    display: none;
+  }
+
+  .thursday:after {
+    font-family: "Arial Black", monospace;
+    content: 'TH';
+  }
+
+  .friday:after {
+    font-family: "Arial Black", monospace;
+    content: 'FR';
+  }
+
+  .saturday:after {
+    font-family: "Arial Black", monospace;
+    content: 'SA';
+  }
+
+  .sunday:after {
+    font-family: "Arial Black", monospace;
+    content: 'SU';
+  }
+
+  .monday:after {
+    font-family: "Arial Black", monospace;
+    content: 'MO';
+  }
+
+  .tuesday:after {
+    font-family: "Arial Black", monospace;
+    content: 'TU';
+  }
+
+  .wednesday:after {
+    font-family: "Arial Black", monospace;
+    content: 'WE';
+  }
+
+  .allweek:after {
+    font-family: "Arial Black", monospace;
+    content: 'XX';
+  }
+  /*   span{
+    font-family:"IBM Flex Mono", monospace;
+    font-weight: 300;
+  }*/
+}
+
+@media screen and (max-width: 32em) {
+  .tabs nav ul li {
+    border: 0.5vw solid;
+    border-color: #e540c2;
+    border-bottom: none;
+    padding: 3px 8px 3px 8px;
+  }
+
+  .tabs nav li.tab-current {
+    border: 0.5vw solid #fff424;
+    border-bottom: none;
+    z-index: 100;
+  }
+
+  .tabs nav li.tab-current:before,
+  .tabs nav li.tab-current:after {
+    height: 0.5vw;
+    right: 100%;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .tabs nav a {
+    font-size: 2.5vw;
+    line-height: 2.5;
+    padding-right: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
