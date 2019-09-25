@@ -1,15 +1,57 @@
 @font-face{
 	font-family: mortified;
-	src:url('../fonts/Mortified.ttf');
+	src:url('../fonts/Mortified.ttf') format('truetype');
+}
+@font-face{
 	font-family: curves;
-	src:url('../fonts/Royal Inferno.ttf');
+	src:url('../fonts/Royal Inferno.ttf') format('truetype');
+}
+@font-face{
+	font-family: fishy;
+	src:url('../fonts/SomethingFishy.ttf') format('truetype');
+}
+@font-face{
+	font-family: submerged;
+	src:url('../fonts/submergd.ttf') format('truetype');
+}
+@font-face{
+	font-family: ulove;
+	src:url('../fonts/ulove.ttf') format('truetype');
+}
+@font-face{
+	font-family: victorianna;
+	src:url('../fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf') format('truetype');
+}
+@font-face{
+	font-family: balloonsPop;
+	src:url('../fonts/BalloonPops-AX0x.ttf') format('truetype');
+}
+@font-face{
+	font-family: waves;
+	src:url('../fonts/JLRwaves.ttf') format('truetype');
+}
+@font-face{
+	font-family: waver;
+	src:url('../fonts/waver.ttf') format('truetype');
+}
+@font-face{
+	font-family: waterPark;
+	src:url('../fonts/WaterPark-6L2M.ttf') format('truetype');
+}
+@font-face{
+	font-family: format;
+	src:url('../fonts/format/Format_1452.woff2') format('woff2');
+}
+@font-face{
+	font-family: campagnon;
+	src:url('../fonts/compagnon/Compagnon-Medium.woff2') format('woff2');
 }
 
 body{
 	margin:0;
 	padding:0;
-	background-image:url("../img/water1.gif");
-	background-size: 120%;
+	background-image:url("../img/water11.gif");
+	background-size: 100%;
 	height: 100%;
 	width:100vw;
 	overflow: scroll;
@@ -20,13 +62,15 @@ body{
 	z-index: 1;
 }
 button{
-	border: 3px solid rgba(255, 0, 255, 0.45 );
-	background-color: rgba(153,255,204,0.5);
+	border: 3px solid #119dfc;
+	background-color: rgba(205, 239, 255, 0.6);
+	/* background-color: rgba(153,255,204,0.5); */
 	border-radius: 45px;
-	font-family: 'curves', cursive;
+	/* font-family: 'curves', cursive; */
+	font-family: balloonsPop;
 	font-size: 1em;
-	color: rgba(255, 0, 255, 0.7);
-	text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	/* color: rgba(255, 0, 255, 0.7); */
+	text-shadow: 1px 1px #33ccff;
 	-webkit-animation: floating_phone 15s infinite alternate linear;
 		animation: floating_phone 15s infinite alternate linear
 }
@@ -34,10 +78,12 @@ button{
 
 #festival_title {
 	display: inline-block;
-	font-size: 7vw;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 4px 1px rgba(153,255,204,1);
-	font-family: 'New Rocker', cursive;
+	font-size: 6vw;
+	/* color: rgba(255, 0, 255, 0.2); */
+	/* text-shadow: 2px 4px 1px rgba(153,255,204,1); */
+	text-shadow: 2px 4px 1px #e540c2;
+	/* font-family: 'New Rocker', cursive; */
+	font-family: ulove;
 	-webkit-animation: floating 25s infinite alternate-reverse linear;
 	    animation: floating 25s infinite alternate-reverse linear;
 }
@@ -47,8 +93,8 @@ button{
 }
 
 #middle_color{
-	color:rgba(153,255,204, 0.2);
-	text-shadow: 2px 4px 1px rgba(243, 255, 15, 0.6);
+	/* color:rgba(153,255,204, 0.2); */
+	text-shadow: 2px 4px 1px #7e42ff;
 	font-style: italic;
 	font-weight: 400;
 }
@@ -56,6 +102,8 @@ button{
 
 #edishon{
 	font-size: 4vw;
+	/* font-family: 'IBM Plex Mono', monospace; */
+	font-family: balloonsPop;
 	text-align: center;
 	font-style: italic;
 	display: block;
@@ -73,8 +121,8 @@ button{
 	font-family: 'curves';
 	text-align: center;
 	font-size: 5vh;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	/* color: rgba(255, 0, 255, 0.2); */
+	text-shadow: 1px 1px 1px #ffffff;
 
 }
 
@@ -90,8 +138,8 @@ button{
 	font-family: 'curves';
 	font-size: 5vh;
 	text-align: center; 
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	/* color: rgba(255, 0, 255, 0.2); */
+	text-shadow: 1px 1px 1px #ffffff;
 
 
 }
@@ -117,10 +165,11 @@ button{
 	margin-left: 25vw;
 
 	/*fonts and colors*/
-	font-family: 'New Rocker', cursive;
-	font-size: 3vw;
-	text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6);
-	color: rgba(153,255,204, 0.2);
+	/* font-family: 'New Rocker', cursive; */
+	font-family: 'waterPark';
+	font-size: 5vw;
+	text-shadow: 2px 2px 1px #e540c2;
+	/* color: rgba(153,255,204, 0.2); */
 	letter-spacing: 5px;
 
 	/*animation*/
@@ -131,14 +180,15 @@ button{
 .hook{
 	margin: 6vh 5vw 6vh 5vw;
 	padding: 10px;
-	font-family: 'curves', serif;
-	font-size: 3vw;
+	font-family: 'Chewy';
+	font-size: 2.6vw;
 	font-weight: 400;
-	color: rgba(153,255,204,0.75);
-	text-shadow: 2px 2px 1px rgba(243, 255, 15, 0.4);
+	color: #119dfc;
+	text-shadow: 2px 2px 1px #ffffff;
 	display:flex;
 	flex-direction: row;
-	background-image: url("../img/water2.gif");
+	/* background-image: url("../img/water33.gif"); */
+	background-color: rgba(205, 239, 255, 0.6);
 	background-size: 100%;
 	background-position: center;
 	border-radius: 22px;
@@ -190,20 +240,24 @@ button{
 	padding: 20px 70px;
 	display: block;
 	justify-content: center;
-    font-family: 'Lacquer', sans-serif;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
     /*color: rgba(162, 237, 24, 0.55	);
 	text-shadow: 2px 2px 1px rgba(139, 16, 227, 0.75);*/
-	color: rgba(153,255,204, 0.8);
-	text-shadow: 1px 2px 1px rgba(255, 0, 255, 0.5);
+	color: #333333;
+	/* color: #0086df; */
+	text-shadow: 1px 1px 1px #ffffff;
     /*color: rgba(153,255,204, 0.7);
     text-shadow: 1.5px 1.5px 1.5px rgba(255,0,255,0.7);*/
-    background-image: url("../img/water2.gif");
-    background-size: 120%;
-    background-size: 120%;
+	/* background-image: url("../img/water2.gif"); */
+	background-color: rgba(205, 239, 255, 0.6);
+    /* background-size: 120%; */
     border-radius: 25px;
 }
 
 #description  p {
+	font-family: 'IBM Plex Mono', monospace;
+	font-style: italic;
 	font-size: 1.5em;
 }
 
@@ -217,12 +271,13 @@ button{
 
 
 h3{
-	font-size: 1.8em;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	font-size: 2.5em;
+	font-stretch: expanded;
+	color: #119dfc;
+	text-shadow: 2px 2px 1px #ffffff;
 	text-transform: uppercase;
 	margin: auto;
-	font-family: 'New Rocker', cursive;
+	font-family: 'Barrio';
 }
 
 .alien_flex{
@@ -278,7 +333,7 @@ h3{
 #price{
 	padding:5px;
 	font-size: 1.5em;
-	color: rgba(255, 0, 255, 0.2);
+	/* color: rgba(255, 0, 255, 0.2); */
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 }
 
@@ -297,12 +352,97 @@ h3{
 
 .answer{
 	margin-top: 10vh;
+	font-family: 'balloonsPop';
+	color: #555555;
 }
 .answer > p{
 	padding-left: 4vw;
 	text-align: justify;
     text-justify: inter-word;	
 }
+
+.magenta {
+	color: #e540c2;
+  }
+
+.magentaBackground{
+background: #e540c2;
+}
+
+.green{
+color: #3ee485;
+}
+
+.greenBackground{
+background: #3ee485;
+}
+
+.yellow{
+/*color: #fff424;*/
+color: #ffcc33;
+}
+
+.yellowBackground{
+/*background: #fff424;*/
+background: #ffcc33;
+}
+
+.orange{
+color: #fd6504;
+}
+
+.orangeBackground{
+background: #fd6504;
+}
+
+.blue{
+color:#33ccff;
+}
+
+.blueBackground{
+background: #33ccff;
+}
+
+.blue2 {
+color:#119dfc;
+}
+
+.blue2Background {
+background:#119dfc;
+}
+
+.purple {
+color: #7e42ff;
+}
+
+.purpleBackground {
+background: #7e42ff;
+}
+
+.red {
+color: #ff4141;
+}
+
+.redBackground {
+background: #ff4141;
+}
+
+.black {
+color: #333333;
+}
+
+.blackBackground {
+background: #333333;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.whiteBackground {
+	background: #ffffff;
+}
+  
 
 
 

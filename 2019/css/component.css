@@ -40,12 +40,14 @@
 .cbp-mc-form input,
 .cbp-mc-form textarea,
 .cbp-mc-form select {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'IBM Plex Mono', monospace;
+	/* font-style: italic; */
+	font-weight: 500;
 	line-height: 1.5;
 	font-size: 1em;
 	padding: 5px 10px;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	color: #333333;
+	text-shadow: 1px 1px 1px #ffffff;
 	display: block;
 	width: 100%;
 	background: transparent;
@@ -54,38 +56,38 @@
 
 .cbp-mc-form input,
 .cbp-mc-form textarea {
-	border: 3px solid rgba(153,255,204,0.7);
+	border: 3px solid rgba(255,255,255,0.7);;
 /*	background-image: url("../img/cloth.png");
 	background-size: 100%;
   	background-position: center;*/
 }
 
 #first_name{
-	background-image: url("../img/cloth.png");
+	/* background-image: url("../img/water11.gif"); */
 	background-size: 100%;
 }
 
 #last_name{
-	background-image: url("../img/cloth.png");
+	/* background-image: url("../img/water11.gif"); */
 	background-size: 100%;
 	background-position: center;
 }
 
 #email{
-	background-image: url("../img/cloth.png");
+	/* background-image: url("../img/water11.gif"); */
 	background-size: 100%;
 	background-position: bottom;
 }
 
 #attending{
-	background-image: url("../img/cloth.png");
+	/* background-image: url("../img/water11.gif"); */
 	background-size: 100%;
 	background-position: 40%;
-	border:3px solid rgba(153,255,204,0.7);
+	border:3px solid rgba(255,255,255,0.7);
 }
 
 #wkshp_description{
-	background-image: url("../img/cloth.png");
+	/* background-image: url("../img/water11.gif"); */
 	background-size: 100%;
 
 }
@@ -99,7 +101,7 @@
 .cbp-mc-form label:active + input,
 .cbp-mc-form label:active + textarea {
 	outline: none;
-	border: 3px solid #e540c2;
+	border: 3px solid #119dfc;
 }
 
 .cbp-mc-form select:focus {
@@ -108,30 +110,30 @@
 
 
 /* WebKit browsers */
-::-webkit-input-placeholder { 
-    color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+::-webkit-input-placeholder {
+    color: #888888;
+	text-shadow: 1px 1px 1px #ffffff;
     font-style: italic;
 }
 
 /* Mozilla Firefox 4 to 18 */
 :-moz-placeholder { 
     color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	text-shadow: 1px 1px 1px rgba(153,255,204,1);
     font-style: italic;
 }
 
 /* Mozilla Firefox 19+ */
 ::-moz-placeholder { 
     color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	text-shadow: 1px 1px 1px rgba(153,255,204,1);
     font-style: italic;
 }
 
 /* Internet Explorer 10+ */
 :-ms-input-placeholder { 
     color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	text-shadow: 1px 1px 1px rgba(153,255,204,1);
     font-style: italic;
 }
 
@@ -142,22 +144,23 @@
 }
 
 .cbp-mc-form input.cbp-mc-submit {
-	background-image: url("../img/cloth.png");
-	background-size: 100%;
-	border: solid 3px rgba(153,255,204,0.7);
+	border: solid 3px #ffffff;
 	border-radius: 12px;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	color: #ffffff;
+	font-family: 'Ranchier';
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 	width: auto;
 	cursor: pointer;
 	display: inline-block;
 	padding: 15px 30px;
-	font-size: 1.1em;
+	font-size: 1.5em;
 	letter-spacing: 1px;
 }
 
 .cbp-mc-form input.cbp-mc-submit:hover {
-	background: rgba(0,0,0,0.2);
+	background: #ffffff;
+	color: #333333;
+	text-shadow: 2px 2px 2px #33ccff;
 }
 
 /*.cbp-mc-form input.checkbox {
@@ -202,9 +205,9 @@
 	.cbp-mc-form input,
 	.cbp-mc-form textarea,
 	.cbp-mc-form select {
-		font-family: 'Permanent Marker', cursive;
+		font-family: 'IBM Plex Mono', monospace;
 		color: rgba(255, 0, 255, 0.2);
-		text-shadow: 2px 2px 1px rgba(153,255,204,1);
+		text-shadow: 1px 1px 1px rgba(153,255,204,1);
 		background: transparent;
 		line-height: 1.5;
 		font-size: 1em;

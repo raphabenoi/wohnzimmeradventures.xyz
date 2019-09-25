@@ -14,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bangers|Barrio|Chewy|Cute+Font|Fredoka+One|Luckiest+Guy|Monoton|Ranchers|Righteous&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -24,41 +26,43 @@
 			<source src="audio/her_lazer_light_eyes.mp3" type="audio/mp3"></source>
 		</audio>
 		<div class="buttons"> 
-		 	<button onclick="document.getElementById('player').play()">Play</button> 
- 			<button onclick="document.getElementById('player').pause()">Pause</button> 
-			<button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-			<button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-			<button onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
+		 	<button class="black" onclick="document.getElementById('player').play()">Play</button> 
+ 			<button class="black" onclick="document.getElementById('player').pause()">Pause</button> 
+			<button class="black" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+			<button class="black" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+			<button class="black" onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
 		</div>
 
 		<div id="festival_title">
-			<p data-content="wohnzimmer"> wohnzimmer<span id="middle_color">advent</span>ures <br> <span id="edishon"> b e r l i n / .2 0 1 9. /</span></p>
+			<p class="yellow" data-content="wohnzimmer"> wohnzimmer<span id="middle_color" class="green">advent</span>ures <br>
+				<!-- <span id="edishon">  \&emsp14; <span class="purple" style="text-shadow: 2px 4px 1px #ff4141;">b e r l i n</span> &emsp14; <span class="magenta" style="text-shadow: 2px 4px 1px #7e42ff;">2  0  1  9</span> &emsp14;\</span></p> -->
+				<span id="edishon" class="orange" style="text-shadow: 2px 4px 1px #7e42ff;"> \&emsp14; b e r l i n&emsp14; 2  0  1  9 &emsp14;\</span></p>
 		</div>
 
 
 		<div id="images">
-			<div id="girl"> Math</div>
-			<div id="man"> Crystal</div>
+			<div id="girl" class="magenta"> Math</div>
+			<div id="man" class="magenta"> Crystal</div>
 		</div>
 
 		<div id="date">
-			<p>~ thu. dec 12~<br>	&#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> ~ sun. dec 15~</p>
+			<p class="yellow">thu dec &emsp14;<span style="font-family: 'Ranchers'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">12</span><br>	&#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> <span style="font-family: 'Ranchers';"></span> sun dec &emsp14;<span style="font-family: 'Barrio'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">15</span></p>
 		</div>
 
 		<div id="donut"></div>
 
 		<div class="hook">
-			<p id="word1">Honey,</p> 
-			<p id="word2">you</p> 
-			<p id="word3">have </p>
-			<p id="word4">been</p> 
-			<p id="word5">invited</p>
-			<p id="word6"> to </p>
-			<p id="word7"> a </p>
-			<p id="word8">decembery</p> 
-			<p id="word9">weekend</p>
-			<p id="word10"> of </p>
-			<p id="word11">summer 
+			<p id="word1">Honey,&nbsp;</p> 
+			<p id="word2">you&nbsp;</p> 
+			<p id="word3">have&nbsp;</p>
+			<p id="word4">been&nbsp;</p> 
+			<p id="word5">invited&nbsp;</p>
+			<p id="word6">to&nbsp;</p>
+			<p id="word7">a&nbsp;</p>
+			<p id="word8">decembery&nbsp;</p> 
+			<p id="word9">weekend&nbsp;</p>
+			<p id="word10">of&nbsp;</p>
+			<p id="word11">summer&nbsp;</p> 
 			<p id="word12">weirdness:</p> 
 
 		</div>
@@ -86,16 +90,16 @@
 			</div>
 
 			<div class="where">
-				<h3>where</h3> 
+				<h3>where?</h3> 
 				<div id="glowflex">
 				<p>WZA takes place in people's livingrooms as well as party places in Berlin. A detailed schedule will be communicated before the event.</p><p id="glow"> </p>
 				</div>
 			</div>
 
 			<div class="cost">
-				<h3>~c o s t~</h3>
+				<h3>How much?</h3>
 				<div id="moneyflex">
-				<p id="money"> </p><p>To cover costs you pay <span id="price">33€</span> for 3,3 days. </p>
+				<p id="money"> </p><p>To cover costs you pay <span id="price" style="font-family: 'Ranchers';">33€</span> for 3,3 days. </p>
 				</div>
 			</div>
 
@@ -104,6 +108,8 @@
 					<form class="cbp-mc-form" id="test-form">
 
 						<div class="cbp-mc-column">
+							<label for="id">ID</label>
+		  				  	<input type="text" id="id" name="id" placeholder="P00L5670">
 							<label for="first_name">First Name</label>
 		  				  	<input type="text" id="first_name" name="first_name" placeholder="Bob">
 			  				<label for="last_name">Last Name</label>
@@ -126,7 +132,7 @@
 		  				<div class="cbp-mc-column">
 							<label for="wkshp_description">If you'd like to contribute with an activity, please describe it below:</label>
 							<textarea style="height: 250px;" id="wkshp_description" name="description" placeholder="Proposals should contain a short description of the activity, the maximum amount of people and materials needed."></textarea>
-							<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" id="submit-form" value="SUBMIT" />
+							<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" style="font-family: 'Ranchers';" type="submit" id="submit-form" value="SUBMIT" />
 							</div>
 						</div>
 
