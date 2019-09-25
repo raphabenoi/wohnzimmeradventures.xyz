@@ -64,7 +64,7 @@
 
 	<body>
 		<div class="center">
-			<img src="2019/img/ring.png" alt="Schwimmring" style="width:50%;">
+			<img id="ring" src="2019/img/ring.png" alt="Schwimmring" style="width:50%;">
 			<p>Filling the pool with water ...<br>Heating up the jacuzzy ...<br>Making you wait for no reason ...</p>
 		<!-- </div>
 		<div class="center">
@@ -73,6 +73,8 @@
 		<!-- Scripts-->
 
 		<script>
+			var images = ['2019/img/ring.png', '2019/img/barbie.png', '2019/img/disney.png', '2019/img/donut.png', '2019/img/kitty.png'];
+			document.getElementById("ring").src = images[Math.floor(Math.random() * images.length)];
 			var redirect = function() { window.location.href = "http://www.wohnzimmeradventures.xyz/2019/landing.html"; }
 			setTimeout(redirect, 10000)
 		</script>
