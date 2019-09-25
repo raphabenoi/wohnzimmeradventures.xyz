@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>wohnzimmeradventures2019</title>
+		<meta charset="utf-8">
+	    <meta name="success" content="#wza">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker||ChewyAcme|Ranchers|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/success.css">
+	</head>
+
+
+	<body>
+		<div class="center">
+			<img id="ring" src="img/duck.png" alt="Duck" style="width:50%;">
+			<p><span style="font-size: 150%;">\ BOOM \<br>You're IN.</span><br>Get that swim suit dry-cleaned.<br>The more dessert, the bigger the splash.<br>And while you're at it:</p>
+			<p id="money">ACCOUNT NAME:<br>
+				Wohnzimmeradventures<br>
+				<br>
+				IBAN:<br>
+				DE72100110012628061034<br>
+				<br>
+				BIC:<br>
+				NTSBDEB1XXX<br>
+				<br>
+				VERWENDUNGSZWECK/COMMENT:<br>
+				Your ID ONLY</p>
+				<p>Or PAYPAL (add your ID)</p>
+				<button class="paypal" onclick="document.window.href('https://www.paypal.me/wohnzimmeradventures')">PAYPAL</button> 
+		</div>
+
+		<!-- Scripts-->
+
+		<script>
+			var images = ['2019/img/ring.png', '2019/img/barbie.png', '2019/img/disney.png', '2019/img/donut.png', '2019/img/kitty.png'];
+			document.getElementById("ring").src = images[Math.floor(Math.random() * images.length)];
+			var redirect = function() { window.location.href = "http://www.wohnzimmeradventures.xyz/2019/landing.html"; }
+			setTimeout(redirect, 10000)
+		</script>
+
+	</body>
+
+</html>
