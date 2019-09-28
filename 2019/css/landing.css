@@ -1,14 +1,14 @@
 @font-face{
 	font-family: mortified;
 	src:url('../fonts/Mortified.ttf');
-	font-family: curves;
+	font-family: submerged;
 	src:url('../fonts/submergd.ttf');
 }
 
 body{
 	margin:0;
 	padding:0;
-	background-image:url("../img/water3ter.gif");
+	background-image:url("../img/cloth.png");
 	background-size: 120%;
 	height: 100%;
 	width:100vw;
@@ -24,8 +24,8 @@ button{
 	border: 3px solid rgba(255, 0, 255, 0.45 );
 	background-color: rgba(153,255,204,0.5);
 	border-radius: 45px;
-	font-family: 'curves', cursive;
-	font-size: 1em;
+	font-family: 'submerged', cursive;
+	font-size: 3vh;
 	color: rgba(255, 0, 255, 0.7);
 	text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
 	-webkit-animation: floating_phone 15s infinite alternate linear;
@@ -42,84 +42,91 @@ button{
 	overflow: hidden;
 	position: relative;
 	font-size: 6vw;
-	color: rgba(255, 0, 255, 0.2);
+	color: #fc4f91c5;
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
-	font-family: 'Permanent Marker', cursive;
-	background-image: url("../img/cloth.png");
+	text-transform: uppercase;
+	font-family: 'Arial Black', sans-serif;
+	background-image: url("../img/water3bis.gif");
 	background-size: 100%;
 	background-position-y: center;
 	/* -webkit-animation: floating 25s infinite alternate-reverse linear;
 	    animation: floating 25s infinite alternate-reverse linear; */
 }
 
+#middle_color{
+	color:rgba(153,255,204, 0.7);
+	text-shadow: 2px 4px 1px #e84c88;
+	font-style: italic;
+	font-weight: 400;
+	/*rgba(153,255,204, 0.2)*/
+}
+
 .marquee_wrapper{
 	white-space:nowrap;
-	text-align: left;
+	text-align: center;
 	
 }
 
 .marquee_sliding{
 	display: inline-block;
 	margin-top: 0;
-	margin-right: 180px;
 }
 
 
-#middle_color{
-	color:rgba(153,255,204, 0.2);
-	text-shadow: 2px 4px 1px rgba(243, 255, 15, 0.6);
-	font-style: italic;
-	font-weight: 400;
-}
 
 
-#edishon{
+
+/* #edishon{
 	font-size: 4vw;
-	/* text-align: center; */
 	font-style: italic;
-	/* display: block; */
-}
+	text-align:center;
+} */
 
 #girl{
-	margin-top: 5%;
+	margin-top: 12vh;
 	background-image: url("../img/girlhead.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 85%;
 	margin-left: 70%;	
 	position:absolute;
-	height: 350px;
-	width: 300px;
+	height: 60vh;
+	width: 25vw;
 	font-family: 'curves';
 	text-align: center;
 	font-size: 5vh;
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	animation: rotation 10s infinite linear;
+	-webkit-animation: rotation 10s infinite linear;
 
 }
 
 #man{
-	margin-top: 5%;
+	margin-top: 12vh;
 	margin-left: 5%;
 	background-image: url("../img/girlhead2.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 85%;
 	margin-right: 70%;	
 	position:absolute;
-	height: 350px;
-	width: 300px;
+	height: 60vh;
+	width: 25vw;
 	font-family: 'curves';
 	font-size: 5vh;
 	text-align: center; 
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	animation: rotation 10s infinite linear reverse;
+	-webkit-animation: rotation 10s infinite linear reverse;
 
 
 }
 
 #donut{	
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	margin-left: 25vw;
+	margin-top: -37vh;
 	display: block;
 	height: 40vh;
 	width: 28vw;
@@ -133,35 +140,54 @@ button{
 #date{
 	/*v+h alignment of text inside container*/
 	text-align:center;
-	display: table;
-	margin-left: 25vw;
+	display: inline-flex;
 
+	/* margin-left: 31vw; */
+	margin-top: 10vh;
+	margin-left: 1.6vw;
+	width: 95vw;
+	height: 60vh; 
 	/*fonts and colors*/
-	font-family: 'Permanent Marker', cursive;
-	font-size: 3vw;
-	text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6);
-	color: rgba(153,255,204, 0.2);
+	font-family: 'Permanent Marker', serif;
+	text-transform: uppercase;
+	font-size: 4vw;
+	/* text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6); */
+	/* color: rgba(153,255,204, 0.2); */
+	color: #e84c88;
 	letter-spacing: 5px;
+	background-image: url('../img/water3bis.gif');
+	background-position-y: center;
+	background-size: 150%;
+	border-radius: 60px;
+	border: solid black 10px;
 
-	/*animation*/
-    -webkit-animation: floating 18s infinite alternate linear;
-	    animation: floating 18s infinite alternate linear;
+}
+
+#date > p{
+	/* -webkit-animation: floating 18s infinite alternate linear;
+	animation: floating 18s infinite alternate linear; */
+	margin: auto;
+	z-index: 2;
+	color:rgba(153,255,204,0.8) ;
+	text-shadow: 2px 4px 1px #e84c88;
+	/*rgba(255, 0, 255, 0.5)*/
 }
 
 .hook{
 	margin: 6vh 5vw 6vh 5vw;
 	padding: 10px;
-	font-family: 'curves', serif;
-	font-size: 3vw;
+	border: solid black 10px;
+	font-family: 'Permanent Marker', serif;
+	font-size: 2.5vw;
 	font-weight: 400;
 	color: rgba(153,255,204,0.75);
-	text-shadow: 2px 2px 1px rgba(243, 255, 15, 0.4);
+	text-shadow: 2px 2px 1px #e84c88;
 	display:flex;
 	flex-direction: row;
-	background-image: url("../img/water2.gif");
+	background-image: url("../img/water3bis.gif");
 	background-size: 100%;
 	background-position: center;
-	border-radius: 22px;
+	border-radius: 50px;
 	}
 
 #word1{
@@ -207,33 +233,22 @@ button{
 
 #description{
 	margin: 5vw;
-	padding: 20px 70px;
+	padding: 10px 70px;
 	display: block;
 	justify-content: center;
-    font-family: 'Lacquer', sans-serif;
-    /*color: rgba(162, 237, 24, 0.55	);
-	text-shadow: 2px 2px 1px rgba(139, 16, 227, 0.75);*/
-	color: rgba(153,255,204, 0.8);
-	text-shadow: 1px 2px 1px rgba(255, 0, 255, 0.5);
-    /*color: rgba(153,255,204, 0.7);
-    text-shadow: 1.5px 1.5px 1.5px rgba(255,0,255,0.7);*/
-    background-image: url("../img/water2.gif");
-    background-size: 120%;
-    background-size: 120%;
-    border-radius: 25px;
+    font-family: 'Permanent Marker', sans-serif;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px #e84c88;
+
 }
 
 #description  p {
 	font-size: 1.5em;
+	background-image: url("../img/water3bis.gif");
+	background-size: 200%;
+	border-radius: 50px;
+	border: solid black 10px;
 }
-
-/*WEIRD TEXT LINEAR SCROLL (can't manage to have a confined scroll)*/
-/*#weird{
-	font-size: 0.65em;
-	overflow: hidden;
-    white-space: nowrap;
-    -webkit-animation: weirdtranslation 25s infinite linear;
-	    animation: weirdtranslation 25s infinite linear;}*/
 
 
 h3{
@@ -242,35 +257,32 @@ h3{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
 	margin: auto;
-	font-family: 'New Rocker', cursive;
+	font-family: 'Arial Black', monospace;
 }
 
-.alien_flex{
+.duck_flex{
 	display:flex;
 }
 
-#alien{
-	position: relative;
-	background-image: url("../img/alien.png");
-	background-position: center;
-	background-size: 110%;
-	background-repeat: no-repeat;
-	width: 2000px;
+.duck_flex>p{
+	padding: 50px;
 }
+
 
 .awaits p{
 	/*padding-left: 4vw;*/
 	text-align: justify;
-    text-justify: inter-word;
+	text-justify: inter-word;
 }	
 
 .where{
-	margin-top: 6vh;
+	margin-top: 6vh;	
 }
 .where > p{
-	padding-left: 4vw;
 	text-align: justify;
-    text-justify: inter-word;
+	text-justify: inter-word;
+	padding: 50px;
+
 }
 
 #glowflex{
@@ -353,13 +365,13 @@ h3{
 
 @-webkit-keyframes floating{
 	0%{-webkit-transform: translate(2vw, -10vh);}
-	50%{-webkit-transform: translate(8vw, -18vh);}
+	50%{-webkit-transform: translate(8vw, -14vh);}
 	100%{-webkit-transform: translate(12vw, 1vh);}
 }
 
 @keyframes floating{
 	0%{transform: translate(2vw, -10vh);}
-	50%{transform:  translate(8vw, -18vh);}
+	50%{transform:  translate(8vw, -14vh);}
 	100%{transform: translate(12vw, 1vh);}
 }
 
@@ -409,4 +421,20 @@ h3{
 		}
 }
 
+@keyframes rotation{
+	from {
+		transform: rotate(0deg);
+}
+to {
+		transform: rotate(359deg);
+}
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
 
