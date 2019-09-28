@@ -2,75 +2,96 @@
 
 <html>
 
-	<head>
-		<title>wohnzimmeradventures2019</title>
-		<meta charset="utf-8">
-	    <meta name="description" content="Invitation2019">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/landing.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css">
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Bangers|Barrio|Chewy|Cute+Font|Fredoka+One|Luckiest+Guy|Monoton|Ranchers|Righteous&display=swap" rel="stylesheet">
-	</head>
+<head>
+	<title>wohnzimmeradventures2019</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Invitation2019">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/landing.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+	<script src="js/gsheets.js"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Bangers|Barrio|Chewy|Cute+Font|Fredoka+One|Luckiest+Guy|Monoton|Ranchers|Righteous&display=swap"
+		rel="stylesheet">
+</head>
 
-	<body>
-		<!-- Image Credit -->
-		<!-- <a href='https://sgcisanfrancisco.org'>https://sgcisanfrancisco.org</a> -->
+<body>
+	<!-- Image Credit -->
+	<!-- <a href='https://sgcisanfrancisco.org'>https://sgcisanfrancisco.org</a> -->
 
-		<audio autoplay id="player">
-			<source src="audio/her_lazer_light_eyes.mp3" type="audio/mp3"></source>
-		</audio>
-		<div class="buttons"> 
-		 	<button class="black" style="cursor: pointer;" onclick="document.getElementById('player').play()">Play</button> 
- 			<button class="black" style="cursor: pointer;" onclick="document.getElementById('player').pause()">Pause</button> 
-			<button class="black" style="cursor: n-resize;" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-			<button class="black" style="cursor: s-resize;" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-			<button class="black" style="cursor: w-resize;" onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
-		</div>
+	<audio autoplay id="player">
+		<source src="audio/her_lazer_light_eyes.mp3" type="audio/mp3">
+		</source>
+	</audio>
+	<div class="buttons">
+		<button class="black" style="cursor: pointer;" onclick="document.getElementById('player').play()">Play</button>
+		<button class="black" style="cursor: pointer;"
+			onclick="document.getElementById('player').pause()">Pause</button>
+		<button class="black" style="cursor: n-resize;" onclick="document.getElementById('player').volume += 0.1">Vol
+			+</button>
+		<button class="black" style="cursor: s-resize;" onclick="document.getElementById('player').volume -= 0.1">Vol
+			-</button>
+		<button class="black" style="cursor: w-resize;"
+			onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last
+			year's edition</button>
+	</div>
 
-		<div id="festival_title">
-			<p class="yellow" data-content="wohnzimmer"> wohnzimmer<span id="middle_color" class="green">advent</span>ures <br>
-				<!-- <span id="edishon">  \&emsp14; <span class="purple" style="text-shadow: 2px 4px 1px #ff4141;">b e r l i n</span> &emsp14; <span class="magenta" style="text-shadow: 2px 4px 1px #7e42ff;">2  0  1  9</span> &emsp14;\</span></p> -->
-				<span id="edishon" class="orange" style="text-shadow: 2px 4px 1px #7e42ff;"> \&emsp14; b e r l i n&emsp14; 2  0  1  9 &emsp14;\</span></p>
-		</div>
+	<div id="festival_title">
+		<p class="yellow" data-content="wohnzimmer"> wohnzimmer<span id="middle_color" class="green">advent</span>ures
+			<br>
+			<!-- <span id="edishon">  \&emsp14; <span class="purple" style="text-shadow: 2px 4px 1px #ff4141;">b e r l i n</span> &emsp14; <span class="magenta" style="text-shadow: 2px 4px 1px #7e42ff;">2  0  1  9</span> &emsp14;\</span></p> -->
+			<span id="edishon" class="orange" style="text-shadow: 2px 4px 1px #7e42ff;"> \&emsp14; b e r l i n&emsp14; 2
+				0 1 9 &emsp14;\</span></p>
+	</div>
 
 
-		<div id="images">
-			<div id="girl" class="magenta"> Math</div>
-			<div id="man" class="magenta"> Crystal</div>
-		</div>
+	<div id="images">
+		<div id="girl" class="magenta"> Math</div>
+		<div id="man" class="magenta"> Crystal</div>
+	</div>
 
-		<div id="date">
-			<p class="yellow">thu dec &emsp14;<span style="font-family: 'Ranchers'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">12</span><br>	&#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> <span style="font-family: 'Ranchers';"></span> sun dec &emsp14;<span style="font-family: 'Barrio'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">15</span></p>
-		</div>
+	<div id="date">
+		<p class="yellow">thu dec &emsp14;<span
+				style="font-family: 'Ranchers'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">12</span><br> &#8623
+			<br> <!-- <span style="color: #e540c2">&#9656;</span> --> <span style="font-family: 'Ranchers';"></span> sun
+			dec &emsp14;<span style="font-family: 'Barrio'; color: #3ee485; text-shadow: 2px 4px 1px #7e42ff;">15</span>
+		</p>
+	</div>
 
-		<div id="donut"></div>
+	<div id="donut"></div>
 
-		<div class="hook">
-			<p id="word1">Honey,&nbsp;</p> 
-			<p id="word2">you&nbsp;</p> 
-			<p id="word3">have&nbsp;</p>
-			<p id="word4">been&nbsp;</p> 
-			<p id="word5">invited&nbsp;</p>
-			<p id="word6">to&nbsp;</p>
-			<p id="word7">a&nbsp;</p>
-			<p id="word8">decembery&nbsp;</p> 
-			<p id="word9">weekend&nbsp;</p>
-			<p id="word10">of&nbsp;</p>
-			<p id="word11">summer&nbsp;</p> 
-			<p id="word12">weirdness:</p> 
+	<div class="hook">
+		<p id="word1">Honey,&nbsp;</p>
+		<p id="word2">you&nbsp;</p>
+		<p id="word3">have&nbsp;</p>
+		<p id="word4">been&nbsp;</p>
+		<p id="word5">invited&nbsp;</p>
+		<p id="word6">to&nbsp;</p>
+		<p id="word7">a&nbsp;</p>
+		<p id="word8">decembery&nbsp;</p>
+		<p id="word9">weekend&nbsp;</p>
+		<p id="word10">of&nbsp;</p>
+		<p id="word11">summer&nbsp;</p>
+		<p id="word12">weirdness:</p>
 
-		</div>
+	</div>
 
-		<div id="description">
-			<div class="awaits">		
-				<h3>what awaits you?</h3><br>
-<!-- 				<p id="weird">interactions with friends ~   
+	<div id="description">
+		<div class="awaits">
+			<h3>what awaits you?</h3><br>
+			<!-- 				<p id="weird">interactions with friends ~   
 				   interactions with friends of friends ~  
 				   learning from each other ~
 				   partying with each other ~
@@ -80,102 +101,103 @@
 				   feeling the cray ~ 
 				   tasting the air ~ 
 				   bondin' up high. </p> -->
-				<div class="alien_flex">
-					<p id="alien">
-					<p>Wohnzimmeradventures <span style="font-weight: 800">#wza</span> is a special festival happening in several Berliner living rooms! For four days, you can join us in inventing, realizing and participating in an array of activities, performances, concerts and parties, creating a unique ambiance for meeting other people, learning from and with them and having fun.<br>
+			<div class="alien_flex">
+				<p id="alien">
+					<p>Wohnzimmeradventures <span style="font-weight: 800">#wza</span> is a special festival happening
+						in several Berliner living rooms! For four days, you can join us in inventing, realizing and
+						participating in an array of activities, performances, concerts and parties, creating a unique
+						ambiance for meeting other people, learning from and with them and having fun.<br>
 						<br>
 						All colors, genders and careers are welcome to propose an idea or come along and enjoy.<br>
 						<br>
-						So pack your hottest Adiletten, don your best swimsuit, buy the admission ticket, and don’t forget the sunscreen – got everything?<br>
+						So pack your hottest Adiletten, don your best swimsuit, buy the admission ticket, and don’t
+						forget the sunscreen – got everything?<br>
 						Great, then join us, because this year it’s pool party time!<br>
-					</p></p>
-				
-				</div>
-				
+					</p>
+				</p>
+
 			</div>
 
-			<!-- <div class="where">
+		</div>
+
+		<!-- <div class="where">
 				<h3>where?</h3> 
 				<div id="glowflex">
 				<p>WZA takes place in people's livingrooms as well as party places in Berlin. A detailed schedule will be communicated before the event.</p><p id="glow"> </p>
 				</div>
 			</div> -->
 
-			<div class="cost">
-				<h3>Season pass for Badespaß</h3>
-				<div id="moneyflex">
-				<p id="money"> </p><p>Tickets will be <span id="price" style="font-family: 'Ranchers';">33,33€</span> for 3,3 days.<br>
+		<div class="cost">
+			<h3>Season pass for Badespaß</h3>
+			<div id="moneyflex">
+				<p id="money"> </p>
+				<p>Tickets will be <span id="price" style="font-family: 'Ranchers';">33,33€</span> for 3,3 days.<br>
 					<br>
-					This includes workshop materials, brunch, snacks, external locations, and so on – for full transparency in this pool put on these googgles (link to costs table).<br>
+					This includes workshop materials, brunch, snacks, external locations, and so on – for full
+					transparency in this pool put on these googgles (link to costs table).<br>
 					<br>
 					More info on how to transfer follows after sign-up.</p>
-				</div>
 			</div>
+		</div>
 
-			<div class="where">
-					<h3>Wanna be a lifeguard?</h3>
-					<div id="glowflex">
-					<p> You want to join the pool staff and propose your own swimming lesson/aquarobic course/…?<br>
-						Send us your <span style="font-weight: 800;">one*</span> idea as a short description as part of your registration below!<br>
-						<br>
-						<span style="font-size: 75%;">* Why? Last year’s experience has shown that there will be more than enough happenings. Plus ideally we all get to both give and receive <3</span>
-					</p>
-					</div>
-				</div>
+		<div class="where">
+			<h3>Wanna be a lifeguard?</h3>
+			<div id="glowflex">
+				<p> You want to join the pool staff and propose your own swimming lesson/aquarobic course/…?<br>
+					Send us your <span style="font-weight: 800;">one*</span> idea as a short description as part of your
+					registration below!<br>
+					<br>
+					<span style="font-size: 75%;">* Why? Last year’s experience has shown that there will be more than
+						enough happenings. Plus ideally we all get to both give and receive <3</span> </p> </div> </div>
+							<div class="answer">
+							<h3>SIGN UP</h3>
+							<form class="cbp-mc-form" id="test-form">
 
-			<div class="answer">
-				<h3>SIGN UP</h3>
-					<form class="cbp-mc-form" id="test-form">
+								<div class="cbp-mc-column">
+									<label for="id">ID</label>
+									<input type="text" id="id" name="id" placeholder="P00L5670">
 
-						<div class="cbp-mc-column">
-							<label for="id">ID</label>
-								<input type="text" id="id" name="id" placeholder="P00L5670">
-								
-							<label for="first_name">First Name</label>
-								<input type="text" id="first_name" name="first_name" placeholder="Bob">
-								
-			  				<label for="last_name">Last Name</label>
-								<input type="text" id="last_name" name="last_name" placeholder="Van Machina">
-							  
-			  				<label for="email">Email Address</label>
-								<input type="email" id="email" name="email" placeholder="bobvmachina@example.com">
-							  
-				  			<p></p>
-			 		  	</div>
+									<label for="first_name">First Name</label>
+									<input type="text" id="first_name" name="first_name" placeholder="Bob">
 
-			 		  	<div class="cbp-mc-column">
-							<label for="attending">I Am Attending</label>
-		  					<select id="attending" name="attending">
-		  						<option class="preview">Choose an option</option>
-		  						<option>Yes, count on me!</option>
-		  						<option>I would like to, but can’t confirm yet</option>
-								<option>No.</option>
-		  					</select>
-		  				</div>
+									<label for="last_name">Last Name</label>
+									<input type="text" id="last_name" name="last_name" placeholder="Van Machina">
 
-		  				<div class="cbp-mc-column">
-							<label for="wkshp_description">If you'd like to contribute with an activity, please describe it below:</label>
-							<textarea style="height: 250px;" id="wkshp_description" name="description" placeholder="Proposals should contain a short description of the activity, the maximum amount of people and materials needed."></textarea>
-							<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" style="font-family: 'Ranchers';" type="submit" id="submit-form" value="SUBMIT" />
-							</div>
-						</div>
+									<label for="email">Email Address</label>
+									<input type="email" id="email" name="email" placeholder="bobvmachina@example.com">
 
-					</form>
+									<p></p>
+								</div>
+
+								<div class="cbp-mc-column">
+									<label for="attending">I Am Attending</label>
+									<select id="attending" name="attending">
+										<option class="preview">Choose an option</option>
+										<option>Yes, count on me!</option>
+										<option>I would like to, but can’t confirm yet</option>
+										<option>No.</option>
+									</select>
+								</div>
+
+								<div class="cbp-mc-column">
+									<label for="wkshp_description">If you'd like to contribute with an activity, please
+										describe it below:</label>
+									<textarea style="height: 250px;" id="wkshp_description" name="description"
+										placeholder="Proposals should contain a short description of the activity, the maximum amount of people and materials needed."></textarea>
+									<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit"
+											style="font-family: 'Ranchers';" type="submit" id="submit-form"
+											value="SUBMIT" />
+									</div>
+								</div>
+
+							</form>
 
 
 			</div>
 		</div>
 
 
-		<!-- Scripts-->
-		<script
-		    src="https://code.jquery.com/jquery-3.3.1.js"
-		    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-		<script src="js/gsheets.js"></script>
 
-
-	</body>
+</body>
 
 </html>
