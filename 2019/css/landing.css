@@ -2,17 +2,18 @@
 	font-family: mortified;
 	src:url('../fonts/Mortified.ttf');
 	font-family: curves;
-	src:url('../fonts/Royal Inferno.ttf');
+	src:url('../fonts/submergd.ttf');
 }
 
 body{
 	margin:0;
 	padding:0;
-	background-image:url("../img/water1.gif");
+	background-image:url("../img/water3ter.gif");
 	background-size: 120%;
 	height: 100%;
 	width:100vw;
 	overflow: scroll;
+
 }
 
 .buttons{
@@ -33,18 +34,36 @@ button{
 
 
 #festival_title {
-	display: inline-block;
-	font-size: 7vw;
+	border-top: solid black 10px;
+	border-bottom: solid black 10px;
+	height: 20vh;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	font-size: 6vw;
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
-	font-family: 'New Rocker', cursive;
-	-webkit-animation: floating 25s infinite alternate-reverse linear;
-	    animation: floating 25s infinite alternate-reverse linear;
+	font-family: 'Permanent Marker', cursive;
+	background-image: url("../img/cloth.png");
+	background-size: 100%;
+	background-position-y: center;
+	/* -webkit-animation: floating 25s infinite alternate-reverse linear;
+	    animation: floating 25s infinite alternate-reverse linear; */
 }
 
-#festival_title > p{
-
+.marquee_wrapper{
+	white-space:nowrap;
+	text-align: left;
+	
 }
+
+.marquee_sliding{
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 180px;
+}
+
 
 #middle_color{
 	color:rgba(153,255,204, 0.2);
@@ -56,13 +75,13 @@ button{
 
 #edishon{
 	font-size: 4vw;
-	text-align: center;
+	/* text-align: center; */
 	font-style: italic;
-	display: block;
+	/* display: block; */
 }
 
 #girl{
-	margin-top: -10%;
+	margin-top: 5%;
 	background-image: url("../img/girlhead.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -79,7 +98,8 @@ button{
 }
 
 #man{
-	margin-top: -10%;
+	margin-top: 5%;
+	margin-left: 5%;
 	background-image: url("../img/girlhead2.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -117,7 +137,7 @@ button{
 	margin-left: 25vw;
 
 	/*fonts and colors*/
-	font-family: 'New Rocker', cursive;
+	font-family: 'Permanent Marker', cursive;
 	font-size: 3vw;
 	text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6);
 	color: rgba(153,255,204, 0.2);
@@ -368,17 +388,25 @@ h3{
 	100%{transform: translate(10vw, 5vh);}
 }
 
-@-webkit-keyframes weirdtranslation
+@-webkit-keyframes slider
 {
-    from {margin-left: 4vw;
-    	  padding-left: 4vw;}
-    to {margin-left: -30vw;
-    	padding-left: 4vw;}
+    0% {-webkit-transform: translateX(100%);}
+    100% {-webkit-transform: translateX(-100%);}
 }
-@keyframes weirdtranslation
+@-moz-keyframes slider{
+    0% {-moz-transform: translateX(100%);}
+    100% {-moz-transform: translateX(-100%);}	
+}
+@keyframes slider
 {
-    from {margin-left: 4vw;}
-    to {margin-left: -30vw;}
+    0% {-moz-transform: translateX(100%); /* Firefox bug fix */
+		-webkit-transform: translateX(100%); /* Firefox bug fix */
+		transform: translateX(100%);
+		}
+    100% {-moz-transform: translateX(-100%); /* Firefox bug fix */
+		  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+		  transform: translateX(-100%);
+		}
 }
 
 

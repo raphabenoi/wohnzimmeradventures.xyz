@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/landing.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|Ruslan+Display&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|VT323|Ruslan+Display&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -28,11 +28,13 @@
  			<button onclick="document.getElementById('player').pause()">Pause</button> 
 			<button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
 			<button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-			<button onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
+			<!-- <button onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button>  -->
 		</div>
 
-		<div id="festival_title">
-			<p data-content="wohnzimmer"> wohnzimmer<span id="middle_color">advent</span>ures <br> <span id="edishon"> b e r l i n / .2 0 1 9. /</span></p>
+		<div id="festival_title" class="marquee">
+				<div class="marquee_wrapper">
+					<p data-content="wohnzimmer" class="marquee_sliding"> wohnzimmer<span id="middle_color">advent</span>ures <span id="edishon"> b e r l i n / .2 0 1 9. /</span></p>			
+				</div>
 		</div>
 
 
@@ -152,6 +154,7 @@
 		    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		    crossorigin="anonymous"></script>
 		<script src="js/gsheets.js"></script>
+		<script src="js/marquee.js"></script>
 
 
 	</body>
