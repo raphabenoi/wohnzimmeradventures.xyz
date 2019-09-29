@@ -96,7 +96,8 @@ $(document).ready(function(){
   }, "Please choose an option");
 
 
-  /** Main function of the form-validation plugin*/
+  /** Main function of the form-validation plugin
+   * Documentation: https://jqueryvalidation.org/ */
   $('#test-form').validate({
     /** Rules define what is required */
     rules: {
