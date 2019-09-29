@@ -115,7 +115,7 @@ $(document).ready(function(){
         rangelength: 'ID should be 10 characters long'
       },
       first_name: 'Pretty sure your Mama gave you a name!',
-      last_name: "We won't tell the Peaky Blinders. Promised!",
+      last_name: "Bademeister*innen*s need to know if you're worth marrying!",
       email: 'No tricks with the email field!',
       attending: "Can't leave without telling us :)"
     },
