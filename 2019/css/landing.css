@@ -70,10 +70,9 @@ button{
 .marquee_sliding{
 	display: inline-block;
 	margin-top: 0;
+	-webkit-animation: floating_tiny 15s infinite alternate linear;
+	animation: floating_tiny 15s infinite alternate linear
 }
-
-
-
 
 
 /* #edishon{
@@ -98,7 +97,6 @@ button{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	animation: rotation 10s infinite linear;
 	-webkit-animation: rotation 10s infinite linear;
-
 }
 
 #man{
@@ -118,8 +116,6 @@ button{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	animation: rotation 10s infinite linear reverse;
 	-webkit-animation: rotation 10s infinite linear reverse;
-
-
 }
 
 #donut{	
@@ -233,26 +229,16 @@ button{
 
 #description{
 	margin: 5vw;
-	padding: 10px 70px;
 	display: block;
 	justify-content: center;
     font-family: 'Permanent Marker', sans-serif;
 	color: rgba(153,255,204,0.75);
 	text-shadow: 2px 2px 1px #e84c88;
-
-}
-
-#description  p {
-	font-size: 1.5em;
-	background-image: url("../img/water3bis.gif");
-	background-size: 200%;
-	border-radius: 50px;
-	border: solid black 10px;
 }
 
 
 h3{
-	font-size: 1.8em;
+	font-size: 3vw;
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
@@ -264,11 +250,26 @@ h3{
 	display:flex;
 }
 
-.duck_flex>p{
-	padding: 50px;
+
+#duck{	
+	background-size: 50%;
+	background-position: top;
+	height: 150px;
 }
 
+img{
+	-webkit-animation: floating_tiny 15s infinite alternate linear;
+	animation: floating_tiny 15s infinite alternate linear
+}
 
+#description p {
+	padding: 2.5vh 4vw;
+	font-size: 1.8vw;
+	background-image: url("../img/water3bis.gif");
+	background-size: 200%;
+	border-radius: 50px;
+	border: solid black 10px;
+}
 .awaits p{
 	/*padding-left: 4vw;*/
 	text-align: justify;
@@ -279,6 +280,7 @@ h3{
 	margin-top: 6vh;	
 }
 .where > p{
+	/* background-image: url("../img/dolphin.png"); */
 	text-align: justify;
 	text-justify: inter-word;
 	padding: 50px;
@@ -328,15 +330,21 @@ h3{
 }
 
 .answer{
-	margin-top: 10vh;
+	margin-top: 6vh;
+}
+
+form{
+	margin-top: 4vh;
+	background-image: url("../img/water3bis.gif");
+	background-size: 200%;
+	border-radius: 50px;
+	border: solid black 10px;
 }
 .answer > p{
 	padding-left: 4vw;
 	text-align: justify;
-    text-justify: inter-word;	
+	text-justify: inter-word;
 }
-
-
 
 
 /* phone styles */
@@ -400,6 +408,18 @@ h3{
 	100%{transform: translate(10vw, 5vh);}
 }
 
+@keyframes floating_tiny{
+	0%{transform: translate(-1vw, 2vh);}
+	50%{transform:  translate(3vw, 1vh);}
+	100%{transform: translate(-3vw, -2vh);}
+}
+
+@-webkit-keyframes floating_tiny{
+	0%{-webkit-transform: translate(-1vw, 2vh);}
+	50%{-webkit-transform:  translate(3vw, 1vh);}
+	100%{-webkit-transform: translate(-3vw, -2vh);}
+}
+
 @-webkit-keyframes slider
 {
     0% {-webkit-transform: translateX(100%);}
@@ -409,8 +429,7 @@ h3{
     0% {-moz-transform: translateX(100%);}
     100% {-moz-transform: translateX(-100%);}	
 }
-@keyframes slider
-{
+@keyframes slider{
     0% {-moz-transform: translateX(100%); /* Firefox bug fix */
 		-webkit-transform: translateX(100%); /* Firefox bug fix */
 		transform: translateX(100%);
@@ -422,19 +441,12 @@ h3{
 }
 
 @keyframes rotation{
-	from {
-		transform: rotate(0deg);
-}
-to {
-		transform: rotate(359deg);
-}
+	from {transform: rotate(0deg);}
+	to {transform: rotate(359deg);}
 }
 
 @-webkit-keyframes rotation {
-	from {
-			-webkit-transform: rotate(0deg);
-	}
-	to {
-			-webkit-transform: rotate(359deg);
-	}
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(359deg);}
+}
 

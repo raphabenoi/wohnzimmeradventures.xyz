@@ -40,16 +40,20 @@
 .cbp-mc-form input,
 .cbp-mc-form textarea,
 .cbp-mc-form select {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'VT323', cursive;
 	line-height: 1.5;
-	font-size: 1em;
+	font-size: 1.9vw;
 	padding: 5px 10px;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	color:rgba(153,255,204,1);
+	text-shadow: 2px 2px 1px #ed6c1cce;
 	display: block;
 	width: 100%;
 	background: transparent;
 	max-width: 100%;
+}
+
+.cbp-mc-form textarea{
+	font-size: 1.5vw;
 }
 
 .cbp-mc-form input,
@@ -109,8 +113,8 @@
 
 /* WebKit browsers */
 ::-webkit-input-placeholder { 
-    color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
+	color:rgba(153,255,204,1);
+	text-shadow: 2px 2px 1px #ed6c1cce;
     font-style: italic;
 }
 
@@ -146,14 +150,15 @@
 	background-size: 100%;
 	border: solid 3px rgba(153,255,204,0.7);
 	border-radius: 12px;
-	color: rgba(255, 0, 255, 0.2);
-	text-shadow: 2px 2px 1px rgba(153,255,204,1);
 	width: auto;
 	cursor: pointer;
 	display: inline-block;
 	padding: 15px 30px;
 	font-size: 1.1em;
 	letter-spacing: 1px;
+	font-family: 'Permanent Marker', monospace;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px #e84c88;
 }
 
 .cbp-mc-form input.cbp-mc-submit:hover {
