@@ -26,11 +26,20 @@ $(document).ready(function(){
   // This is the url where the google sheet web app is deployed
   var url = 'https://script.google.com/macros/s/AKfycbxu72wq-TF7E2ZuJg2MFZmXz4e1tJ9HVcP_A_EvRL1OkRSd4wI/exec';
 
+  jQuery.validator.addMethod("exists", function(value, element) {
+    return this.optional(element) || value == 'asdasdasd';
+  }, "Sorry, this ID does not exist");
+
+  jQuery.validator.addMethod("checkbox", function(value, element) {
+    return this.optional(element) || value !== 'Choose an option';
+  }, "Please choose an option");
+
   $('#test-form').validate({
     rules: {
       id: {
         required: true,
-        minlength: 9
+        rangelength: [9, 9],
+        exists: true
       },
       first_name: 'required',
       last_name: 'required',
@@ -38,7 +47,10 @@ $(document).ready(function(){
         required: true,
         email: true,
       },
-      attending: 'required'
+      attending: {
+        required: true,
+        checkbox: true
+      }
     },
     messages: {
       id: {
@@ -48,7 +60,7 @@ $(document).ready(function(){
       first_name: 'Pretty sure your Mama gave you a name!',
       last_name: "Don't be ashamed <3",
       email: 'No tricks with the email field!',
-      attending: "Don't be so mysterious!"
+      attending: "Can't leave without telling us :)"
     },
     submitHandler: function(f) {
       
