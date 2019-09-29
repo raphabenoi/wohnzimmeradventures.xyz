@@ -1,3 +1,54 @@
+/* --------------------------------------------------------------------------------
+TABLETOP PART – Make data from database_2019 available in "data"-object
+-------------------------------------------------------------------------------- */
+
+/** Url to the spreadsheet */
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1EXcq6EYbCVsPS_3L1R4z9FtqMwYwoHKgiLMx4TuIfm8/edit?usp=sharing';
+
+/** The variable all the spreadsheet data will be stored in */
+var data;
+
+/** Function checks if ID exists and returns true if it does */
+function is_invited(id){
+  if(
+    data.some( element => element.id === id) ||
+    data.some( element => element.id.substring(0,9) + "1" === id ) ||   // for friends +1
+    data.some( element => element.id.substring(0,9) + "2" === id )      // for friends +2
+    ) {return true}
+}
+
+/** Function which checks if person with this ID has already subscribed */
+function has_subscribed(id){
+  if(data.some( element => element.subscribed === id)) {return true}
+}
+
+
+function init() {
+  Tabletop.init({
+    key: publicSpreadsheetUrl,
+    callback: showInfo,
+    parseNumbers: true,
+    simpleSheet: true
+  })
+}
+
+function showInfo(input, tabletop) {
+  alert('Successfully processed!')
+  console.log(input);
+  data = input;
+}
+
+window.addEventListener('DOMContentLoaded', init)
+
+
+
+
+
+/* --------------------------------------------------------------------------------
+AJAX PART – Send information from FORM to subscribers_2019
+-------------------------------------------------------------------------------- */
+
+
 // This is a function that will be called later and
 // makes a series that is stored into an array
 $.fn.serializeObject = function() {
@@ -27,19 +78,25 @@ $(document).ready(function(){
   var url = 'https://script.google.com/macros/s/AKfycbxu72wq-TF7E2ZuJg2MFZmXz4e1tJ9HVcP_A_EvRL1OkRSd4wI/exec';
 
   jQuery.validator.addMethod("exists", function(value, element) {
-    return this.optional(element) || value == 'asdasdasd';
-  }, "Sorry, this ID does not exist");
+    return this.optional(element) || is_invited(value);
+  }, "Sorry, this ID does not exist!");
+
+  jQuery.validator.addMethod("subscribed", function(value, element) {
+    return this.optional(element) || !has_subscribed(value);
+  }, "Mh … a person with this ID has already subscribed!");
 
   jQuery.validator.addMethod("checkbox", function(value, element) {
     return this.optional(element) || value !== 'Choose an option';
   }, "Please choose an option");
 
+
   $('#test-form').validate({
     rules: {
       id: {
         required: true,
-        rangelength: [9, 9],
-        exists: true
+        rangelength: [10, 10],
+        exists: true,
+        subscribed: true
       },
       first_name: 'required',
       last_name: 'required',
@@ -55,10 +112,10 @@ $(document).ready(function(){
     messages: {
       id: {
         required: 'Oh, we really need that one!',
-        minlength: 'ID should be 9 characters long'
+        rangelength: 'ID should be 10 characters long'
       },
       first_name: 'Pretty sure your Mama gave you a name!',
-      last_name: "Don't be ashamed <3",
+      last_name: "We won't tell the Peaky Blinders. Promised!",
       email: 'No tricks with the email field!',
       attending: "Can't leave without telling us :)"
     },
