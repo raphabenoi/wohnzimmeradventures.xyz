@@ -11,9 +11,9 @@ var data;
 /** Function checks if ID exists and returns true if it does */
 function is_invited(id){
   if(
-    data.some( element => element.id === id) ||
-    data.some( element => element.id.substring(0,9) + "1" === id ) ||   // for friends +1
-    data.some( element => element.id.substring(0,9) + "2" === id )      // for friends +2
+    data.some( element => element.invite_id === id) ||
+    data.some( element => element.invite_id.substring(0,9) + "1" === id ) ||   // for friends +1
+    data.some( element => element.invite_id.substring(0,9) + "2" === id )      // for friends +2
     ) {return true}
 }
 
@@ -73,6 +73,21 @@ $.fn.serializeObject = function() {
 /** Waiting for the document to be ready */
 $(document).ready(function(){
 
+  try {
+    /** Test if browser supports local storage */
+    if (typeof(Storage) !== "undefined") {     
+      /** If invite_id is found in local storage pre-fill the form with it */
+      let invite_id = localStorage.getItem("invite_id");
+      console.log(invite_id)
+      if(typeof(invite_id) !== "undefined"){ 
+        if(invite_id.length === 10){$("#invite_id").val(invite_id)}
+      }
+    }
+  }
+  catch(err) {
+    console.log("We couldn't store your invite_ID in the browser's local storage. This means you'll have to type it in next time. So don't lose it :P")
+  }
+
   /** This defines the variable "form" from the html */
   var form = $('#test-form');
 
@@ -101,7 +116,7 @@ $(document).ready(function(){
   $('#test-form').validate({
     /** Rules define what is required */
     rules: {
-      id: {
+      invite_id: {
         required: true,
         rangelength: [10, 10],
         exists: true,
@@ -120,7 +135,7 @@ $(document).ready(function(){
     },
     /** Messages define the error messages that are shown if not valid */
     messages: {
-      id: {
+      invite_id: {
         required: 'Oh, we really need that one!',
         rangelength: 'ID should be 10 characters long'
       },
@@ -131,6 +146,20 @@ $(document).ready(function(){
     },
     /** Defines what should happen if the form is valid */
     submitHandler: function(f) {
+      
+      /** In case thrid-party cookies are blocked localStorage is also blocked and then it throws error -> try block */
+      try {
+        /** Store ID in the browser's local storage for future use */
+        if (typeof(Storage) !== "undefined") {                        // make sure browser supports this functionality
+          localStorage.setItem("invite_id", $("#invite_id").val());   // store the invite ID as key value pair
+        } else {
+          alert("We couldn't store your invite_ID in the browser's local storage. This means you'll have to type it in next time. So don't lose it :P")
+        }
+      } 
+      catch(err) {
+        alert("We couldn't store your invite_ID in the browser's local storage. This means you'll have to type it in next time. So don't lose it :P")
+      }
+      
       
       /** AJAX is used to do a HTTP GET request to the webapp (subsribers_2019 google sheet) */
       $.ajax({
