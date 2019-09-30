@@ -28,8 +28,8 @@
  			<button onclick="document.getElementById('player').pause()">Pause</button> 
 			<button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
 			<button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-			<!-- <button onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button>  -->
 		</div>
+
 
 		<div id="festival_title" class="marquee">
 				<div class="marquee_wrapper">
@@ -51,18 +51,19 @@
 		<div id="donut"></div>
 
 		<div class="hook">
-			<p id="word1">Honey,</p> 
-			<p id="word2">you</p> 
-			<p id="word3">have </p>
-			<p id="word4">been</p> 
-			<p id="word5">invited</p>
+			<p id="hook_phone">Honey, you have been invited to a decembery weekend of summer weirdness: </p>
+			<p id="word1">Honey, </p> 
+			<p id="word2"> you </p> 
+			<p id="word3"> have </p>
+			<p id="word4"> been </p> 
+			<p id="word5"> invited </p>
 			<p id="word6"> to </p>
 			<p id="word7"> a </p>
-			<p id="word8">decembery</p> 
-			<p id="word9">weekend</p>
+			<p id="word8"> decembery </p> 
+			<p id="word9"> weekend </p>
 			<p id="word10"> of </p>
-			<p id="word11">summer 
-			<p id="word12">weirdness:</p> 
+			<p id="word11"> summer </p>
+			<p id="word12"> weirdness:</p> 
 
 		</div>
 
@@ -84,7 +85,8 @@
 						
 					<p>Wohnzimmeradventures #wza is a friends-festival happening in several Berliner swimming pools – äh… living rooms! For 3,3 days, you can join us in inventing, realizing and participating in an array of activities, performances, concerts and parties, creating a unique ambiance for meeting other people, learning from and with them and having fun. 	
 					All are welcome in their own beauty and wisdom. So pack your hottest Adiletten, don your best swimsuit, buy your season pass, and don’t forget the sunscreen – got everything? 
-					Great, then join us, because this year it’s pool party time!
+					Great, then join us, because this year it’s pool party time!<br>
+					<button class=" buttons2" id="lastyear" onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
 					</p>		
 							
 				</div>
@@ -137,10 +139,11 @@
 							<label for="wkshp_description">Wanna be a lifeguard?</label>
 							<textarea style="height: 250px;" id="wkshp_description" name="description" placeholder="You want to contribute with a workshop, play some music, do a performance or share anything else with great people? 
 							Send us your one* idea as a short description as part of your registration below.
-							* Why? Last year’s experience has shown that there will be more than enough happenings. Plus ideally we all get to both give and receive <3"></textarea>
-							<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" id="submit-form" value="SUBMIT" />
-							</div>
-							<p><img src="img/plant.png" alt="plant"  width="300"></p>
+							*Why? Last year’s experience has shown that there will be more than enough happenings. Plus ideally we all get to both give and receive <3"></textarea>
+							<div class="cbp-mc-submit-wrap">
+								<input class="cbp-mc-submit" type="submit" id="submit-form" value="SUBMIT" />
+							</div>	
+							<p class="cbp-mc-form plant"><img src="img/plant.png" alt="plant"  width="300"></p>						
 						</div>
 
 					</form>

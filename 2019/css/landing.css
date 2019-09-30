@@ -16,20 +16,16 @@ body{
 
 }
 
-.buttons{
-	position: fixed;
-	z-index: 1;
-}
-button{
+#lastyear{
+	cursor: pointer;
+	display: inline-block;
+	margin:7vh auto auto auto;
 	border: 3px solid rgba(255, 0, 255, 0.45 );
 	background-color: rgba(153,255,204,0.5);
 	border-radius: 45px;
 	font-family: 'submerged', cursive;
-	font-size: 3vh;
 	color: rgba(255, 0, 255, 0.7);
 	text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
-	-webkit-animation: floating_phone 15s infinite alternate linear;
-		animation: floating_phone 15s infinite alternate linear
 }
 
 
@@ -61,12 +57,6 @@ button{
 	/*rgba(153,255,204, 0.2)*/
 }
 
-.marquee_wrapper{
-	white-space:nowrap;
-	text-align: center;
-	
-}
-
 .marquee_sliding{
 	display: inline-block;
 	margin-top: 0;
@@ -74,12 +64,6 @@ button{
 	animation: floating_tiny 15s infinite alternate linear
 }
 
-
-/* #edishon{
-	font-size: 4vw;
-	font-style: italic;
-	text-align:center;
-} */
 
 #girl{
 	margin-top: 12vh;
@@ -90,9 +74,6 @@ button{
 	position:absolute;
 	height: 60vh;
 	width: 25vw;
-	font-family: 'curves';
-	text-align: center;
-	font-size: 5vh;
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	animation: rotation 10s infinite linear;
@@ -109,9 +90,6 @@ button{
 	position:absolute;
 	height: 60vh;
 	width: 25vw;
-	font-family: 'curves';
-	font-size: 5vh;
-	text-align: center; 
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	animation: rotation 10s infinite linear reverse;
@@ -124,8 +102,6 @@ button{
 	margin-left: 25vw;
 	margin-top: -37vh;
 	display: block;
-	height: 40vh;
-	width: 28vw;
 	background-image: url("../img/donut.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -134,21 +110,10 @@ button{
 }
 
 #date{
-	/*v+h alignment of text inside container*/
 	text-align:center;
 	display: inline-flex;
-
-	/* margin-left: 31vw; */
-	margin-top: 10vh;
-	margin-left: 1.6vw;
-	width: 95vw;
-	height: 60vh; 
-	/*fonts and colors*/
 	font-family: 'Permanent Marker', serif;
 	text-transform: uppercase;
-	font-size: 4vw;
-	/* text-shadow: 2px 2px 1px rgba(243, 255, 15,0.6); */
-	/* color: rgba(153,255,204, 0.2); */
 	color: #e84c88;
 	letter-spacing: 5px;
 	background-image: url('../img/water3bis.gif');
@@ -160,21 +125,16 @@ button{
 }
 
 #date > p{
-	/* -webkit-animation: floating 18s infinite alternate linear;
-	animation: floating 18s infinite alternate linear; */
 	margin: auto;
 	z-index: 2;
 	color:rgba(153,255,204,0.8) ;
 	text-shadow: 2px 4px 1px #e84c88;
-	/*rgba(255, 0, 255, 0.5)*/
 }
 
 .hook{
-	margin: 6vh 5vw 6vh 5vw;
 	padding: 10px;
 	border: solid black 10px;
 	font-family: 'Permanent Marker', serif;
-	font-size: 2.5vw;
 	font-weight: 400;
 	color: rgba(153,255,204,0.75);
 	text-shadow: 2px 2px 1px #e84c88;
@@ -186,49 +146,7 @@ button{
 	border-radius: 50px;
 	}
 
-#word1{
-	-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
-	    animation: wordfloating 35s infinite alternate-reverse linear;
-}
-#word2{			
-	-webkit-animation: wordfloating 20s infinite reverse linear;
-	    animation: wordfloating 20s infinite reverse linear;}
-#word3{		
-	-webkit-animation: wordfloating 25s infinite reverse linear;
-	    animation: wordfloating 25s infinite reverse linear;}
-#word4{
-	-webkit-animation: wordfloating 35s infinite alternate linear;
-	    animation: wordfloating 35s infinite alternate linear;}
-#word5{
-	-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
-	    animation: wordfloating 30s infinite alternate-reverse linear;}
-#word6{
-	-webkit-animation: wordfloating 18s infinite reverse linear;
-	    animation: wordfloating 18s infinite reverse linear;}
-#word7{
-	-webkit-animation: wordfloating 23s infinite alternate linear;
-	    animation: wordfloating 23s infinite alternate linear;}
-#word8{
-	-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
-	    animation: wordfloating 32s infinite alternate-reverse linear;}
-#word9{
-	-webkit-animation: wordfloating 22s infinite alternate linear;
-	    animation: wordfloating 22s infinite alternate linear;}
-#word10{
-	-webkit-animation: wordfloating 29s infinite reverse linear;
-	    animation: wordfloating 29s infinite reverse linear;}
-#word11{
-	-webkit-animation: wordfloating 19s infinite reverse linear;
-	    animation: wordfloating 19s infinite reverse linear;}	    
-#word12{
-	-webkit-animation: wordfloating 28s infinite alternate linear;
-	    animation: wordfloating 28s infinite alternate linear;}
-
-
-
-
 #description{
-	margin: 5vw;
 	display: block;
 	justify-content: center;
     font-family: 'Permanent Marker', sans-serif;
@@ -238,18 +156,12 @@ button{
 
 
 h3{
-	font-size: 3vw;
 	color: rgba(255, 0, 255, 0.2);
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
 	margin: auto;
 	font-family: 'Arial Black', monospace;
 }
-
-.duck_flex{
-	display:flex;
-}
-
 
 #duck{	
 	background-size: 50%;
@@ -258,13 +170,12 @@ h3{
 }
 
 img{
-	-webkit-animation: floating_tiny 15s infinite alternate linear;
-	animation: floating_tiny 15s infinite alternate linear
+	-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+	animation: floating_tiny 15s infinite alternate-reverse linear
 }
 
 #description p {
 	padding: 2.5vh 4vw;
-	font-size: 1.8vw;
 	background-image: url("../img/water3bis.gif");
 	background-size: 200%;
 	border-radius: 50px;
@@ -316,18 +227,6 @@ img{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 }
 
-#moneyflex{
-	display: flex;
-}
-
-#money{
-	width: 25vw;
-	height: 180px;
-	background-image: url("../img/nickel.png");
-	background-size: 70%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 .answer{
 	margin-top: 6vh;
@@ -340,6 +239,8 @@ form{
 	border-radius: 50px;
 	border: solid black 10px;
 }
+
+
 .answer > p{
 	padding-left: 4vw;
 	text-align: justify;
@@ -347,21 +248,226 @@ form{
 }
 
 
-/* phone styles */
+/*MEDIA QUERIES*/
 
+
+/* Computers, Laptops, tablets */
+@media only screen and (min-width: 992px){
+	.buttons button{
+		-webkit-animation: floating_phone 15s infinite alternate linear;
+		animation: floating_phone 15s infinite alternate linear
+	}
+
+	.buttons{
+		position: fixed;
+		z-index: 1;
+	}
+	
+	.buttons > button{
+		cursor: pointer;
+		border: 3px solid rgba(255, 0, 255, 0.45 );
+		background-color: rgba(153,255,204,0.5);
+		border-radius: 45px;
+		font-family: 'submerged', cursive;
+		font-size: 3vh;
+		color: rgba(255, 0, 255, 0.7);
+		text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	}
+	#date{
+		margin-left: 1.6vw;
+		margin-top: 10vh;
+		width: 95vw;
+		height: 60vh; 
+		font-size: 4vw;
+	}
+
+	#donut{
+		height: 40vh;
+		width: 28vw;
+	}
+	.hook{
+	margin: 6vh 5vw 6vh 5vw;
+	font-size: 2.5vw;
+	}
+
+	#word1{
+		-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
+			animation: wordfloating 35s infinite alternate-reverse linear;
+	}
+	#word2{			
+		-webkit-animation: wordfloating 20s infinite reverse linear;
+			animation: wordfloating 20s infinite reverse linear;}
+	#word3{		
+		-webkit-animation: wordfloating 25s infinite reverse linear;
+			animation: wordfloating 25s infinite reverse linear;}
+	#word4{
+		-webkit-animation: wordfloating 35s infinite alternate linear;
+			animation: wordfloating 35s infinite alternate linear;}
+	#word5{
+		-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
+			animation: wordfloating 30s infinite alternate-reverse linear;}
+	#word6{
+		-webkit-animation: wordfloating 18s infinite reverse linear;
+			animation: wordfloating 18s infinite reverse linear;}
+	#word7{
+		-webkit-animation: wordfloating 23s infinite alternate linear;
+			animation: wordfloating 23s infinite alternate linear;}
+	#word8{
+		-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
+			animation: wordfloating 32s infinite alternate-reverse linear;}
+	#word9{
+		-webkit-animation: wordfloating 22s infinite alternate linear;
+			animation: wordfloating 22s infinite alternate linear;}
+	#word10{
+		-webkit-animation: wordfloating 29s infinite reverse linear;
+			animation: wordfloating 29s infinite reverse linear;}
+	#word11{
+		-webkit-animation: wordfloating 19s infinite reverse linear;
+			animation: wordfloating 19s infinite reverse linear;}	    
+	#word12{
+		-webkit-animation: wordfloating 28s infinite alternate linear;
+			animation: wordfloating 28s infinite alternate linear;}
+
+	#description{
+		margin: 5vw;
+	}
+
+	#description p{
+		font-size: 1.8vw;
+	}
+
+	h3{
+		font-size: 3vw;
+	}
+
+	.duck_flex{
+		display:flex;
+	}
+
+	#lastyear{
+		font-size: 3vh;
+	}
+
+	#moneyflex{
+		display: flex;
+	}
+
+	.plant{
+		height: 20vh;
+	}
+
+}
+
+/*Phones*/
 @media screen and (max-width: 600px) {
 
 	#festival_title{
-		margin:auto;
-		padding-top: 5vh;
-		width: 90vw;
 		height: 15vh;
-		font-size: 7vw;
-		-webkit-animation: floating_phone 15s infinite alternate linear;
-		        animation: floating_phone 15s infinite alternate linear;
+		margin-top: 5vh;
 	}
 
+	.buttons{
+		display:none;
+	}
 
+	#donut{
+		height: 200px;
+		width: 250px;
+		background-size: 250px;
+	}
+
+	#girl, #man{
+		display: none;
+	}
+
+	#date{
+		margin-left: 0;
+		margin-top: 4vh;
+		width: 95vw;
+		height: 45vh; 
+		font-size: 7vw;
+	}
+
+	#date >p{
+		margin-top: 15vh;
+	}
+
+	.hook{
+		margin-top: 10vh;
+		font-size: 2.5vw;
+		}
+	#word1, #word2, #word3, #word4, #word5, #word6, #word7, #word8, #word9, #word10, #word11, #word12{
+		display:none;
+	}
+	#hook_phone{
+		animation: floating_tiny 18s linear infinite;
+	}
+
+	#description{
+		margin-top: 6vh;
+	}
+
+	h3{
+		font-size: 8vw;
+	}
+	.duck_flex{
+		display:block;
+	}
+
+	#duck{
+		height: 15vh;
+	}
+
+	#money>img{
+		height: 120px;
+		width: 150px;
+	}
+	
+	#description p{
+		font-size: 3vw;
+	}
+
+	#lastyear{
+		font-size: 2vh;
+	}
+
+	#moneyflex{
+		display: block;
+	}
+
+	.plant{
+		width: 50vw;
+		margin-left:15vw;
+	}
+
+	.plant >img{
+		height: 200px;
+		width: 250px;
+	}
+}
+
+/*Between big phone and tablets*/
+@media only screen and (min-width: 600px){
+	.buttons button{
+		-webkit-animation: floating_phone 15s infinite alternate linear;
+		animation: floating_phone 15s infinite alternate linear
+	}
+
+	.buttons{
+		position: fixed;
+		z-index: 1;
+	}
+	
+	.buttons > button{
+		cursor: pointer;
+		border: 3px solid rgba(255, 0, 255, 0.45 );
+		background-color: rgba(153,255,204,0.5);
+		border-radius: 45px;
+		font-family: 'submerged', cursive;
+		font-size: 3vh;
+		color: rgba(255, 0, 255, 0.7);
+		text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	}
 }
 
 
@@ -420,33 +526,13 @@ form{
 	100%{-webkit-transform: translate(-3vw, -2vh);}
 }
 
-@-webkit-keyframes slider
-{
-    0% {-webkit-transform: translateX(100%);}
-    100% {-webkit-transform: translateX(-100%);}
-}
-@-moz-keyframes slider{
-    0% {-moz-transform: translateX(100%);}
-    100% {-moz-transform: translateX(-100%);}	
-}
-@keyframes slider{
-    0% {-moz-transform: translateX(100%); /* Firefox bug fix */
-		-webkit-transform: translateX(100%); /* Firefox bug fix */
-		transform: translateX(100%);
-		}
-    100% {-moz-transform: translateX(-100%); /* Firefox bug fix */
-		  -webkit-transform: translateX(-100%); /* Firefox bug fix */
-		  transform: translateX(-100%);
-		}
-}
-
 @keyframes rotation{
-	from {transform: rotate(0deg);}
-	to {transform: rotate(359deg);}
+	from {transform: rotate(0deg); transform-origin: center;}
+	to {transform: rotate(359deg);transform-origin: center;}
 }
 
 @-webkit-keyframes rotation {
-	from {-webkit-transform: rotate(0deg);}
-	to {-webkit-transform: rotate(359deg);}
+	from {-webkit-transform: rotate(0deg);transform-origin: center;}
+	to {-webkit-transform: rotate(359deg);transform-origin: center;}
 }
 
