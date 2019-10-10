@@ -2,75 +2,83 @@
 
 <html>
 
-	<head>
-		<title>wohnzimmeradventures2019</title>
-		<meta charset="utf-8">
-	    <meta name="description" content="Invitation2019">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/landing.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|VT323|Ruslan+Display|Grenze:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-	</head>
+<head>
+	<title>wohnzimmeradventures2019</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Invitation2019">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/landing.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	<script src="js/gsheets.js"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|VT323|Ruslan+Display|Grenze:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+		rel="stylesheet">
+</head>
 
-	<body>
-		<!-- Image Credit -->
-		<!-- <a href='https://sgcisanfrancisco.org'>https://sgcisanfrancisco.org</a> -->
+<body>
+	<!-- Image Credit -->
+	<!-- <a href='https://sgcisanfrancisco.org'>https://sgcisanfrancisco.org</a> -->
 
-		<audio autoplay id="player">
-			<source src="audio/her_lazer_light_eyes.mp3" type="audio/mp3"></source>
-		</audio>
-		<div class="buttons"> 
-		 	<button onclick="document.getElementById('player').play()">Play</button> 
- 			<button onclick="document.getElementById('player').pause()">Pause</button> 
-			<button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-			<button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+	<audio autoplay id="player">
+		<source src="audio/her_lazer_light_eyes.mp3" type="audio/mp3">
+		</source>
+	</audio>
+	<div class="buttons">
+		<button onclick="document.getElementById('player').play()">Play</button>
+		<button onclick="document.getElementById('player').pause()">Pause</button>
+		<button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+		<button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+	</div>
+
+
+	<div id="festival_title" class="marquee">
+		<div class="marquee_wrapper">
+			<p data-content="wohnzimmer" class="marquee_sliding"> wohnzimmer<span id="middle_color">advent</span>ures
+			</p>
+			<!-- <span id="edishon"> b e r l i n / .2 0 1 9. /</span>			 -->
 		</div>
+	</div>
 
 
-		<div id="festival_title" class="marquee">
-				<div class="marquee_wrapper">
-					<p data-content="wohnzimmer" class="marquee_sliding"> wohnzimmer<span id="middle_color">advent</span>ures </p>
-					<!-- <span id="edishon"> b e r l i n / .2 0 1 9. /</span>			 -->
-				</div>
-		</div>
+	<div id="images">
+		<div id="girl"> </div>
+		<div id="man"> </div>
+	</div>
 
+	<div id="date">
+		<p>~ thu. dec 12~<br> &#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> ~ sun. dec 15~</p>
+	</div>
 
-		<div id="images">
-			<div id="girl"> </div>
-			<div id="man"> </div>
-		</div>
+	<div id="donut"></div>
 
-		<div id="date">
-			<p>~ thu. dec 12~<br>	&#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> ~ sun. dec 15~</p>
-		</div>
+	<div class="hook">
+		<p id="hook_phone">Honey, you have been invited to a decembery weekend of summer weirdness: </p>
+		<p id="word1">Honey, </p>
+		<p id="word2"> you </p>
+		<p id="word3"> have </p>
+		<p id="word4"> been </p>
+		<p id="word5"> invited </p>
+		<p id="word6"> to </p>
+		<p id="word7"> a </p>
+		<p id="word8"> decembery </p>
+		<p id="word9"> weekend </p>
+		<p id="word10"> of </p>
+		<p id="word11"> summer </p>
+		<p id="word12"> weirdness:</p>
 
-		<div id="donut"></div>
+	</div>
 
-		<div class="hook">
-			<p id="hook_phone">Honey, you have been invited to a decembery weekend of summer weirdness: </p>
-			<p id="word1">Honey, </p> 
-			<p id="word2"> you </p> 
-			<p id="word3"> have </p>
-			<p id="word4"> been </p> 
-			<p id="word5"> invited </p>
-			<p id="word6"> to </p>
-			<p id="word7"> a </p>
-			<p id="word8"> decembery </p> 
-			<p id="word9"> weekend </p>
-			<p id="word10"> of </p>
-			<p id="word11"> summer </p>
-			<p id="word12"> weirdness:</p> 
-
-		</div>
-
-		<div id="description">
-			<div class="awaits">		
-				<h3>what awaits you?</h3><br>
-<!-- 				<p id="weird">interactions with friends ~   
+	<div id="description">
+		<div class="awaits">
+			<h3>what awaits you?</h3><br>
+			<!-- 				<p id="weird">interactions with friends ~   
 				   interactions with friends of friends ~  
 				   learning from each other ~
 				   partying with each other ~
@@ -80,25 +88,33 @@
 				   feeling the cray ~ 
 				   tasting the air ~ 
 				   bondin' up high. </p> -->
-				<div class="duck_flex">
-					<p id="duck"><img src="img/duck.png" alt="badass bath duck" width="150"></p>
-						
-					<p>Wohnzimmeradventures #wza is a friends-festival happening in several Berliner swimming pools – äh… living rooms! For 3,3 days, you can join us in inventing, realizing and participating in an array of activities, performances, concerts and parties, creating a unique ambiance for meeting other people, learning from and with them and having fun. 	
-					All are welcome in their own beauty and wisdom. So pack your hottest Adiletten, don your best swimsuit, buy your season pass, and don’t forget the sunscreen – got everything? 
+			<div class="duck_flex">
+				<p id="duck"><img src="img/duck.png" alt="badass bath duck" width="150"></p>
+
+				<p>Wohnzimmeradventures #wza is a friends-festival happening in several Berliner swimming pools – äh…
+					living rooms! For 3,3 days, you can join us in inventing, realizing and participating in an array of
+					activities, performances, concerts and parties, creating a unique ambiance for meeting other people,
+					learning from and with them and having fun.
+					All are welcome in their own beauty and wisdom. So pack your hottest Adiletten, don your best
+					swimsuit, buy your season pass, and don’t forget the sunscreen – got everything?
 					Great, then join us, because this year it’s pool party time!<br>
-					<button class=" buttons2" id="lastyear" onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check out last year's edition</button> 
-					</p>		
-							
-				</div>
-				
+					<button class=" buttons2" id="lastyear"
+						onclick="window.location.href = 'http://www.wohnzimmeradventures.xyz/2018/landing.html';">Check
+						out last year's edition</button>
+				</p>
+
 			</div>
 
-			<div class="where">
-				<h3>w h e r e</h3> 
-				<div id="glowflex">
-				<p>WZA takes place in people's livingrooms as well as party places in Berlin. A detailed schedule will be communicated before the event.</p><p id="glow"><img src="img/dolphin.png" alt="pink dolphins"  width="200"> </p>
-				</div>
-			</div> -->
+		</div>
+
+		<div class="where">
+			<h3>w h e r e</h3>
+			<div id="glowflex">
+				<p>WZA takes place in people's livingrooms as well as party places in Berlin. A detailed schedule will
+					be communicated before the event.</p>
+				<p id="glow"><img src="img/dolphin.png" alt="pink dolphins" width="200"> </p>
+			</div>
+		</div> -->
 
 		<div class="cost">
 			<h3>Season pass for Badespaß</h3>
@@ -113,66 +129,61 @@
 			</div>
 		</div>
 
-			<div class="cost">
-				<h3>c o s t</h3>
-				<div id="moneyflex">
-				<p id="money"><img src="img/ticket.png" alt="admittance ticket"  width="200"> </p><p>Season pass for Badespaß: <br> A ticket will be <span id="price">33€</span> for 3,3 days!
+		<div class="cost">
+			<h3>c o s t</h3>
+			<div id="moneyflex">
+				<p id="money"><img src="img/ticket.png" alt="admittance ticket" width="200"> </p>
+				<p>Season pass for Badespaß: <br> A ticket will be <span id="price">33€</span> for 3,3 days!
 
-					This includes workshop materials, brunch, snacks, external locations, and so on – for full transparency in this pool put on these googgles (link to costs table).
-					
+					This includes workshop materials, brunch, snacks, external locations, and so on – for full
+					transparency in this pool put on these googgles (link to costs table).
+
 					More info on how to transfer follows after sign-up.
 				</p>
-				</div>
-			</div>
-
-			<div class="answer">
-				<h3>SIGN UP</h3>
-					<form class="cbp-mc-form" id="test-form">
-
-						<div class="cbp-mc-column">
-							<label for="first_name">First Name</label>
-		  				  	<input type="text" id="first_name" name="first_name" placeholder="Bob">
-			  				<label for="last_name">Last Name</label>
-			  				<input type="text" id="last_name" name="last_name" placeholder="Van Machina">
-			  				<label for="email">Email Address</label>
-				  			<input type="text" id="email" name="email" placeholder="bobvmachina@example.com">
-			 		  	</div>
-
-			 		  	<div class="cbp-mc-column">
-							<label for="attending">I Am Attending</label>
-		  					<select id="attending" name="attending">
-		  						<option class="preview">Choose an option</option>
-		  						<option>Yes, count on me!</option>
-		  						<option>Uncertain</option>
-								<option>No.</option>
-		  					</select>
-		  				</div>
-
-		  				<div class="cbp-mc-column">
-							<label for="wkshp_description">Wanna be a lifeguard?</label>
-							<textarea style="height: 250px;" id="wkshp_description" name="description" placeholder="You want to contribute with a workshop, play some music, do a performance or share anything else with great people? 
-Send us your one* idea as a short description as part of your registration below.
-*Why? Last year’s experience has shown that there will be more than enough happenings. Plus ideally we all get to both give and receive <3"></textarea>
-							<div class="cbp-mc-submit-wrap">
-								<input class="cbp-mc-submit" type="submit" id="submit-form" value="SUBMIT" />
-							</div>	
-							<p class="cbp-mc-form plant"><img src="img/plant.png" alt="plant"  width="300"></p>						
-						</div>
-
-					</form>
-
-
 			</div>
 		</div>
 
+		<div class="answer">
+			<h3>SIGN UP</h3>
+			<form class="cbp-mc-form" id="test-form">
 
-		<!-- Scripts-->
-		<script
-		    src="https://code.jquery.com/jquery-3.3.1.js"
-		    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		    crossorigin="anonymous"></script>
-		<script src="js/gsheets.js"></script>
-		<!-- <script src="js/marquee.js"></script> -->
+				<div class="cbp-mc-column">
+					<label for="first_name">First Name</label>
+					<input type="text" id="first_name" name="first_name" placeholder="Bob">
+					<label for="last_name">Last Name</label>
+					<input type="text" id="last_name" name="last_name" placeholder="Van Machina">
+					<label for="email">Email Address</label>
+					<input type="text" id="email" name="email" placeholder="bobvmachina@example.com">
+				</div>
+
+				<div class="cbp-mc-column">
+					<label for="attending">I Am Attending</label>
+					<select id="attending" name="attending">
+						<option class="preview">Choose an option</option>
+						<option>Yes, count on me!</option>
+						<option>Uncertain</option>
+						<option>No.</option>
+					</select>
+				</div>
+
+				<div class="cbp-mc-column">
+					<label for="wkshp_description">Wanna be a lifeguard?</label>
+					<textarea style="height: 250px;" id="wkshp_description" name="description"
+						placeholder="You want to contribute with a workshop, play some music, do a performance or share anything else with great people? 
+Send us your one* idea as a short description as part of your registration below.
+*Why? Last year’s experience has shown that there will be more than enough happenings. Plus ideally we all get to both give and receive <3"></textarea>
+					<div class="cbp-mc-submit-wrap">
+						<input class="cbp-mc-submit" type="submit" id="submit-form" value="SUBMIT" />
+					</div>
+					<p class="cbp-mc-form plant"><img src="img/plant.png" alt="plant" width="300"></p>
+				</div>
+
+			</form>
+
+
+		</div>
+	</div>
+
 
 
 </body>
