@@ -37,11 +37,11 @@ body{
 	display: block;
 	overflow: hidden;
 	position: relative;
-	font-size: 6vw;
+	font-size: 11vw;
 	color: #fc4f91c5;
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
-	font-family: 'Arial Black', sans-serif;
+	font-family: 'VT323', sans-serif;
 	background-image: url("../img/water3bis.gif");
 	background-size: 100%;
 	background-position-y: center;
@@ -160,18 +160,13 @@ h3{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
 	margin: auto;
-	font-family: 'Arial Black', monospace;
+	font-family: 'VT323', monospace;
 }
 
 #duck{	
 	background-size: 50%;
 	background-position: top;
 	height: 150px;
-}
-
-img{
-	-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
-	animation: floating_tiny 15s infinite alternate-reverse linear
 }
 
 #description p {
@@ -411,6 +406,10 @@ background: #333333;
 		-webkit-animation: wordfloating 28s infinite alternate linear;
 			animation: wordfloating 28s infinite alternate linear;}
 
+	#hook_phone{
+		display:none;
+	}
+
 	#description{
 		margin: 5vw;
 	}
@@ -420,28 +419,183 @@ background: #333333;
 	}
 
 	h3{
-		font-size: 3vw;
+		font-size: 5vw;
 	}
 
 	.duck_flex{
 		display:flex;
 	}
 
+	#duck > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
+	}
+
 	#lastyear{
 		font-size: 3vh;
+	}
+
+	#glow > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
 	}
 
 	#moneyflex{
 		display: flex;
 	}
 
+	#money > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
+	}
+
 	.plant{
+		display: none;
 		height: 20vh;
+	}
+
+
+	.plant > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
 	}
 
 }
 
-/*Phones*/
+/*Computers (window shrink) / Tablets (portrait) */
+@media screen and (max-width: 991px){
+
+	#date{
+		margin-left: 1.6vw;
+		margin-top: 20vh;
+		width: 95vw;
+		height: 60vh; 
+		font-size: 4vw;
+	}
+
+	.hook{
+		margin: 23vh 5vw 6vh 5vw;
+		font-size: 2.5vw;
+		}
+
+	#hook_phone{
+		display:none;
+	}
+
+	#girl{
+		margin-top: 30vh;
+		height: 40%;
+	}
+	
+	#man{
+		margin-top: 30vh;
+		height: 40%;
+	}
+
+	#word1{
+		-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
+			animation: wordfloating 35s infinite alternate-reverse linear;
+	}
+	#word2{			
+		-webkit-animation: wordfloating 20s infinite reverse linear;
+			animation: wordfloating 20s infinite reverse linear;}
+	#word3{		
+		-webkit-animation: wordfloating 25s infinite reverse linear;
+			animation: wordfloating 25s infinite reverse linear;}
+	#word4{
+		-webkit-animation: wordfloating 35s infinite alternate linear;
+			animation: wordfloating 35s infinite alternate linear;}
+	#word5{
+		-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
+			animation: wordfloating 30s infinite alternate-reverse linear;}
+	#word6{
+		-webkit-animation: wordfloating 18s infinite reverse linear;
+			animation: wordfloating 18s infinite reverse linear;}
+	#word7{
+		-webkit-animation: wordfloating 23s infinite alternate linear;
+			animation: wordfloating 23s infinite alternate linear;}
+	#word8{
+		-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
+			animation: wordfloating 32s infinite alternate-reverse linear;}
+	#word9{
+		-webkit-animation: wordfloating 22s infinite alternate linear;
+			animation: wordfloating 22s infinite alternate linear;}
+	#word10{
+		-webkit-animation: wordfloating 29s infinite reverse linear;
+			animation: wordfloating 29s infinite reverse linear;}
+	#word11{
+		-webkit-animation: wordfloating 19s infinite reverse linear;
+			animation: wordfloating 19s infinite reverse linear;}	    
+	#word12{
+		-webkit-animation: wordfloating 28s infinite alternate linear;
+			animation: wordfloating 28s infinite alternate linear;}
+
+	#donut{
+		height: 30vh;
+		width: 28vw;
+	}
+
+	h3 {
+		font-size: 6vw;
+	}
+
+	.awaits{
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+	.duck_flex{
+		display: flex;
+	}
+
+	#duck > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
+	}
+
+    #lastyear{
+		font-size: 2.5vh;
+	}
+
+	.where{
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+	.cost{
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+	.answer{
+		margin-left: 3vw;
+		margin-right: 3vw;
+	}
+
+	#glow > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
+	}
+
+	#moneyflex{
+		display: flex;
+	}
+
+	#money > img{
+		-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+		animation: floating_tiny 15s infinite alternate-reverse linear
+	}
+
+	.plant{
+		display: none;
+	}
+
+
+}
+
+
+
+/*Phones (portrait)*/
 @media screen and (max-width: 600px) {
 
 	#festival_title{
@@ -527,6 +681,36 @@ background: #333333;
 		height: 200px;
 		width: 250px;
 	}
+}
+
+
+/*PHONE LANDSCAPE*/
+@media screen and (max-height: 480px){
+	#date{
+		margin-top: 4vh;
+	}
+
+	#date >p{
+		margin-top: 7vh;
+	}
+
+	#donut{
+		height: 200px;
+		width: 250px;
+		background-size: 220px;
+	}
+
+
+	#duck > img{
+		height: 100px;
+		width: 100px;
+		margin-left: 33vw;
+	}
+
+	#lastyear{
+		font-size: 2.2vw;
+	}
+
 }
 
 /*Between big phone and tablets*/
