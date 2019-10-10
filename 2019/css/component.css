@@ -181,12 +181,41 @@
 	letter-spacing: 1px;
 }*/
 
-@media screen and (max-width: 70em) {
+/*@media screen and (max-width: 70em) {
 	.cbp-mc-column {
 		width: 50%;
 	}
 	.cbp-mc-column:nth-child(3) {
-		width: 100%;
+		width: 70%;
+		border: solid yellow;
+	}
+
+}*/
+
+@media screen and (max-width: 1123px){
+	.cbp-mc-column{
+/*		width: 70%;
+		padding: 10px;
+		margin-left: 10vw;*/
+/*		border: solid red;
+*/	}
+
+	.cbp-mc-column > textarea{
+		width: 70%;
+		font-size: 0.9em
+	}
+
+	.cbp-mc-form input.cbp-mc-submit {
+		font-size: 2em;
+	}
+
+	.cbp-mc-submit-wrap{
+		width: 70%;
+		border: solid pink;
+	}
+
+	#submit-form{
+		font-size: 1.5em;
 	}
 
 }
