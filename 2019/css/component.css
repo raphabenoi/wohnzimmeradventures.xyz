@@ -40,18 +40,20 @@
 .cbp-mc-form input,
 .cbp-mc-form textarea,
 .cbp-mc-form select {
-	font-family: 'IBM Plex Mono', monospace;
-	/* font-style: italic; */
-	font-weight: 500;
+	font-family: 'VT323', cursive;
 	line-height: 1.5;
-	font-size: 1em;
+	font-size: 1.9vw;
 	padding: 5px 10px;
-	color: #333333;
-	text-shadow: 1px 1px 1px #ffffff;
+	color:rgba(153,255,204,1);
+	text-shadow: 2px 2px 1px #ed6c1cce;
 	display: block;
 	width: 100%;
 	background: transparent;
 	max-width: 100%;
+}
+
+.cbp-mc-form textarea{
+	font-size: 1.5vw;
 }
 
 .cbp-mc-form input,
@@ -110,9 +112,9 @@
 
 
 /* WebKit browsers */
-::-webkit-input-placeholder {
-    color: #888888;
-	text-shadow: 1px 1px 1px #ffffff;
+::-webkit-input-placeholder { 
+	color:rgba(153,255,204,1);
+	text-shadow: 2px 2px 1px #ed6c1cce;
     font-style: italic;
 }
 
@@ -146,15 +148,15 @@
 .cbp-mc-form input.cbp-mc-submit {
 	border: solid 3px #ffffff;
 	border-radius: 12px;
-	color: #ffffff;
-	font-family: 'Ranchier';
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 	width: auto;
 	cursor: pointer;
 	display: inline-block;
 	padding: 15px 30px;
 	font-size: 1.5em;
 	letter-spacing: 1px;
+	font-family: 'Permanent Marker', monospace;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px #e84c88;
 }
 
 .cbp-mc-form input.cbp-mc-submit:hover {
@@ -163,9 +165,6 @@
 	text-shadow: 2px 2px 2px #33ccff;
 }
 
-.cbp-mc-form .error {
-	color: #ff4141;
-  }
 
 /*.cbp-mc-form input.checkbox {
 	background: #e540c2;
@@ -209,21 +208,33 @@
 	.cbp-mc-form input,
 	.cbp-mc-form textarea,
 	.cbp-mc-form select {
-		font-family: 'IBM Plex Mono', monospace;
-		color: rgba(255, 0, 255, 0.2);
-		text-shadow: 1px 1px 1px rgba(153,255,204,1);
+		font-family: 'VT323', monospace;
+		color:rgba(153,255,204,1);
+		text-shadow: 2px 2px 1px #ed6c1cce;
 		background: transparent;
-		line-height: 1.5;
-		font-size: 1em;
+		font-size: 0.8em;
 		padding: 5px 10px;
 		display: block;
 		width: 100%;
+
 	}
 
+	.cbp-mc-column input{
+		width: 80vw;
+	}
+
+	#attending{
+		width: 85vw;
+	}
+
+	#wkshp_description{
+		width: 80vw;
+	}
 
 	.cbp-mc-form input.cbp-mc-submit {
-		font-size: 2.5vw;
+		font-size: 5vw;
 	}
+
 
 
 }

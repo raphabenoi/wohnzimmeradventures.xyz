@@ -1,157 +1,108 @@
 @font-face{
 	font-family: mortified;
-	src:url('../fonts/Mortified.ttf') format('truetype');
-}
-@font-face{
-	font-family: curves;
-	src:url('../fonts/Royal Inferno.ttf') format('truetype');
-}
-@font-face{
-	font-family: fishy;
-	src:url('../fonts/SomethingFishy.ttf') format('truetype');
-}
-@font-face{
+	src:url('../fonts/Mortified.ttf');
 	font-family: submerged;
-	src:url('../fonts/submergd.ttf') format('truetype');
-}
-@font-face{
-	font-family: ulove;
-	src:url('../fonts/ulove.ttf') format('truetype');
-}
-@font-face{
-	font-family: victorianna;
-	src:url('../fonts/VictoriannaThint_Web/vtf_victorianna_thin-webfont.ttf') format('truetype');
-}
-@font-face{
-	font-family: balloonsPop;
-	src:url('../fonts/BalloonPops-AX0x.ttf') format('truetype');
-}
-@font-face{
-	font-family: waves;
-	src:url('../fonts/JLRwaves.ttf') format('truetype');
-}
-@font-face{
-	font-family: waver;
-	src:url('../fonts/waver.ttf') format('truetype');
-}
-@font-face{
-	font-family: waterPark;
-	src:url('../fonts/WaterPark-6L2M.ttf') format('truetype');
-}
-@font-face{
-	font-family: format;
-	src:url('../fonts/format/Format_1452.woff2') format('woff2');
-}
-@font-face{
-	font-family: campagnon;
-	src:url('../fonts/compagnon/Compagnon-Medium.woff2') format('woff2');
+	src:url('../fonts/submergd.ttf');
 }
 
 body{
 	margin:0;
 	padding:0;
-	background-image:url("../img/water11.gif");
-	background-size: 100%;
+	background-image:url("../img/cloth.png");
+	background-size: 120%;
 	height: 100%;
 	width:100vw;
 	overflow: scroll;
+
 }
 
-.buttons{
-	position: fixed;
-	z-index: 1;
-}
-button{
-	border: 3px solid #119dfc;
-	background-color: rgba(205, 239, 255, 0.6);
-	/* background-color: rgba(153,255,204,0.5); */
+#lastyear{
+	cursor: pointer;
+	display: inline-block;
+	margin:7vh auto auto auto;
+	border: 3px solid rgba(255, 0, 255, 0.45 );
+	background-color: rgba(153,255,204,0.5);
 	border-radius: 45px;
-	/* font-family: 'curves', cursive; */
-	font-family: balloonsPop;
-	font-size: 1em;
-	/* color: rgba(255, 0, 255, 0.7); */
-	text-shadow: 1px 1px #33ccff;
-	-webkit-animation: floating_phone 15s infinite alternate linear;
-		animation: floating_phone 15s infinite alternate linear
+	font-family: 'submerged', cursive;
+	color: rgba(255, 0, 255, 0.7);
+	text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
 }
 
 
 #festival_title {
-	display: inline-block;
+	border-top: solid black 10px;
+	border-bottom: solid black 10px;
+	height: 20vh;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
 	font-size: 6vw;
-	/* color: rgba(255, 0, 255, 0.2); */
-	/* text-shadow: 2px 4px 1px rgba(153,255,204,1); */
-	text-shadow: 2px 4px 1px #e540c2;
-	/* font-family: 'New Rocker', cursive; */
-	font-family: ulove;
-	-webkit-animation: floating 25s infinite alternate-reverse linear;
-	    animation: floating 25s infinite alternate-reverse linear;
-}
-
-#festival_title > p{
-
+	color: #fc4f91c5;
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	text-transform: uppercase;
+	font-family: 'Arial Black', sans-serif;
+	background-image: url("../img/water3bis.gif");
+	background-size: 100%;
+	background-position-y: center;
+	/* -webkit-animation: floating 25s infinite alternate-reverse linear;
+	    animation: floating 25s infinite alternate-reverse linear; */
 }
 
 #middle_color{
-	/* color:rgba(153,255,204, 0.2); */
-	text-shadow: 2px 4px 1px #7e42ff;
+	color:rgba(153,255,204, 0.7);
+	text-shadow: 2px 4px 1px #e84c88;
 	font-style: italic;
 	font-weight: 400;
+	/*rgba(153,255,204, 0.2)*/
 }
 
-
-#edishon{
-	font-size: 4vw;
-	/* font-family: 'IBM Plex Mono', monospace; */
-	font-family: balloonsPop;
-	text-align: center;
-	font-style: italic;
-	display: block;
+.marquee_sliding{
+	display: inline-block;
+	margin-top: 0;
+	-webkit-animation: floating_tiny 15s infinite alternate linear;
+	animation: floating_tiny 15s infinite alternate linear
 }
+
 
 #girl{
-	margin-top: -10%;
+	margin-top: 12vh;
 	background-image: url("../img/girlhead.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 85%;
 	margin-left: 70%;	
 	position:absolute;
-	height: 350px;
-	width: 300px;
-	font-family: 'curves';
-	text-align: center;
-	font-size: 5vh;
-	/* color: rgba(255, 0, 255, 0.2); */
-	text-shadow: 1px 1px 1px #ffffff;
-
+	height: 60vh;
+	width: 25vw;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	animation: rotation 10s infinite linear;
+	-webkit-animation: rotation 10s infinite linear;
 }
 
 #man{
-	margin-top: -10%;
+	margin-top: 12vh;
+	margin-left: 5%;
 	background-image: url("../img/girlhead2.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 85%;
 	margin-right: 70%;	
 	position:absolute;
-	height: 350px;
-	width: 300px;
-	font-family: 'curves';
-	font-size: 5vh;
-	text-align: center; 
-	/* color: rgba(255, 0, 255, 0.2); */
-	text-shadow: 1px 1px 1px #ffffff;
-
-
+	height: 60vh;
+	width: 25vw;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
+	animation: rotation 10s infinite linear reverse;
+	-webkit-animation: rotation 10s infinite linear reverse;
 }
 
 #donut{	
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 	margin-left: 25vw;
+	margin-top: -37vh;
 	display: block;
-	height: 40vh;
-	width: 28vw;
-	background-image: url("../img/donut2.png");
+	background-image: url("../img/donut.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
     -webkit-animation: floating 15s infinite alternate-reverse linear;
@@ -159,153 +110,92 @@ button{
 }
 
 #date{
-	/*v+h alignment of text inside container*/
 	text-align:center;
-	display: table;
-	margin-left: 25vw;
-
-	/*fonts and colors*/
-	/* font-family: 'New Rocker', cursive; */
-	font-family: 'waterPark';
-	font-size: 5vw;
-	text-shadow: 2px 2px 1px #e540c2;
-	/* color: rgba(153,255,204, 0.2); */
+	display: inline-flex;
+	font-family: 'Permanent Marker', serif;
+	text-transform: uppercase;
+	color: #e84c88;
 	letter-spacing: 5px;
+	background-image: url('../img/water3bis.gif');
+	background-position-y: center;
+	background-size: 150%;
+	border-radius: 60px;
+	border: solid black 10px;
 
-	/*animation*/
-    -webkit-animation: floating 18s infinite alternate linear;
-	    animation: floating 18s infinite alternate linear;
+}
+
+#date > p{
+	margin: auto;
+	z-index: 2;
+	color:rgba(153,255,204,0.8) ;
+	text-shadow: 2px 4px 1px #e84c88;
 }
 
 .hook{
-	margin: 6vh 5vw 6vh 5vw;
 	padding: 10px;
-	font-family: 'Chewy';
-	font-size: 2.6vw;
+	border: solid black 10px;
+	font-family: 'Permanent Marker', serif;
 	font-weight: 400;
-	color: #119dfc;
-	text-shadow: 2px 2px 1px #ffffff;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px #e84c88;
 	display:flex;
 	flex-direction: row;
-	/* background-image: url("../img/water33.gif"); */
-	background-color: rgba(205, 239, 255, 0.6);
+	background-image: url("../img/water3bis.gif");
 	background-size: 100%;
 	background-position: center;
-	border-radius: 22px;
+	border-radius: 50px;
 	}
 
-#word1{
-	-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
-	    animation: wordfloating 35s infinite alternate-reverse linear;
-}
-#word2{			
-	-webkit-animation: wordfloating 20s infinite reverse linear;
-	    animation: wordfloating 20s infinite reverse linear;}
-#word3{		
-	-webkit-animation: wordfloating 25s infinite reverse linear;
-	    animation: wordfloating 25s infinite reverse linear;}
-#word4{
-	-webkit-animation: wordfloating 35s infinite alternate linear;
-	    animation: wordfloating 35s infinite alternate linear;}
-#word5{
-	-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
-	    animation: wordfloating 30s infinite alternate-reverse linear;}
-#word6{
-	-webkit-animation: wordfloating 18s infinite reverse linear;
-	    animation: wordfloating 18s infinite reverse linear;}
-#word7{
-	-webkit-animation: wordfloating 23s infinite alternate linear;
-	    animation: wordfloating 23s infinite alternate linear;}
-#word8{
-	-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
-	    animation: wordfloating 32s infinite alternate-reverse linear;}
-#word9{
-	-webkit-animation: wordfloating 22s infinite alternate linear;
-	    animation: wordfloating 22s infinite alternate linear;}
-#word10{
-	-webkit-animation: wordfloating 29s infinite reverse linear;
-	    animation: wordfloating 29s infinite reverse linear;}
-#word11{
-	-webkit-animation: wordfloating 19s infinite reverse linear;
-	    animation: wordfloating 19s infinite reverse linear;}	    
-#word12{
-	-webkit-animation: wordfloating 28s infinite alternate linear;
-	    animation: wordfloating 28s infinite alternate linear;}
-
-
-
-
 #description{
-	margin: 5vw;
-	padding: 20px 70px;
 	display: block;
 	justify-content: center;
-	font-family: 'IBM Plex Mono', monospace;
-	font-weight: 400;
-    /*color: rgba(162, 237, 24, 0.55	);
-	text-shadow: 2px 2px 1px rgba(139, 16, 227, 0.75);*/
-	color: #333333;
-	/* color: #0086df; */
-	text-shadow: 1px 1px 1px #ffffff;
-    /*color: rgba(153,255,204, 0.7);
-    text-shadow: 1.5px 1.5px 1.5px rgba(255,0,255,0.7);*/
-	/* background-image: url("../img/water2.gif"); */
-	background-color: rgba(205, 239, 255, 0.6);
-    /* background-size: 120%; */
-    border-radius: 25px;
+    font-family: 'Permanent Marker', sans-serif;
+	color: rgba(153,255,204,0.75);
+	text-shadow: 2px 2px 1px #e84c88;
 }
-
-#description  p {
-	font-family: 'IBM Plex Mono', monospace;
-	font-style: italic;
-	font-size: 1.5em;
-}
-
-/*WEIRD TEXT LINEAR SCROLL (can't manage to have a confined scroll)*/
-/*#weird{
-	font-size: 0.65em;
-	overflow: hidden;
-    white-space: nowrap;
-    -webkit-animation: weirdtranslation 25s infinite linear;
-	    animation: weirdtranslation 25s infinite linear;}*/
 
 
 h3{
-	font-size: 2.5em;
-	font-stretch: expanded;
-	color: #119dfc;
-	text-shadow: 2px 2px 1px #ffffff;
+	color: rgba(255, 0, 255, 0.2);
+	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 	text-transform: uppercase;
 	margin: auto;
-	font-family: 'Barrio';
+	font-family: 'Arial Black', monospace;
 }
 
-.alien_flex{
-	display:flex;
+#duck{	
+	background-size: 50%;
+	background-position: top;
+	height: 150px;
 }
 
-#alien{
-	position: relative;
-	background-image: url("../img/alien.png");
-	background-position: center;
-	background-size: 110%;
-	background-repeat: no-repeat;
-	width: 2000px;
+img{
+	-webkit-animation: floating_tiny 15s infinite alternate-reverse linear;
+	animation: floating_tiny 15s infinite alternate-reverse linear
 }
 
+#description p {
+	padding: 2.5vh 4vw;
+	background-image: url("../img/water3bis.gif");
+	background-size: 200%;
+	border-radius: 50px;
+	border: solid black 10px;
+}
 .awaits p{
 	/*padding-left: 4vw;*/
 	text-align: justify;
-    text-justify: inter-word;
+	text-justify: inter-word;
 }	
 
 .where{
-	margin-top: 6vh;
+	margin-top: 6vh;	
 }
 .where > p{
-	padding-left: 4vw;
+	/* background-image: url("../img/dolphin.png"); */
 	text-align: justify;
-    text-justify: inter-word;
+	text-justify: inter-word;
+	padding: 50px;
+
 }
 
 #glowflex{
@@ -337,28 +227,24 @@ h3{
 	text-shadow: 2px 4px 1px rgba(153,255,204,1);
 }
 
-#moneyflex{
-	display: flex;
-}
-
-#money{
-	width: 25vw;
-	height: 180px;
-	background-image: url("../img/nickel.png");
-	background-size: 70%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 .answer{
-	margin-top: 10vh;
-	font-family: 'balloonsPop';
-	color: #555555;
+	margin-top: 6vh;
 }
+
+form{
+	margin-top: 4vh;
+	background-image: url("../img/water3bis.gif");
+	background-size: 200%;
+	border-radius: 50px;
+	border: solid black 10px;
+}
+
+
 .answer > p{
 	padding-left: 4vw;
 	text-align: justify;
-    text-justify: inter-word;	
+	text-justify: inter-word;
 }
 
 .magenta {
@@ -445,23 +331,226 @@ background: #333333;
   
 
 
+/*MEDIA QUERIES*/
 
 
-/* phone styles */
+/* Computers, Laptops, tablets */
+@media only screen and (min-width: 992px){
+	.buttons button{
+		-webkit-animation: floating_phone 15s infinite alternate linear;
+		animation: floating_phone 15s infinite alternate linear
+	}
 
+	.buttons{
+		position: fixed;
+		z-index: 1;
+	}
+	
+	.buttons > button{
+		cursor: pointer;
+		border: 3px solid rgba(255, 0, 255, 0.45 );
+		background-color: rgba(153,255,204,0.5);
+		border-radius: 45px;
+		font-family: 'submerged', cursive;
+		font-size: 3vh;
+		color: rgba(255, 0, 255, 0.7);
+		text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	}
+	#date{
+		margin-left: 1.6vw;
+		margin-top: 10vh;
+		width: 95vw;
+		height: 60vh; 
+		font-size: 4vw;
+	}
+
+	#donut{
+		height: 40vh;
+		width: 28vw;
+	}
+	.hook{
+	margin: 6vh 5vw 6vh 5vw;
+	font-size: 2.5vw;
+	}
+
+	#word1{
+		-webkit-animation: wordfloating 35s infinite alternate-reverse linear;
+			animation: wordfloating 35s infinite alternate-reverse linear;
+	}
+	#word2{			
+		-webkit-animation: wordfloating 20s infinite reverse linear;
+			animation: wordfloating 20s infinite reverse linear;}
+	#word3{		
+		-webkit-animation: wordfloating 25s infinite reverse linear;
+			animation: wordfloating 25s infinite reverse linear;}
+	#word4{
+		-webkit-animation: wordfloating 35s infinite alternate linear;
+			animation: wordfloating 35s infinite alternate linear;}
+	#word5{
+		-webkit-animation: wordfloating 30s infinite alternate-reverse linear;
+			animation: wordfloating 30s infinite alternate-reverse linear;}
+	#word6{
+		-webkit-animation: wordfloating 18s infinite reverse linear;
+			animation: wordfloating 18s infinite reverse linear;}
+	#word7{
+		-webkit-animation: wordfloating 23s infinite alternate linear;
+			animation: wordfloating 23s infinite alternate linear;}
+	#word8{
+		-webkit-animation: wordfloating 32s infinite alternate-reverse linear;
+			animation: wordfloating 32s infinite alternate-reverse linear;}
+	#word9{
+		-webkit-animation: wordfloating 22s infinite alternate linear;
+			animation: wordfloating 22s infinite alternate linear;}
+	#word10{
+		-webkit-animation: wordfloating 29s infinite reverse linear;
+			animation: wordfloating 29s infinite reverse linear;}
+	#word11{
+		-webkit-animation: wordfloating 19s infinite reverse linear;
+			animation: wordfloating 19s infinite reverse linear;}	    
+	#word12{
+		-webkit-animation: wordfloating 28s infinite alternate linear;
+			animation: wordfloating 28s infinite alternate linear;}
+
+	#description{
+		margin: 5vw;
+	}
+
+	#description p{
+		font-size: 1.8vw;
+	}
+
+	h3{
+		font-size: 3vw;
+	}
+
+	.duck_flex{
+		display:flex;
+	}
+
+	#lastyear{
+		font-size: 3vh;
+	}
+
+	#moneyflex{
+		display: flex;
+	}
+
+	.plant{
+		height: 20vh;
+	}
+
+}
+
+/*Phones*/
 @media screen and (max-width: 600px) {
 
 	#festival_title{
-		margin:auto;
-		padding-top: 5vh;
-		width: 90vw;
 		height: 15vh;
-		font-size: 7vw;
-		-webkit-animation: floating_phone 15s infinite alternate linear;
-		        animation: floating_phone 15s infinite alternate linear;
+		margin-top: 5vh;
 	}
 
+	.buttons{
+		display:none;
+	}
 
+	#donut{
+		height: 200px;
+		width: 250px;
+		background-size: 250px;
+	}
+
+	#girl, #man{
+		display: none;
+	}
+
+	#date{
+		margin-left: 0;
+		margin-top: 4vh;
+		width: 95vw;
+		height: 45vh; 
+		font-size: 7vw;
+	}
+
+	#date >p{
+		margin-top: 15vh;
+	}
+
+	.hook{
+		margin-top: 10vh;
+		font-size: 2.5vw;
+		}
+	#word1, #word2, #word3, #word4, #word5, #word6, #word7, #word8, #word9, #word10, #word11, #word12{
+		display:none;
+	}
+	#hook_phone{
+		animation: floating_tiny 18s linear infinite;
+	}
+
+	#description{
+		margin-top: 6vh;
+	}
+
+	h3{
+		font-size: 8vw;
+	}
+	.duck_flex{
+		display:block;
+	}
+
+	#duck{
+		height: 15vh;
+	}
+
+	#money>img{
+		height: 120px;
+		width: 150px;
+	}
+	
+	#description p{
+		font-size: 3vw;
+	}
+
+	#lastyear{
+		font-size: 2vh;
+	}
+
+	#moneyflex{
+		display: block;
+	}
+
+	.plant{
+		width: 50vw;
+		margin-left:15vw;
+	}
+
+	.plant >img{
+		height: 200px;
+		width: 250px;
+	}
+}
+
+/*Between big phone and tablets*/
+@media only screen and (min-width: 600px){
+	.buttons button{
+		-webkit-animation: floating_phone 15s infinite alternate linear;
+		animation: floating_phone 15s infinite alternate linear
+	}
+
+	.buttons{
+		position: fixed;
+		z-index: 1;
+	}
+	
+	.buttons > button{
+		cursor: pointer;
+		border: 3px solid rgba(255, 0, 255, 0.45 );
+		background-color: rgba(153,255,204,0.5);
+		border-radius: 45px;
+		font-family: 'submerged', cursive;
+		font-size: 3vh;
+		color: rgba(255, 0, 255, 0.7);
+		text-shadow: 2px 1px rgba(243, 255, 15, 0.7);
+	}
 }
 
 
@@ -473,13 +562,13 @@ background: #333333;
 
 @-webkit-keyframes floating{
 	0%{-webkit-transform: translate(2vw, -10vh);}
-	50%{-webkit-transform: translate(8vw, -18vh);}
+	50%{-webkit-transform: translate(8vw, -14vh);}
 	100%{-webkit-transform: translate(12vw, 1vh);}
 }
 
 @keyframes floating{
 	0%{transform: translate(2vw, -10vh);}
-	50%{transform:  translate(8vw, -18vh);}
+	50%{transform:  translate(8vw, -14vh);}
 	100%{transform: translate(12vw, 1vh);}
 }
 
@@ -508,17 +597,25 @@ background: #333333;
 	100%{transform: translate(10vw, 5vh);}
 }
 
-@-webkit-keyframes weirdtranslation
-{
-    from {margin-left: 4vw;
-    	  padding-left: 4vw;}
-    to {margin-left: -30vw;
-    	padding-left: 4vw;}
-}
-@keyframes weirdtranslation
-{
-    from {margin-left: 4vw;}
-    to {margin-left: -30vw;}
+@keyframes floating_tiny{
+	0%{transform: translate(-1vw, 2vh);}
+	50%{transform:  translate(3vw, 1vh);}
+	100%{transform: translate(-3vw, -2vh);}
 }
 
+@-webkit-keyframes floating_tiny{
+	0%{-webkit-transform: translate(-1vw, 2vh);}
+	50%{-webkit-transform:  translate(3vw, 1vh);}
+	100%{-webkit-transform: translate(-3vw, -2vh);}
+}
+
+@keyframes rotation{
+	from {transform: rotate(0deg); transform-origin: center;}
+	to {transform: rotate(359deg);transform-origin: center;}
+}
+
+@-webkit-keyframes rotation {
+	from {-webkit-transform: rotate(0deg);transform-origin: center;}
+	to {-webkit-transform: rotate(359deg);transform-origin: center;}
+}
 
