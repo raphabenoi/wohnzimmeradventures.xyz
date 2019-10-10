@@ -166,7 +166,8 @@
 }
 
 .cbp-mc-form .error {
-	color: #ff4141;
+	color: #fc4f91c5;
+	text-shadow: 2px 2px 2px #33ccff;
 }
 
 
