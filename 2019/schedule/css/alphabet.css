@@ -1,0 +1,73 @@
+.post-tags li {
+    display: inline-block;
+    margin: 0 1% 0.5% 0;
+    text-align: center;
+    font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+  }
+  
+  .j,
+  .f,
+  .p,
+  .w {
+    text-transform: uppercase;
+  }
+  
+  .a,
+  .e,
+  .n,
+  .t,
+  .x {
+    font-style: italic;
+  }
+  
+  .b,
+  .k,
+  .m,
+  .p,
+  .s {
+    font: small-caps 100%/130% "PT Sans Narrow", Helvetica, Arial, sans-serif;
+  }
+  
+  li a {
+    text-decoration: none;
+    width: 30px;
+    display: block;
+  }
+  
+  li:nth-child(1n + 1) a {
+    color: #144b6b;
+    background-color: #c6dfdd;
+  }
+  
+  li:nth-child(2n + 1) a {
+    color: #c6393f;
+    background-color: #c6dfdd;
+  }
+  
+  li:nth-child(3n + 1) a {
+    color: #c6393f;
+    background-color: #f5c004;
+  }
+  
+  li:nth-child(4n + 1) a {
+    color: white;
+    background-color: #c6393f;
+  }
+  
+  li:nth-child(5n + 1) a {
+    color: white;
+    background-color: #144b6b;
+  }
+  
+  li:nth-child(6n + 1) a {
+    color: #144b6b;
+    background-color: #f5c004;
+  }
+  
+  li.active a,
+  li a:hover {
+    background-color: white;
+    color: #c6393f;
+  }
+  

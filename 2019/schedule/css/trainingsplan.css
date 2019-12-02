@@ -1,0 +1,95 @@
+@font-face {
+    font-family: mortified;
+    src: url('../../fonts/Mortified.ttf');
+    font-family: submerged;
+    src: url('../../fonts/submergd.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../img/cloth.png");
+    background-size: 120%;
+    height: 100%;
+    width: 100vw;
+    overflow: scroll;
+}
+
+#back {
+    color: #fc4f91c5;
+}
+
+#lookback {
+    padding: 5px 3px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #e8e8e8;
+    font-family: "Arial Black", sans-serif;
+    font-size: 1em;
+    width: 24vw;
+    font-weight: bold;
+    text-shadow: 2px 3px black;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    position: relative;
+}
+
+#lookback:hover {
+    color: rgba(153, 255, 204, 1);
+}
+
+#trainingsplan {
+    border-top: solid black 2vh;
+    border-bottom: solid black 2vh;
+    height: 20vh;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    font-size: 11vw;
+    color: #fc4f91c5;
+    text-shadow: 2px 4px 1px rgba(153, 255, 204, 1);
+    text-transform: uppercase;
+    font-family: 'VT323', sans-serif;
+    background-image: url("../../img/water3bis.gif");
+    background-size: 100%;
+    background-position-y: center;
+    /* -webkit-animation: floating 25s infinite alternate-reverse linear;
+	    animation: floating 25s infinite alternate-reverse linear; */
+}
+
+.marquee_sliding {
+    display: inline-block;
+    margin-top: 0;
+    -webkit-animation: floating_tiny 15s infinite alternate linear;
+    animation: floating_tiny 15s infinite alternate linear
+}
+
+.description {
+    margin-left: 1vw;
+    display: block;
+    justify-content: center;
+    font-family: 'Permanent Marker', sans-serif;
+    color: rgba(153, 255, 204, 0.75);
+    text-shadow: 2px 2px 1px #e84c88;
+}
+
+#gsheet {
+    width: 100vw;
+    height: 100vh;
+}
+
+#lifeguard {
+    float: right;
+    width: 30vw;
+    height: auto;
+}
+
+.title {
+    margin-left: 1vw;
+    display: block;
+    justify-content: center;
+    font-family: 'VT323', sans-serif;
+    color: rgba(153, 255, 204, 0.75);
+    text-shadow: 2px 2px 1px #e84c88;
+}

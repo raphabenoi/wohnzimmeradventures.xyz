@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wohnzimmeradventures</title>
+    <meta name="description" content="Wohnzimmeradventures Schedule" />
+    <meta name="keywords" content="schedule, festival, program" />
+    <meta name="author" content="Wohnzimmeradventurers" />
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/landing.css">
+    <link rel="stylesheet" type="text/css" href="css/trainingsplan.css" />
+    <link rel="stylesheet" type="text/css" href="css/alphabet.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Font Awesome for Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme|Lexend+Exa|Lacquer|New+Rocker|VT323|Ruslan+Display|Grenze:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio autoplay id="player">
+        <source src="../audio/her_lazer_light_eyes.mp3" type="audio/mp3">
+        </source>
+    </audio>
+    <div class="buttons">
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+    </div>
+
+
+    <div id="festival_title" class="marquee">
+        <div class="marquee_wrapper">
+            <p data-content="wohnzimmer" class="marquee_sliding"> wohnzimmer<span id="middle_color">advent</span>ures
+            </p>
+            <!-- <span id="edishon"> b e r l i n / .2 0 1 9. /</span>			 -->
+        </div>
+    </div>
+
+
+    <div id="images">
+        <div id="girl"> </div>
+        <div id="man"> </div>
+    </div>
+
+    <div id="date">
+        <p>~ thu. dec 12~<br> &#8623 <br> <!-- <span style="color: #e540c2">&#9656;</span> --> ~ sun. dec 15~</p>
+    </div>
+
+    <div id="donut"></div>
+
+    <div id="description">
+        <div class="where">
+            <h3 style="font-size: 5vw;">Anmeldung</h3>
+            <div id="glowflex">
+                <p>If you still haven't registered to the Badespass, you can do by <a href="../landing.html">clicking
+                        here.</a></p>
+                <p id="glow"><img src="../img/dolphin.png" alt="pink dolphins" width="200"> </p>
+            </div>
+        </div>
+
+        <div class="awaits">
+            <h3 style="font-size: 5vw;">Saturday Night Special</h3>
+            <div class="duck_flex">
+                <p id="duck"><img src="../img/duck.png" alt="badass bath duck" width="150"></p>
+
+                <p>Can’t make it during the day? Don’t worry: we now offer an Evening Tariff on Saturday night for only
+                    <span id="price" style="font-family: 'Ranchers';">9,99 Euro</span>*<br>
+                    <br>
+                    <span style="font-size: 75%;">*Valid only from 22:22pm to 7:77am at Badehaus <a
+                            href="https://goo.gl/maps/3Vhcuv2mgSU1MFRU9">(<-- click me)</a>. <br>
+                                * Floor name: SAUNA (back entrance)<br>
+                                * Please bring suitable swimwear.<br>
+                                * Adults under 5 years are free when accompanied by a child.</span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="cost">
+            <h3 style="font-size: 5vw;">Do your part</h3>
+            <div id="moneyflex">
+                <p id="duck"><img src="../img/whistle.png" alt="badass bath duck" width="150"></p>
+                <p>Acute lack of Bademeister*innen in Berlin!<br>
+                    Help us keep the pools clean and the Kiosk stocked, and enter your name at least once – or better
+                    yet: twice! – into this table:
+                    <a
+                        href="https://docs.google.com/spreadsheets/d/1A3u0zYfc4iwAFdQDGQp0DDdbXMt2gxZn5C7IOp2f2U0/edit?usp=sharing">[->
+                        I'm a table]</a>.<br>
+                    (Maybe after you checked out the Trainingsplan below!)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="trainingsplan" class="marquee">
+        <div class="marquee_wrapper">
+            <p data-content="Trainingsplan" class="marquee_sliding">Trainingsplan</p>
+            <!-- <span id="edishon"> b e r l i n / .2 0 1 9. /</span>			 -->
+        </div>
+    </div>
+
+    <h2 class="description">A body immersed up to the neck in water only weighs 1/10 of its weight! This fantastic
+        feature allows almost anyone regardless of age, sex and fitness to train in the water with very little risk of
+        injury. Therefore, our attractive and varied aqua fitness Trainingsplan definitely offers the right course for
+        you to feel physically healthy, fit and balanced.<br>
+        <br>
+        So that everyone can have the greatest possible health benefits and at the same time have fun in the water, we
+        offer training in several different stress levels. More information on this can be found in the respective
+        detailed course descriptions.
+    </h2>
+
+
+    <div id="schedule">
+        <iframe id="gsheet"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vROWPsHcD3gIS8_hDsasBGhSSKXrQ4WtTIJxrRCzoiY1K5uwRwXqnkoqdyy6UiEMjx-5RfZvC6JgdrL/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false"></iframe>
+        <p class="details">--> You can download the current version as PDF by clicking <a
+                href="https://docs.google.com/spreadsheets/d/1ANK9EPxPKkD-mD0CmYVJIy15zhMCXH71BA3ZoaZ0wAs/export?format=pdf"
+                target="_blank">here</a> or access the online version by clicking <a
+                href="https://docs.google.com/spreadsheets/d/1ANK9EPxPKkD-mD0CmYVJIy15zhMCXH71BA3ZoaZ0wAs/edit?usp=sharing"
+                target="_blank">here</a></p>
+    </div>
+
+    <div id="list">
+
+        <div id="trainingsplan" class="marquee">
+            <div class="marquee_wrapper">
+                <p data-content="Trainingsplan" class="marquee_sliding">Descriptions</p>
+                <!-- <span id="edishon"> b e r l i n / .2 0 1 9. /</span>			 -->
+            </div>
+        </div>
+
+
+        <!-- <h1>List of things</h1> -->
+        <h2 class="description">Wanna know more about specific Schwimmkurse or Liegewiesen? Click and enjoy!</h2>
+        <!-- <ul class="post-tags">
+                <li class="a"><a href="#" class="tax-filter" title="a">a</a></li>
+                <li class="b"><a href="" class="tax-filter" title="b">b</a></li>
+                <li class="c"><a href="" class="tax-filter" title="c">c</a></li>
+                <li class="d"><a href="" class="tax-filter" title="d">d</a></li>
+                <li class="e"><a href="" class="tax-filter" title="e">e</a></li>
+                <li class="f"><a href="" class="tax-filter" title="f">f</a></li>
+                <li class="g"><a href="" class="tax-filter" title="g">g</a></li>
+                <li class="h"><a href="" class="tax-filter" title="h">h</a></li>
+                <li class="i"><a href="" class="tax-filter" title="i">i</a></li>
+                <li class="j"><a href="" class="tax-filter" title="j">j</a></li>
+                <li class="k"><a href="/" class="tax-filter" title="k">k</a></li>
+                <li class="l"><a href="/" class="tax-filter" title="l">l</a></li>
+                <li class="m"><a href="/" class="tax-filter" title="m">m</a></li>
+                <li class="n active"><a href="/" class="tax-filter" title="n">n</a></li>
+                <li class="o"><a href="/" class="tax-filter" title="o">o</a></li>
+                <li class="p"><a href="/" class="tax-filter" title="p">p</a></li>
+                <li class="q"><a href="/" class="tax-filter" title="q">q</a></li>
+                <li class="r"><a href="/" class="tax-filter" title="r">r</a></li>
+                <li class="s"><a href="/" class="tax-filter" title="s">s</a></li>
+                <li class="t"><a href="/" class="tax-filter" title="t">t</a></li>
+                <li class="u"><a href="/" class="tax-filter" title="u">u</a></li>
+                <li class="v"><a href="/" class="tax-filter" title="v">v</a></li>
+                <li class="w"><a href="/" class="tax-filter" title="w">w</a></li>
+                <li class="x"><a href="/" class="tax-filter" title="x">x</a></li>
+                <li class="z"><a href="/" class="tax-filter" title="z">z</a></li>
+            </ul> -->
+
+        <div class="container">
+            <div id="grid-gallery" class="grid-gallery">
+
+                <section class="grid-wrap">
+                    <ul class="grid">
+                        <li class="grid-sizer"></li><!-- for Masonry column width -->
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>AKKORDEON</h3>
+                                    <p>by Rita</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>AKROYOGA</h3>
+                                    <p>by Pia & Jonas</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>ANIMAL SOUNDS</h3>
+                                    <p>by Alex</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>ANIMATED MOVIEMAKING</h3>
+                                    <p>by Sophia</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BLIND WALKING</h3>
+                                    <p>by Marie-Luise</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BODYPAINTING</h3>
+                                    <p>by Stella</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BRIEF HISTORY OF DIGITAL MONEY</h3>
+                                    <p>by Till & Rapha</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>COFFEE MAKING</h3>
+                                    <p>by Santo</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>COLLAGIMPRO</h3>
+                                    <p>by Hauke</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>CRASHKURS POLISH AND PORTUGUESE</h3>
+                                    <p>by Rike</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>CRITICAL MASCULINITY</h3>
+                                    <p>by Martin</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>FIRENZE FESTIVAL</h3>
+                                    <p>by Jacopo</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>HOW TO DJ</h3>
+                                    <p>by Niklas, Lukas, Mike</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>HOW TO WHISTLE</h3>
+                                    <p>by Sebi</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>JEWELRY MAKING</h3>
+                                    <p>by Luise</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>LAWINENTRAINING</h3>
+                                    <p>by Rosella</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>PAINTING</h3>
+                                    <p>by Isabella</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>REPAIR CAFÉ</h3>
+                                    <p>by Olga</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>SAUNA</h3>
+                                    <p>by Simon</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>NEON TENNIS</h3>
+                                    <p>by Pit</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>VEGAN XMAS COOKIES</h3>
+                                    <p>by Philline & Felix</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>WOMENPOWER IN POLITICS</h3>
+                                    <p>by Mona</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section><!-- // grid-wrap -->
+
+
+                <section class="slideshow">
+                    <ul class="slideshow-sizer">
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>AKKORDEON</h3>
+                                    <p>Everything you always wanted to know about Akkordeons but never dared to ask.</p>
+                                </figcaption>
+                                <img src="img/akkordeon.png" alt="akkordeon" />
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>ACROYOGA</h3>
+                                    <p>Folded Leaf? Thron? Free Bird? What? Let's do some AcroYoga (suitable also for
+                                        beginners).</p>
+                                </figcaption>
+                                <img src="img/acroyoga.jpeg" alt="acroyoga" />
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>ANIMAL SOUNDS</h3>
+                                    <p>Howl, moo, giggle.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>ANIMATED MOVIEMAKING</h3>
+                                    <p>Take part in the making of a short pixelation movie.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BLIND WALKING</h3>
+                                    <p>Trust.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BODYPAINTING</h3>
+                                    <p>Transform yourself into any fish, pool noodle or baywatch lifeguard you want with the Help of Stella's Watercolours.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>BRIEF HISTORY OF DIGITAL MONEY</h3>
+                                    <p>A history of digital money: from the coffee beans to Bitcoin in 45 minutes!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>COFFEE MAKING</h3>
+                                    <p>Lean the Basics of Coffee Making and maybe finally the difference between Espresso Macchiato and a Latte.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>COLLAGIMPRO</h3>
+                                    <p>Improvised collage making or collaged improvisation?</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>CRASHKURS POLISH AND PORTUGUESE</h3>
+                                    <p>Dzien dobry? Bom dia?</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>CRITICAL MASCULINITY</h3>
+                                    <p>A critical analysis of the socialization as a man. Open to all genders.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>FIRENZE FESTIVAL</h3>
+                                    <p>Jacopo tells us about a similar festival in Florence.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>HOW TO DJ</h3>
+                                    <p>Break beats, scratching, looping, and punch phrasing are the skills of the DJ, and you can learn to get started if you want to participate in disc-jockey culture.' – wikiHOW</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>HOW TO WHISTLE</h3>
+                                    <p>Master the most important life(guard) skill and learn how to whistle on your fingers.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>JEWELRY MAKING</h3>
+                                    <p>Some acrylic, some glue, some chains and more bling-bling and let's get crafty for the party that night!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>LAWINENTRAINING</h3>
+                                    <p>Survive both Matterhorn and Teufelsberg.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>PAINTING</h3>
+                                    <p>Brushes, Colours, Shades and Textures – immerse yourself into the world of Painting.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>REPAIR CAFÉ</h3>
+                                    <p>Learn how to rescue that piece in your wardrobe you always loved and wore to a nub!</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>SAUNA</h3>
+                                    <p>Sweating, but it smells nice.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>NEON TENNIS</h3>
+                                    <p>An introduction to Tennis with specials.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>VEGAN XMAS COOKIES</h3>
+                                    <p>Learn how to make and then eat three different types of yummy vegan cookies.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <figcaption>
+                                    <h3>WOMENPOWER IN POLITICS</h3>
+                                    <p>A workshop on political engagement, the female role in politics and how to raise your voice/annoy people.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+                    <nav>
+                        <span class="icon nav-prev"></span>
+                        <span class="icon nav-next"></span>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon">Navigate with arrow keys</div>
+                </section><!-- // slideshow -->
+            </div><!-- // grid-gallery -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="js/gsheet.js"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script> -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script>
+        new CBPGridGallery(document.getElementById('grid-gallery'));
+    </script>
+
+
+
+
+
+
+</body>
