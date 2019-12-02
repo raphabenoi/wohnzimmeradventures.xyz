@@ -67,16 +67,28 @@ body {
 
 .description {
     margin-left: 1vw;
+    margin-right: 1vw;
     display: block;
     justify-content: center;
-    font-family: 'Permanent Marker', sans-serif;
-    color: rgba(153, 255, 204, 0.75);
+    /* font-family: 'Permanent Marker', sans-serif; */
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(29, 205, 218, 0.75);
     text-shadow: 2px 2px 1px #e84c88;
+}
+
+.details {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 1vw;
+}
+
+#schedule {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 #gsheet {
     width: 100vw;
     height: 100vh;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 #lifeguard {
@@ -92,4 +104,29 @@ body {
     font-family: 'VT323', sans-serif;
     color: rgba(153, 255, 204, 0.75);
     text-shadow: 2px 2px 1px #e84c88;
+}
+
+h1 {
+    font-family: 'VT323', sans-serif;
+    font-size: x-large;
+    border-top: solid black 2vh;
+    border-bottom: solid black 2vh;
+    height: 20vh;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    font-size: 11vw;
+    color: #fc4f91c5;
+    text-shadow: 2px 4px 1px rgba(153, 255, 204, 1);
+    text-transform: uppercase;
+    font-family: 'VT323', sans-serif;
+    background-image: url("../../img/water3bis.gif");
+    background-size: 100%;
+    background-position-y: center;
+}
+
+h3 {
+    font-family: 'VT323', sans-serif;
+    font-size: x-large;
 }
