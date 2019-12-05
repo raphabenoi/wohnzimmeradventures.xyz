@@ -73,7 +73,7 @@ body {
     /* font-family: 'Permanent Marker', sans-serif; */
     font-family: 'IBM Plex Mono', monospace;
     color: rgba(29, 205, 218, 0.75);
-    text-shadow: 2px 2px 1px #e84c88;
+    text-shadow: 2px 2px 1px #fff067;
 }
 
 .details {
