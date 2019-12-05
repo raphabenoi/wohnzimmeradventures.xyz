@@ -33,7 +33,9 @@
 .grid-gallery figcaption p {
 	margin: 0;
 	font-family: 'IBM Plex mono', monospace;
-	font-style: italic;;
+	font-style: italic;
+	color: #fff067;
+	text-shadow: 1px 1px black;
 }
 
 /* Grid style */
@@ -66,7 +68,7 @@
 .grid figcaption {
 	background: #e4e4e4;
 	padding: 25px;
-	background-image: url("../../img/water3bis.gif");
+	background-image: url("../../img/water3bis2.gif");
 	border: solid 1vh black;
 }
 
@@ -163,7 +165,9 @@
 
 .slideshow figcaption {
 	padding: 20px;
-	background-image: url("../../img/water3bis.gif");
+	background-image: url("../../img/water3bis2.gif");
+	background-size: 120%;
+
 }
 
 .slideshow figcaption h3 {
